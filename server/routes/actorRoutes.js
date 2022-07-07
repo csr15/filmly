@@ -2,8 +2,8 @@ const { API_VERSION } = require("../constants/constants");
 const {
   getAllActor,
   getAllMoviesofAllActor,
-  getActorMovieCount,
   addActor,
+  getActorMovieCountByThisYear,
 } = require("../controllers/actorController");
 
 exports.actorRoutes = [
@@ -23,9 +23,9 @@ exports.actorRoutes = [
   },
   {
     method: "GET",
-    path: `${API_VERSION}/actor/movie/count`,
+    path: `${API_VERSION}/actor/movie/count/{id}`,
     config: {
-      handler: getActorMovieCount,
+      handler: getActorMovieCountByThisYear,
     },
   },
   {

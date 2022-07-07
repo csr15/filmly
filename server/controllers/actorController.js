@@ -29,21 +29,12 @@ exports.getAllActor = async (request, reply) => {
 
 exports.getAllMoviesofAllActor = async (request, reply) => {
   try {
-    const allMovieOfAllActor = await client.get("all_movie_of_all_actor");
-
-    if (allMovieOfAllActor === null) {
-      const data = await Actor.findAll({
-        include: Movie,
-        raw: true,
-        where: (Sequelize.fn("month", Sequelize.col("fromDate")), "mov_year"),
-      });
-      await client.set("all_movie_of_all_actor", JSON.stringify(data));
-      reply(successReplyMessage(data)).code(200);
-      logger.log("info", "Successfully got list of movies af all actor");
-    } else {
-      reply(successReplyMessage(JSON.parse(allMovieOfAllActor))).code(200);
-      logger.log("info", "Successfully got list of movies af all actor");
-    }
+    const data = await Actor.findAll({
+      include: Movie,
+      raw: true,
+    });
+    reply(successReplyMessage(data)).code(200);
+    logger.log("info", "Successfully got list of movies af all actor");
   } catch (error) {
     reply(catchReplyMessage());
     logger.log("error", "Error getting list of movies af all actor");
@@ -67,17 +58,17 @@ exports.getAllMoviesofActor = async (request, reply) => {
   }
 };
 
-exports.getActorMovieCount = async (request, reply) => {
+exports.getActorMovieCountByThisYear = async (request, reply) => {
   try {
     const data = await Actor.count({
       include: Movie,
       raw: true,
       where: {
         [Op.and]: [Sequelize.fn('EXTRACT(YEAR from "mov_year") =', 2022)],
-        id: 17,
+        id: request.params.id,
       },
     });
-    reply(successReplyMessage(data)).code(200);
+    reply(successReplyMessage({ count: data })).code(200);
     logger.log("info", "Successfully got movie count of an actor");
   } catch (error) {
     reply(catchReplyMessage());
