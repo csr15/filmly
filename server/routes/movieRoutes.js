@@ -4,12 +4,13 @@ const {
   getMovie,
   getMovieByLanguage,
   getMovieReleasedThisMonth,
+  addNewMovie,
 } = require("../controllers/movieController");
 
 exports.movieRoutes = [
   {
     method: "GET",
-    path: `${API_VERSION}/movie/all`,
+    path: `${API_VERSION}/movie/all/{page}`,
     config: {
       handler: getAllMovie,
     },
@@ -34,5 +35,12 @@ exports.movieRoutes = [
     config: {
       handler: getMovieByLanguage,
     },
-  }
+  },
+  {
+    method: "POST",
+    path: `${API_VERSION}/movie/add`,
+    config: {
+      handler: addNewMovie,
+    },
+  },
 ];

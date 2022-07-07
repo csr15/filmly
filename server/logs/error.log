@@ -1,0 +1,20 @@
+{"level":"error","message":"Error getting list of movies","timestamp":"2022-07-07T03:08:25.389Z"}
+{"level":"error","message":"Un handled rejection","timestamp":"2022-07-07T03:34:31.489Z"}
+{"level":"error","message":"Un handled rejection","timestamp":"2022-07-07T03:35:53.379Z"}
+{"level":"error","message":"Un handled rejection","timestamp":"2022-07-07T03:36:35.948Z"}
+{"level":"error","message":"Un handled rejection","timestamp":"2022-07-07T03:37:48.322Z"}
+{"level":"error","message":"Un handled rejection","timestamp":"2022-07-07T03:38:49.728Z"}
+{"level":"error","message":"Un handled rejection","timestamp":"2022-07-07T03:38:58.865Z"}
+{"level":"error","message":"Un handled rejection","timestamp":"2022-07-07T03:40:08.403Z"}
+{"level":"error","message":"Un handled rejection","timestamp":"2022-07-07T03:40:21.536Z"}
+{"level":"error","message":"Un handled rejection","timestamp":"2022-07-07T03:41:04.162Z"}
+{"level":"error","message":"Un handled rejection","timestamp":"2022-07-07T03:41:31.964Z"}
+{"level":"error","message":"Un handled rejection","timestamp":"2022-07-07T03:41:36.507Z"}
+{"level":"error","message":"Un handled rejection","timestamp":"2022-07-07T03:44:52.882Z"}
+{"level":"error","message":"Un handled rejection","timestamp":"2022-07-07T03:44:56.322Z"}
+{"level":"error","message":"Un handled rejection","timestamp":"2022-07-07T03:45:01.386Z"}
+{"level":"error","message":"Un handled rejection","timestamp":"2022-07-07T03:45:25.846Z"}
+{"level":"error","message":"Un handled rejection reply interface called twice","stack":"Error: reply interface called twice\n    at Object.exports.assert (/Users/ragulcs/Desktop/filmly/server/node_modules/hoek/lib/index.js:740:11)\n    at Function.internals.response (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/reply.js:164:10)\n    at bound (domain.js:421:15)\n    at Function.runBound [as response] (domain.js:432:12)\n    at reply (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/reply.js:72:22)\n    at bound (domain.js:421:15)\n    at runBound (domain.js:432:12)\n    at /Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:105:36\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)","timestamp":"2022-07-07T03:46:06.430Z"}
+{"level":"error","message":"Un handled rejection","timestamp":"2022-07-07T03:46:22.521Z"}
+{"level":"error","message":"Un handled rejection","timestamp":"2022-07-07T03:46:47.131Z"}
+{"level":"error","message":"Un handled rejection reply interface called twice","stack":"Error: reply interface called twice\n    at Object.exports.assert (/Users/ragulcs/Desktop/filmly/server/node_modules/hoek/lib/index.js:740:11)\n    at Function.internals.response (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/reply.js:164:10)\n    at bound (domain.js:421:15)\n    at Function.runBound [as response] (domain.js:432:12)\n    at reply (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/reply.js:72:22)\n    at bound (domain.js:421:15)\n    at runBound (domain.js:432:12)\n    at /Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:105:36\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)","timestamp":"2022-07-07T03:47:04.210Z"}

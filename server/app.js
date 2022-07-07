@@ -1,4 +1,5 @@
 const Hapi = require("hapi");
+const logger = require("./logger");
 
 // Routes
 const { actorRoutes } = require("./routes/actorRoutes");
@@ -24,13 +25,16 @@ server.route(actorRoutes);
 server.start((err) => {
   if (err) {
     console.log(err);
+    logger.log("error", "Problem on creating server");
   }
 
+  logger.log("info", "Server created successfully");
   console.log(`Server is listening in ${server.info.uri}`);
 });
 
 process.on("unhandledRejection", (err) => {
   if (err) {
-    console.log(err);
+
+    logger.log("error", "Un handled rejection", err);
   }
 });

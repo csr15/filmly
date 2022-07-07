@@ -3,12 +3,13 @@ const {
   getAllDirector,
   getAllMoviesOfDirector,
   getAllMoviesOfAllDirector,
+  addDirector,
 } = require("../controllers/directorController");
 
 exports.directorRoutes = [
   {
     method: "GET",
-    path: `${API_VERSION}/director/all`,
+    path: `${API_VERSION}/director/all/{page}`,
     config: {
       handler: getAllDirector,
     },
@@ -25,6 +26,13 @@ exports.directorRoutes = [
     path: `${API_VERSION}/director/movie/{id}`,
     config: {
       handler: getAllMoviesOfDirector,
+    },
+  },
+  {
+    method: "POST",
+    path: `${API_VERSION}/director/add`,
+    config: {
+      handler: addDirector,
     },
   },
 ];

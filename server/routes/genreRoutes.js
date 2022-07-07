@@ -1,10 +1,10 @@
 const { API_VERSION } = require("../constants/constants");
-const { getAllGenre, getAllMoviesGenre, getAllMoviesOfSingleGenre } = require("../controllers/genreController");
+const { getAllGenre, getAllMoviesGenre, getAllMoviesOfSingleGenre, addGenre } = require("../controllers/genreController");
 
 exports.genreRoutes = [
   {
     method: "GET",
-    path: `${API_VERSION}/genre/all`,
+    path: `${API_VERSION}/genre/all/{page}`,
     handler: getAllGenre,
   },
   {
@@ -16,5 +16,10 @@ exports.genreRoutes = [
     method: "GET",
     path: `${API_VERSION}/genre/movie/{id}`,
     handler: getAllMoviesOfSingleGenre,
+  },
+  {
+    method: "POST",
+    path: `${API_VERSION}/genre/add`,
+    handler: addGenre,
   },
 ];

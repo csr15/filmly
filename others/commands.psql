@@ -1,0 +1,65 @@
+-- [] All Movies
+select * from movie.movie
+
+-- [] All actors
+select * from actor.actor;
+
+-- [] All directors;
+select * from director.director;
+
+-- [] All Genres
+select * from genres;
+
+-- [] All Movie_cast
+select * from movies_cast.movie_cast;
+
+-- [] All actor and their movies
+select act_name, mov_title from movie_cast.movie_cast join movie.movie on movie.movie.mov_id = movie_cast.movie_cast.mov_id join actor.actor on actor.actor.act_id = movie_cast.movie_cast.act_id;
+
+-- [] All movies of an actor
+select act_name, mov_title from movie_cast.movie_cast join movie.movie on movie.movie.mov_id = movie_cast.movie_cast.mov_id join actor.actor on actor.actor.act_id = movie_cast.movie_cast.act_id where actor.actor.act_id = 8;
+
+-- [] All directors and their movies
+select dir_name, mov_title from movie.movie join movie_direction.movie_direction on movie_direction.movie_direction.mov_id = movie.movie.mov_id join director.director on director.director.dir_id = movie_direction.movie_direction.dir_id;
+
+-- [] All movies of a director
+select dir_name, mov_title from movie.movie join movie_direction.movie_direction on movie_direction.movie_direction.mov_id = movie.movie.mov_id join director.director on director.director.dir_id = movie_direction.movie_direction.dir_id where director.director.dir_id = 2;
+
+-- [] Single Movie
+select * from movie.movie where mov_id = 12;
+
+-- [] Movie cast
+select act_name, mov_title from movie_cast.movie_cast join movie.movie on movie.movie.mov_id = movie_cast.movie_cast.mov_id join actor.actor on actor.actor.act_id = movie_cast.movie_cast.act_id where movie.movie.mov_id = 12;
+
+-- [] All movies under a single genre
+select movie.movie.mov_title, genres.genres.gen_title from movie.movie join movie_genres.movie_genres on movie.movie.mov_id = movie_genres.movie_genres.mov_id join genres.genres on movie_genres.movie_genres.gen_id = genres.genres.gen_id where genres.genres.gen_id = 1;
+
+-- [] Movies under a particular genre
+select movies.movies.mov_title, genres.genres.gen_title from  movie_genres.movie_genres 
+join genres.genres 
+on  movie_genres.movie_genres.gen_id = genres.genres.gen_id
+join movies.movies
+on movie_genres.movie_genres.mov_id = movies.movies.mov_id
+where gen_title = 'Thriller';
+
+-- [x] List upcoming movies
+select * from movies.movies where movies.mov_year > now();
+
+-- [] List all movies released this month
+SELECT *
+FROM movie.movie
+WHERE extract (month FROM mov_year) = extract (month FROM CURRENT_DATE) 
+and 
+extract (year FROM mov_year) = extract (year from CURRENT_DATE);
+
+-- [] List of movies under single language
+select * from movie.movie where mov_lang like '%Hindi%';
+
+-- [] Return a count of movies of a actor in this year
+select count(act_name)
+from movie_cast.movie_cast 
+join actor.actor
+    on actor.actor.act_id = movie_cast.movie_cast.act_id 
+join movie.movie
+    on movie.movie.mov_id = movie_cast.movie_cast.mov_id 
+where extract (year from mov_year) = extract (year from  current_date);
