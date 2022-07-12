@@ -3,8 +3,8 @@ const { getAllGenre, getAllMoviesGenre, getAllMoviesOfSingleGenre, addGenre } = 
 
 exports.genreRoutes = [
   {
-    method: "GET",
-    path: `${API_VERSION}/genre/all/{page}`,
+    method: "POST",
+    path: `${API_VERSION}/genre/all`,
     handler: getAllGenre,
   },
   {

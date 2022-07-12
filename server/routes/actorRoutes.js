@@ -8,8 +8,8 @@ const {
 
 exports.actorRoutes = [
   {
-    method: "GET",
-    path: `${API_VERSION}/actor/all/{page}`,
+    method: "POST",
+    path: `${API_VERSION}/actor/all`,
     config: {
       handler: getAllActor,
     },

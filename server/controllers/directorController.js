@@ -7,12 +7,12 @@ const Movie = db.movie;
 
 exports.getAllDirector = async (request, reply) => {
   try {
-    const { page } = request.params;
-    const offset = page * PAGE_SIZE;
+    const { page, pageSize } = request.payload;
+    const offset = page * pageSize;
 
     const data = await Director.findAll({
       offset: offset,
-      limit: PAGE_SIZE,
+      limit: pageSize,
     });
 
     reply(successReplyMessage(data)).code(200);
@@ -20,21 +20,21 @@ exports.getAllDirector = async (request, reply) => {
     logger.log("info", "Successfully got list of directors");
   } catch (error) {
     reply(catchReplyMessage());
-    logger.log("error", "Error getting list of directord");
+    logger.log("error", "Error getting list of directord", error);
   }
 };
 
 exports.getAllMoviesOfAllDirector = async (request, reply) => {
   try {
-    const result = await Movie.findAll({
-      include: Director,
+    const result = await Director.findAll({
+      include: Movie,
     });
 
     reply(successReplyMessage(result)).code(200);
     logger.log("info", "Successfully got list of movies of all directors");
   } catch (error) {
     reply(catchReplyMessage());
-    logger.log("error", "Error getting list of movies of all director");
+    logger.log("error", "Error getting list of movies of all director", error);
   }
 };
 
@@ -42,9 +42,8 @@ exports.getAllMoviesOfDirector = async (request, reply) => {
   try {
     const result = await Director.findAll({
       include: Movie,
-      raw: true,
       where: {
-        id: request.params.id,
+        id: request.payload.directorId,
       },
     });
 
@@ -52,7 +51,7 @@ exports.getAllMoviesOfDirector = async (request, reply) => {
     logger.log("info", "Successfully got list of movies of a director");
   } catch (error) {
     reply(catchReplyMessage());
-    logger.log("error", "Error getting list of movies of a director");
+    logger.log("error", "Error getting list of movies of a director", error);
   }
 };
 
@@ -66,6 +65,6 @@ exports.addDirector = async (request, reply) => {
     logger.log("info", "Successfully added a new director");
   } catch (error) {
     reply(catchReplyMessage());
-    logger.log("error", "Error while adding a new diorector");
+    logger.log("error", "Error while adding a new diorector", error);
   }
 };

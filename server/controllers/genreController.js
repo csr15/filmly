@@ -1,4 +1,3 @@
-const { PAGE_SIZE } = require("../constants/constants");
 const { successReplyMessage, catchReplyMessage } = require("../helpers/helper");
 const db = require("../models");
 const client = require("../redis");
@@ -8,12 +7,12 @@ const Movie = db.movie;
 
 exports.getAllGenre = async (request, reply) => {
   try {
-    const { page } = request.params;
-    const offset = page * PAGE_SIZE;
+    const { page, pageSize } = request.payload;
+    const offset = page * pageSize;
 
     const data = await Genre.findAll({
       offset: offset,
-      limit: PAGE_SIZE,
+      limit: pageSize,
     });
 
     reply(successReplyMessage(data)).code(200);
@@ -22,7 +21,7 @@ exports.getAllGenre = async (request, reply) => {
   } catch (error) {
     reply(catchReplyMessage());
 
-    logger.log("error", "Error getting list of genres");
+    logger.log("error", "Error getting list of genres", error);
   }
 };
 
@@ -44,7 +43,7 @@ exports.getAllMoviesGenre = async (request, reply) => {
     }
   } catch (error) {
     reply(catchReplyMessage());
-    logger.log("error", "Error getting list of movies of all genre");
+    logger.log("error", "Error getting list of movies of all genre", error);
   }
 };
 
@@ -63,7 +62,7 @@ exports.getAllMoviesOfSingleGenre = async (request, reply) => {
   } catch (error) {
     reply(catchReplyMessage());
 
-    logger.log("error", "Error getting list of movies by genre");
+    logger.log("error", "Error getting list of movies by genre", error);
   }
 };
 
@@ -78,6 +77,6 @@ exports.addGenre = async (request, reply) => {
   } catch (error) {
     reply(catchReplyMessage());
 
-    logger.log("error", "Error while creating a new genre");
+    logger.log("error", "Error while creating a new genre", error);
   }
 };

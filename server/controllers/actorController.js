@@ -1,21 +1,19 @@
 const { Op } = require("sequelize");
-const { PAGE_SIZE } = require("../constants/constants");
 const { successReplyMessage, catchReplyMessage } = require("../helpers/helper");
 const { Sequelize } = require("../models");
 const db = require("../models");
-const client = require("../redis");
 
 const Actor = db.actor;
 const Movie = db.movie;
 
 exports.getAllActor = async (request, reply) => {
   try {
-    const { page } = request.params;
-    const offset = page * PAGE_SIZE;
+    const { page, pageSize } = request.payload;
+    const offset = page * pageSize;
 
     const data = await Actor.findAll({
       offset: offset,
-      limit: PAGE_SIZE,
+      limit: pageSize,
     });
 
     reply(successReplyMessage(data)).code(200);
@@ -23,7 +21,7 @@ exports.getAllActor = async (request, reply) => {
     logger.log("info", "Successfully got list of directors");
   } catch (error) {
     reply(catchReplyMessage());
-    logger.log("error", "Error getting list of actors");
+    logger.log("error", "Error getting list of actors", error);
   }
 };
 
@@ -37,7 +35,7 @@ exports.getAllMoviesofAllActor = async (request, reply) => {
     logger.log("info", "Successfully got list of movies af all actor");
   } catch (error) {
     reply(catchReplyMessage());
-    logger.log("error", "Error getting list of movies af all actor");
+    logger.log("error", "Error getting list of movies af all actor", error);
   }
 };
 
@@ -54,7 +52,7 @@ exports.getAllMoviesofActor = async (request, reply) => {
     logger.log("info", "Successfully got list of movies af an actor");
   } catch (error) {
     reply(catchReplyMessage());
-    logger.log("error", "Error getting list of movies af an actor");
+    logger.log("error", "Error getting list of movies af an actor", error);
   }
 };
 
@@ -72,7 +70,7 @@ exports.getActorMovieCountByThisYear = async (request, reply) => {
     logger.log("info", "Successfully got movie count of an actor");
   } catch (error) {
     reply(catchReplyMessage());
-    logger.log("error", "Error getting movie count of an actor");
+    logger.log("error", "Error getting movie count of an actor", error);
   }
 };
 
@@ -86,6 +84,6 @@ exports.addActor = async (request, reply) => {
     logger.log("info", "Successfully added an actor");
   } catch (error) {
     reply(catchReplyMessage());
-    logger.log("error", "Error adding an actor");
+    logger.log("error", "Error adding an actor", error);
   }
 };

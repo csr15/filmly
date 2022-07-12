@@ -8,8 +8,8 @@ const {
 
 exports.directorRoutes = [
   {
-    method: "GET",
-    path: `${API_VERSION}/director/all/{page}`,
+    method: "POST",
+    path: `${API_VERSION}/director/all`,
     config: {
       handler: getAllDirector,
     },
@@ -22,8 +22,8 @@ exports.directorRoutes = [
     },
   },
   {
-    method: "GET",
-    path: `${API_VERSION}/director/movie/{id}`,
+    method: "POST",
+    path: `${API_VERSION}/director/movie`,
     config: {
       handler: getAllMoviesOfDirector,
     },

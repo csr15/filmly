@@ -4,16 +4,17 @@ const { Sequelize } = require("../models");
 const db = require("../models");
 const logger = require("../logger/index");
 
-const { PAGE_SIZE } = require("../constants/constants");
 const Movie = db.movie;
+const Rating = db.movieRating;
 
 exports.getAllMovie = async (request, reply) => {
   try {
-    const { page, pageSize } = request.params;
+    const { page, pageSize } = request.payload;
+    const offset = page * pageSize;
 
     const data = await Movie.findAll({
       offset: offset,
-      limit: PAGE_SIZE,
+      limit: pageSize,
     });
 
     reply(successReplyMessage(data)).code(200);
@@ -21,7 +22,7 @@ exports.getAllMovie = async (request, reply) => {
   } catch (error) {
     reply(catchReplyMessage());
 
-    logger.log("error", "Error getting list of movies");
+    logger.log("error", "Error getting list of movies", error);
   }
 };
 
@@ -37,7 +38,7 @@ exports.getMovie = async (request, reply) => {
     logger.log("info", "Successfully got a movie with ID");
   } catch (error) {
     reply(catchReplyMessage());
-    logger.log("error", "Error getting movie by ID");
+    logger.log("error", "Error getting movie by ID", error);
   }
 };
 
@@ -53,7 +54,7 @@ exports.getMovieReleasedThisMonth = async (request, reply) => {
     logger.log("info", "Successfully got movies released this month");
   } catch (error) {
     reply(catchReplyMessage());
-    logger.log("error", "Error getting movies released by this month");
+    logger.log("error", "Error getting movies released by this month", error);
   }
 };
 
@@ -62,7 +63,7 @@ exports.getMovieByLanguage = async (request, reply) => {
     const data = await Movie.findAll({
       where: {
         mov_lang: {
-          [Op.like]: `%${request.params.name}%`,
+          [Op.like]: `%${request.payload.language}%`,
         },
       },
     });
@@ -71,7 +72,7 @@ exports.getMovieByLanguage = async (request, reply) => {
     logger.log("info", "Successfully got list of movies by languages");
   } catch (error) {
     reply(catchReplyMessage());
-    logger.log("error", "Error getting movie by language");
+    logger.log("error", "Error getting movie by language", error);
   }
 };
 
@@ -104,6 +105,6 @@ exports.addNewMovie = async (request, reply) => {
     logger.log("info", "Movie created successfully!");
   } catch (error) {
     reply(catchReplyMessage());
-    logger.log("error", "Error creating a movie");
+    logger.log("error", "Error creating a movie", error);
   }
 };

@@ -1,28 +1,22 @@
 module.exports = (sequelize, DataTypes) => {
-  const Movie = sequelize.define(
-    "movie",
+  const User = sequelize.define(
+    "users",
     {
       id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
         allowNull: false,
       },
-      mov_title: {
+      name: {
         type: DataTypes.STRING,
       },
-      mov_year: {
-        type: DataTypes.DATE,
-      },
-      mov_lang: {
+      mail: {
         type: DataTypes.STRING,
       },
-      mov_region: {
+      password: {
         type: DataTypes.STRING,
       },
-      mov_time: {
-        type: DataTypes.INTEGER,
-      },
-      mov_img: {
+      plan: {
         type: DataTypes.STRING,
       },
     },
@@ -32,5 +26,5 @@ module.exports = (sequelize, DataTypes) => {
     }
   );
 
-  return Movie;
+  return User;
 };

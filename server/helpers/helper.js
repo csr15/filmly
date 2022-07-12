@@ -2,6 +2,7 @@ const {
   ERROR,
   SUCCESS,
   INTERNAL_SERVER_ERROR_CODE,
+  ACCESS_TOKEN_EXPIRED,
 } = require("../constants/constants");
 
 exports.successReplyMessage = (data, message) => {
@@ -25,3 +26,12 @@ exports.catchReplyMessage = (message, status) => {
     status: status ? status : INTERNAL_SERVER_ERROR_CODE,
   };
 };
+
+exports.accessTokenExpired = (message, status) => {
+  return {
+    message: "Access token expired, Please login again!",
+    status: 403,
+    type: ACCESS_TOKEN_EXPIRED
+  }
+};
+

@@ -9,8 +9,8 @@ const {
 
 exports.movieRoutes = [
   {
-    method: "GET",
-    path: `${API_VERSION}/movie/all/{page}`,
+    method: "POST",
+    path: `${API_VERSION}/movie/all`,
     config: {
       handler: getAllMovie,
     },
@@ -30,8 +30,8 @@ exports.movieRoutes = [
     },
   },
   {
-    method: "GET",
-    path: `${API_VERSION}/movie/language/{name}`,
+    method: "POST",
+    path: `${API_VERSION}/movie/language`,
     config: {
       handler: getMovieByLanguage,
     },

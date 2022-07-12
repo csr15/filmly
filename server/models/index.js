@@ -37,6 +37,7 @@ db.genre = require("./genreModel")(sequelize, DataTypes);
 db.movieCast = require("./MovieCast")(sequelize, DataTypes);
 db.movieDirection = require("./MovieDirection")(sequelize, DataTypes);
 db.movieGenre = require("./MovieGenre")(sequelize, DataTypes);
+db.users = require("./userModel")(sequelize, DataTypes);
 
 // Creating association between actor and movies as Movie Cast
 db.actor.belongsToMany(db.movie, { through: db.movieCast }); //movId, actId //
