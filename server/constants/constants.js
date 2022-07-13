@@ -1,5 +1,4 @@
 const CONSTANTS = {
-  ERROR: "error",
   SUCCESS: 200,
   INTERNAL_SERVER_ERROR_CODE: 500,
   BAD_REQUEST_CODE: 400,
@@ -7,7 +6,8 @@ const CONSTANTS = {
   API_VERSION: "/api/v1",
   PAGE_SIZE: 5,
   ACCESS_TOKEN_EXPIRED: "accessTokenExpired",
-  FORBIDDEN: 403
+  FORBIDDEN: 403,
+  UN_AUTHORIZED: 401,
 };
 
 module.exports = CONSTANTS;

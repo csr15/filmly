@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap");
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #000000;
+}
+
+p,
+a {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  color: #686b78;
+  text-decoration: none;
+}
+
+button:hover {
+  box-shadow: none;
+  outline: none;
+}
+
+.center, .f_home_cotainer .f_home_header .row .f_home_banner_buttons, .f_btn_solid, .f_home_cotainer .f_home_header .row .f_btn_sec, .f_home_cotainer .f_home_header .row .f_btn_pri {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.f_jumbotron, .f_home_cotainer .f_home_header {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 90vh;
+  max-height: 90vh;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+}
+
+.f_btn_solid, .f_home_cotainer .f_home_header .row .f_btn_sec, .f_home_cotainer .f_home_header .row .f_btn_pri {
+  padding: 0.5rem 1.2rem 0.5rem 1.2rem;
+  border: none;
+  border-radius: 4px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.f_btn_solid span, .f_home_cotainer .f_home_header .row .f_btn_sec span, .f_home_cotainer .f_home_header .row .f_btn_pri span {
+  margin-right: 10px;
+}
+.f_btn_solid span img, .f_home_cotainer .f_home_header .row .f_btn_sec span img, .f_home_cotainer .f_home_header .row .f_btn_pri span img {
+  margin-bottom: 3px;
+}
+.f_btn_solid:hover, .f_home_cotainer .f_home_header .row .f_btn_sec:hover, .f_home_cotainer .f_home_header .row .f_btn_pri:hover {
+  transition: all 0.3s ease;
+  transform: scale(0.98);
+}
+.f_btn_solid:focus, .f_home_cotainer .f_home_header .row .f_btn_sec:focus, .f_home_cotainer .f_home_header .row .f_btn_pri:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.f_home_cotainer .f_home_header {
+  background-image: linear-gradient(-90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1), rgb(0, 0, 0)), url("https://cdn.mos.cms.futurecdn.net/CVTdKGWBfeG5nLVRR9uMuQ.jpg");
+  padding: 20px 50px 80px 50px;
+  display: flex;
+  align-items: center;
+}
+.f_home_cotainer .f_home_header .row h1 {
+  color: #ffffff;
+  font-weight: 700;
+}
+.f_home_cotainer .f_home_header .row p {
+  color: #ffffff;
+  width: 80%;
+}
+.f_home_cotainer .f_home_header .row .f_home_banner_buttons {
+  justify-content: flex-start;
+  gap: 10px;
+}
+.f_home_cotainer .f_home_header .row .f_btn_pri {
+  background: #ffffff;
+  color: #000000;
+}
+.f_home_cotainer .f_home_header .row .f_btn_sec {
+  background: #686b78;
+  color: #ffffff;
+}/*# sourceMappingURL=Home.css.map */

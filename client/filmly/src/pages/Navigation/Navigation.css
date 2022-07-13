@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap");
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #000000;
+}
+
+p,
+a {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  color: #686b78;
+  text-decoration: none;
+}
+
+button:hover {
+  box-shadow: none;
+  outline: none;
+}
+
+.center, .f_nav_container .btn_solid, .f_nav_container .navbar-nav, .f_nav_container .navbar-brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.f_nav_container {
+  padding: 0.1rem 1.2rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background: transparent;
+  border: none;
+  transition: all 0.3s ease;
+}
+.f_nav_container a {
+  outline: none;
+  text-decoration: none;
+}
+.f_nav_container .navbar-brand span {
+  font-weight: 600;
+  color: #e50815;
+  text-decoration: none;
+  font-size: 34px;
+  text-transform: uppercase;
+}
+.f_nav_container .navbar-nav {
+  padding: 0px;
+  margin: 0px;
+}
+.f_nav_container .navbar-nav li {
+  position: relative;
+}
+.f_nav_container .navbar-nav li p {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 7px 15px;
+  cursor: pointer;
+  padding: 7px 0px;
+}
+.f_nav_container .navbar-nav li p:hover {
+  transition: all 0.5s ease-in-out;
+  color: #686b78;
+}
+.f_nav_container .navbar-nav li p:focus {
+  outline: none;
+  box-shadow: none;
+}
+.f_nav_container .navbar-nav li i {
+  font-size: 1.2rem;
+  margin: 7px 20px 7px 15px;
+  cursor: pointer;
+  padding: 7px 0px;
+  color: #686b78;
+  position: relative;
+  z-index: 11;
+}
+.f_nav_container .navbar-nav button {
+  padding: 7px 15px;
+}
+.f_nav_container .btn_solid {
+  background: #e50815;
+  color: #ffffff;
+  padding: 0.5rem 1.2rem 0.5rem 1.2rem;
+  border: none;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.f_nav_container .btn_solid span {
+  margin-right: 10px;
+}
+.f_nav_container .btn_solid span img {
+  margin-bottom: 3px;
+}
+.f_nav_container .btn_solid:hover {
+  transition: all 0.3s ease;
+  transform: scale(0.98);
+}
+.f_nav_container .btn_solid:focus {
+  outline: none;
+  box-shadow: none;
+}/*# sourceMappingURL=Navigation.css.map */

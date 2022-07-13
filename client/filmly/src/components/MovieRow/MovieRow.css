@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap");
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #000000;
+}
+
+p,
+a {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  color: #686b78;
+  text-decoration: none;
+}
+
+button:hover {
+  box-shadow: none;
+  outline: none;
+}
+
+.center, .f_home_movie_container .f_chevron_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.f_jumbotron {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 90vh;
+  max-height: 90vh;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+}
+
+.f_home_movie_container {
+  padding: 1rem 0 1rem 1rem;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  margin-bottom: 30px;
+}
+.f_home_movie_container .f_movie_card_sections {
+  position: relative;
+}
+.f_home_movie_container::-webkit-scrollbar {
+  display: none;
+}
+.f_home_movie_container h1 {
+  font-size: 28px;
+  font-weight: 500;
+  margin: 20px 0px;
+  color: #ffffff;
+}
+.f_home_movie_container .f_movie_card {
+  width: 300px;
+  height: 150px;
+  border-radius: 4px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url("https://m.media-amazon.com/images/M/MV5BNjQzNmEyYTYtMWE4MC00NmQxLTgzN2QtMjY3NTNkMTVjZmVhXkEyXkFqcGdeQXVyOTY5MTE4MjA@._V1_.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-right: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 5px 12px;
+}
+.f_home_movie_container .f_movie_card h5 {
+  color: #ffffff;
+  width: 288px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.f_home_movie_container .f_chevron_icon {
+  position: absolute;
+  z-index: 99;
+  height: 100%;
+}
+.f_home_movie_container .f_chevron_icon i {
+  font-size: 3rem !important;
+  color: #ffffff;
+}
+.f_home_movie_container .f_chevron_left {
+  left: -1%;
+  top: 0%;
+  background: linear-gradient(90deg, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+  transform: translate(0%, 0%);
+}
+.f_home_movie_container .f_chevron_right {
+  right: -1%;
+  top: 0%;
+  background: linear-gradient(-90deg, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+  transform: translate(0%, 0%);
+}/*# sourceMappingURL=MovieRow.css.map */

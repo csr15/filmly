@@ -1,4 +1,5 @@
 const { successReplyMessage, catchReplyMessage } = require("../helpers/helper");
+const logger = require("../logger");
 const db = require("../models");
 const client = require("../redis");
 
@@ -15,7 +16,7 @@ exports.getAllGenre = async (request, reply) => {
       limit: pageSize,
     });
 
-    reply(successReplyMessage(data)).code(200);
+    reply(successReplyMessage(data));;
 
     logger.log("info", "Successfully got list of genres");
   } catch (error) {
@@ -35,10 +36,10 @@ exports.getAllMoviesGenre = async (request, reply) => {
       });
 
       await client.set("all_movie_genre", JSON.stringify(data));
-      reply(successReplyMessage(data)).code(200);
+      reply(successReplyMessage(data));;
       logger.log("info", "Successfully got list of movies of all genre");
     } else {
-      reply(successReplyMessage(JSON.parse(allMovieGenre))).code(200);
+      reply(successReplyMessage(JSON.parse(allMovieGenre)));;
       logger.log("info", "Successfully got list of movies of all genre");
     }
   } catch (error) {
@@ -49,19 +50,24 @@ exports.getAllMoviesGenre = async (request, reply) => {
 
 exports.getAllMoviesOfSingleGenre = async (request, reply) => {
   try {
+    const { page, pageSize } = request.payload;
+    const offset = page * pageSize;
+
+    console.log(offset, pageSize)
     const result = await Genre.findAll({
       include: Movie,
-      raw: true,
       where: {
-        id: request.params.id,
+        gen_title: request.params.title,
       },
+      offset: offset,
+      limit: pageSize,
     });
-    reply(successReplyMessage(result)).code(200);
 
+    reply(successReplyMessage(result));;
     logger.log("info", "Successfully got list of movies by genre");
   } catch (error) {
+    console.log(error);
     reply(catchReplyMessage());
-
     logger.log("error", "Error getting list of movies by genre", error);
   }
 };
@@ -71,7 +77,7 @@ exports.addGenre = async (request, reply) => {
     await Genre.create({
       ...request.payload,
     });
-    reply(successReplyMessage("", "Genre added successfully!")).code(200);
+    reply(successReplyMessage("", "Genre added successfully!"));;
 
     logger.log("info", "Successfully created a new genre");
   } catch (error) {

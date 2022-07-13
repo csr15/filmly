@@ -15,7 +15,7 @@ exports.getAllDirector = async (request, reply) => {
       limit: pageSize,
     });
 
-    reply(successReplyMessage(data)).code(200);
+    reply(successReplyMessage(data));;
 
     logger.log("info", "Successfully got list of directors");
   } catch (error) {
@@ -30,7 +30,7 @@ exports.getAllMoviesOfAllDirector = async (request, reply) => {
       include: Movie,
     });
 
-    reply(successReplyMessage(result)).code(200);
+    reply(successReplyMessage(result));;
     logger.log("info", "Successfully got list of movies of all directors");
   } catch (error) {
     reply(catchReplyMessage());
@@ -47,7 +47,7 @@ exports.getAllMoviesOfDirector = async (request, reply) => {
       },
     });
 
-    reply(successReplyMessage(result)).code(200);
+    reply(successReplyMessage(result));;
     logger.log("info", "Successfully got list of movies of a director");
   } catch (error) {
     reply(catchReplyMessage());
@@ -61,7 +61,7 @@ exports.addDirector = async (request, reply) => {
       ...request.payload,
     });
 
-    reply(successReplyMessage("", "Director added successfully!")).code(200);
+    reply(successReplyMessage("", "Director added successfully!"));;
     logger.log("info", "Successfully added a new director");
   } catch (error) {
     reply(catchReplyMessage());

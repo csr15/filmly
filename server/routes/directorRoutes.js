@@ -11,6 +11,7 @@ exports.directorRoutes = [
     method: "POST",
     path: `${API_VERSION}/director/all`,
     config: {
+      cors: true,
       handler: getAllDirector,
     },
   },
@@ -18,6 +19,7 @@ exports.directorRoutes = [
     method: "GET",
     path: `${API_VERSION}/director/movie/all`,
     config: {
+      cors: true,
       handler: getAllMoviesOfAllDirector,
     },
   },
@@ -25,6 +27,7 @@ exports.directorRoutes = [
     method: "POST",
     path: `${API_VERSION}/director/movie`,
     config: {
+      cors: true,
       handler: getAllMoviesOfDirector,
     },
   },
@@ -32,6 +35,7 @@ exports.directorRoutes = [
     method: "POST",
     path: `${API_VERSION}/director/add`,
     config: {
+      cors: true,
       handler: addDirector,
     },
   },

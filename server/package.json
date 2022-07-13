@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@hapi/hapi": "^18.4.1",
     "bcrypt": "^5.0.1",
     "dotenv": "^16.0.1",
     "hapi": "^16.1.0",
@@ -17,6 +18,7 @@
     "pg-hstore": "^2.3.4",
     "redis": "^4.1.0",
     "sequelize": "^6.21.2",
+    "uuid": "^8.3.2",
     "winston": "^3.8.1"
   },
   "devDependencies": {

@@ -11,6 +11,7 @@ exports.actorRoutes = [
     method: "POST",
     path: `${API_VERSION}/actor/all`,
     config: {
+      cors: true,
       handler: getAllActor,
     },
   },
@@ -18,6 +19,7 @@ exports.actorRoutes = [
     method: "GET",
     path: `${API_VERSION}/actor/movie/all`,
     config: {
+      cors: true,
       handler: getAllMoviesofAllActor,
     },
   },
@@ -25,6 +27,7 @@ exports.actorRoutes = [
     method: "GET",
     path: `${API_VERSION}/actor/movie/count/{id}`,
     config: {
+      cors: true,
       handler: getActorMovieCountByThisYear,
     },
   },
@@ -32,6 +35,7 @@ exports.actorRoutes = [
     method: "POST",
     path: `${API_VERSION}/actor/add`,
     config: {
+      cors: true,
       handler: addActor,
     },
   },

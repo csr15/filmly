@@ -1,0 +1,122 @@
+@import "../../utilities/scss-variables/variables.scss";
+
+.auth {
+  @extend .center;
+  @extend .f_jumbotron;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../../assets/images/home-bg.jpeg");
+  padding: 10px 50px 0px 50px;
+
+  .row {
+    .auth-card {
+      background: rgba(0, 0, 0, 0.75);
+      padding: 4.5rem 4rem;
+      width: 30vw;
+
+      h2 {
+        color: $f_white;
+        font-weight: 700;
+        margin-bottom: 40px;
+      }
+
+      .auth-input {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin-bottom: 20px;
+
+        input,
+        .wrapped-input {
+          width: 100%;
+          padding: 12px 18px;
+          background-color: #333333;
+          border-radius: 4px;
+          border: none;
+          font-size: 14px;
+          color: white;
+
+          &:focus {
+            box-shadow: none;
+            outline: none;
+          }
+        }
+
+        .wrapped-input {
+          @extend .center;
+          justify-content: space-between;
+
+          input {
+            padding: 0;
+          }
+
+          .auth-input-password-visibility {
+            color: $f_accent;
+            font-size: 12px;
+            cursor: pointer;
+            margin-left: 5px;
+          }
+        }
+
+        .error-text {
+          color: #e87c03;
+          font-size: 12px;
+        }
+      }
+
+      .error-text {
+        color: #e87c03;
+        font-size: 12px;
+      }
+    }
+
+    .auth-action {
+      margin-top: 40px;
+      .btn-auth {
+        background: $f_pri;
+        color: $f_white;
+        padding: 12px 18px;
+        width: 100%;
+        border: none;
+        border-radius: 4px;
+        font-family: $f_pop;
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: capitalize;
+        @extend .center;
+        border: none;
+
+        span {
+          margin-right: 10px;
+
+          img {
+            margin-bottom: 3px;
+          }
+        }
+
+        &:hover {
+          transition: all 0.3s ease;
+          transform: scale(0.98);
+        }
+
+        &:focus {
+          outline: none;
+          box-shadow: none;
+        }
+      }
+    }
+
+    .auth-footer {
+      margin-top: 35px;
+
+      p {
+        color: $f_accent;
+
+        span {
+          color: $f_white;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

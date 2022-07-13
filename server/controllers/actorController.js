@@ -16,7 +16,7 @@ exports.getAllActor = async (request, reply) => {
       limit: pageSize,
     });
 
-    reply(successReplyMessage(data)).code(200);
+    reply(successReplyMessage(data))
 
     logger.log("info", "Successfully got list of directors");
   } catch (error) {
@@ -31,7 +31,7 @@ exports.getAllMoviesofAllActor = async (request, reply) => {
       include: Movie,
       raw: true,
     });
-    reply(successReplyMessage(data)).code(200);
+    reply(successReplyMessage(data))
     logger.log("info", "Successfully got list of movies af all actor");
   } catch (error) {
     reply(catchReplyMessage());
@@ -48,7 +48,7 @@ exports.getAllMoviesofActor = async (request, reply) => {
         id: request.params.id,
       },
     });
-    reply(successReplyMessage(data)).code(200);
+    reply(successReplyMessage(data))
     logger.log("info", "Successfully got list of movies af an actor");
   } catch (error) {
     reply(catchReplyMessage());
@@ -66,7 +66,7 @@ exports.getActorMovieCountByThisYear = async (request, reply) => {
         id: request.params.id,
       },
     });
-    reply(successReplyMessage({ count: data })).code(200);
+    reply(successReplyMessage({ count: data }));;
     logger.log("info", "Successfully got movie count of an actor");
   } catch (error) {
     reply(catchReplyMessage());
@@ -80,7 +80,7 @@ exports.addActor = async (request, reply) => {
       ...request.payload,
     });
 
-    reply(successReplyMessage("", "Actor added successfully!")).code(200);
+    reply(successReplyMessage("", "Actor added successfully!"));;
     logger.log("info", "Successfully added an actor");
   } catch (error) {
     reply(catchReplyMessage());

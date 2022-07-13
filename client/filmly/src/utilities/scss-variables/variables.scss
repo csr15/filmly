@@ -1,0 +1,58 @@
+//Google Fonts CDN
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap");
+//Fonts
+$f_pop: "Poppins", sans-serif;
+$f_meri: "Merriweather", serif;
+
+//Colors
+$f_pri: #e50815;
+$f_accent: #686b78;
+$f_white: #ffffff;
+$f_black: #000000;
+$f_black-alt: #242323;
+$f_light_grey: #f2f2f2;
+$f_danger: #ee3902;
+
+//Default Configuration
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $f_pop;
+  font-weight: 500;
+  color: $f_black;
+}
+
+p,
+a {
+  font-size: 14px;
+  font-family: $f_pop;
+  color: $f_accent;
+  text-decoration: none;
+}
+
+button {
+  &:hover {
+    box-shadow: none;
+    outline: none;
+  }
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.f_jumbotron {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 90vh;
+  max-height: 90vh;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+}

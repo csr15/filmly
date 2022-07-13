@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap");
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #000000;
+}
+
+p,
+a {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  color: #686b78;
+  text-decoration: none;
+}
+
+button:hover {
+  box-shadow: none;
+  outline: none;
+}
+
+.center, .auth .row .auth-action .btn-auth, .auth .row .auth-card .auth-input .wrapped-input, .auth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.f_jumbotron, .auth {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 90vh;
+  max-height: 90vh;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+}
+
+.auth {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../assets/images/home-bg.jpeg");
+  padding: 10px 50px 0px 50px;
+}
+.auth .row .auth-card {
+  background: rgba(0, 0, 0, 0.75);
+  padding: 4.5rem 4rem;
+  width: 30vw;
+}
+.auth .row .auth-card h2 {
+  color: #ffffff;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+.auth .row .auth-card .auth-input {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.auth .row .auth-card .auth-input input,
+.auth .row .auth-card .auth-input .wrapped-input {
+  width: 100%;
+  padding: 12px 18px;
+  background-color: #333333;
+  border-radius: 4px;
+  border: none;
+  font-size: 14px;
+  color: white;
+}
+.auth .row .auth-card .auth-input input:focus,
+.auth .row .auth-card .auth-input .wrapped-input:focus {
+  box-shadow: none;
+  outline: none;
+}
+.auth .row .auth-card .auth-input .wrapped-input {
+  justify-content: space-between;
+}
+.auth .row .auth-card .auth-input .wrapped-input input {
+  padding: 0;
+}
+.auth .row .auth-card .auth-input .wrapped-input .auth-input-password-visibility {
+  color: #686b78;
+  font-size: 12px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+.auth .row .auth-card .auth-input .error-text {
+  color: #e87c03;
+  font-size: 12px;
+}
+.auth .row .auth-card .error-text {
+  color: #e87c03;
+  font-size: 12px;
+}
+.auth .row .auth-action {
+  margin-top: 40px;
+}
+.auth .row .auth-action .btn-auth {
+  background: #e50815;
+  color: #ffffff;
+  padding: 12px 18px;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: capitalize;
+  border: none;
+}
+.auth .row .auth-action .btn-auth span {
+  margin-right: 10px;
+}
+.auth .row .auth-action .btn-auth span img {
+  margin-bottom: 3px;
+}
+.auth .row .auth-action .btn-auth:hover {
+  transition: all 0.3s ease;
+  transform: scale(0.98);
+}
+.auth .row .auth-action .btn-auth:focus {
+  outline: none;
+  box-shadow: none;
+}
+.auth .row .auth-footer {
+  margin-top: 35px;
+}
+.auth .row .auth-footer p {
+  color: #686b78;
+}
+.auth .row .auth-footer p span {
+  color: #ffffff;
+  cursor: pointer;
+}/*# sourceMappingURL=AuthBackdrop.css.map */

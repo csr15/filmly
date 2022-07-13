@@ -12,6 +12,7 @@ exports.movieRoutes = [
     method: "POST",
     path: `${API_VERSION}/movie/all`,
     config: {
+      cors: true,
       handler: getAllMovie,
     },
   },
@@ -19,6 +20,7 @@ exports.movieRoutes = [
     method: "GET",
     path: `${API_VERSION}/movie/{id}`,
     config: {
+      cors: true,
       handler: getMovie,
     },
   },
@@ -26,6 +28,7 @@ exports.movieRoutes = [
     method: "GET",
     path: `${API_VERSION}/movie/currentMonth`,
     config: {
+      cors: true,
       handler: getMovieReleasedThisMonth,
     },
   },
@@ -33,6 +36,7 @@ exports.movieRoutes = [
     method: "POST",
     path: `${API_VERSION}/movie/language`,
     config: {
+      cors: true,
       handler: getMovieByLanguage,
     },
   },
@@ -40,6 +44,7 @@ exports.movieRoutes = [
     method: "POST",
     path: `${API_VERSION}/movie/add`,
     config: {
+      cors: true,
       handler: addNewMovie,
     },
   },

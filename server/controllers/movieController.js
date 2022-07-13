@@ -17,7 +17,7 @@ exports.getAllMovie = async (request, reply) => {
       limit: pageSize,
     });
 
-    reply(successReplyMessage(data)).code(200);
+    reply(successReplyMessage(data));;
     logger.log("info", "Successfully got list of movies");
   } catch (error) {
     reply(catchReplyMessage());
@@ -33,7 +33,7 @@ exports.getMovie = async (request, reply) => {
         id: request.params.id,
       },
     });
-    reply(successReplyMessage(data)).code(200);
+    reply(successReplyMessage(data));;
 
     logger.log("info", "Successfully got a movie with ID");
   } catch (error) {
@@ -49,7 +49,7 @@ exports.getMovieReleasedThisMonth = async (request, reply) => {
         [Op.and]: [Sequelize.fn('EXTRACT(MONTH from "mov_year") =', 6)],
       },
     });
-    reply(successReplyMessage(data)).code(200);
+    reply(successReplyMessage(data));;
 
     logger.log("info", "Successfully got movies released this month");
   } catch (error) {
@@ -67,7 +67,7 @@ exports.getMovieByLanguage = async (request, reply) => {
         },
       },
     });
-    reply(successReplyMessage(data)).code(200);
+    reply(successReplyMessage(data));;
 
     logger.log("info", "Successfully got list of movies by languages");
   } catch (error) {
@@ -100,7 +100,7 @@ exports.addNewMovie = async (request, reply) => {
       through: { selfGranted: false },
     });
 
-    reply(successReplyMessage("", "Movie created successfully!")).code(200);
+    reply(successReplyMessage("", "Movie created successfully!"));;
 
     logger.log("info", "Movie created successfully!");
   } catch (error) {
