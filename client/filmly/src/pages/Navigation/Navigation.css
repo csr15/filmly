@@ -23,10 +23,51 @@ button:hover {
   outline: none;
 }
 
-.center, .f_nav_container .btn_solid, .f_nav_container .navbar-nav, .f_nav_container .navbar-brand {
+.center, .f_nav_container .btn_solid, .f_nav_container .navbar-nav, .f_nav_container .navbar-brand, .f_btn_solid {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.f_jumbotron {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 90vh;
+  max-height: 90vh;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+}
+
+.f_btn_solid {
+  padding: 0.5rem 1.2rem 0.5rem 1.2rem;
+  border: none;
+  border-radius: 4px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.f_btn_solid span {
+  margin-right: 10px;
+}
+.f_btn_solid span img {
+  margin-bottom: 3px;
+}
+.f_btn_solid:hover {
+  transition: all 0.3s ease;
+  transform: scale(0.98);
+}
+.f_btn_solid:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.f_text_wrap, .f_nav_container .navbar-nav li .f_profile .f_profile_section p, .f_nav_container .navbar-nav li .f_profile .f_profile_section h6 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .f_nav_container {
@@ -56,6 +97,34 @@ button:hover {
 }
 .f_nav_container .navbar-nav li {
   position: relative;
+  cursor: pointer;
+}
+.f_nav_container .navbar-nav li .f_profile {
+  position: absolute;
+  top: 140%;
+  right: 100%;
+  transform: translate(50%, 0%);
+  width: 180px;
+  height: 200px;
+  background: rgb(24, 24, 24);
+  padding: 15px 10px;
+  border-radius: 5px;
+}
+.f_nav_container .navbar-nav li .f_profile .f_profile_section {
+  margin-bottom: 15px;
+  border-bottom: 1px solid rgb(53, 53, 53);
+}
+.f_nav_container .navbar-nav li .f_profile .f_profile_section:last-child {
+  border-bottom: none;
+}
+.f_nav_container .navbar-nav li .f_profile .f_profile_section h6 {
+  font-size: 14px;
+  font-weight: 400px;
+  color: #686b78;
+  margin: 0;
+}
+.f_nav_container .navbar-nav li .f_profile .f_profile_section p {
+  margin: 0;
 }
 .f_nav_container .navbar-nav li p {
   color: #ffffff;

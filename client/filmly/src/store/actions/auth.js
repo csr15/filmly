@@ -1,4 +1,6 @@
 import axios from "axios";
+import { API } from "../../utilities/constants/constants";
+import { SIGIN_IN, ERROR, USER_DETAILS } from "../actionTypes";
 
 export const loginAction = (userData) => {
   return async (dispatch) => {
@@ -16,12 +18,12 @@ export const loginAction = (userData) => {
         const { payload } = data;
         if (payload.data.token !== undefined && payload.data.token !== null) {
           localStorage.setItem("token", payload.data.token);
-
-          dispatch({ type: "SIGNIN", payload: data });
+          localStorage.setItem("userId", payload.data.id);
+          dispatch({ type: SIGIN_IN, payload: data.payload.data });
         }
       }
     } catch (error) {
-      dispatch({ type: "ERROR" });
+      dispatch({ type: ERROR });
     }
   };
 };
@@ -43,22 +45,38 @@ export const signupAction = (userData) => {
   };
 };
 
-export const validateToken = (userData) => {
+export const validateToken = () => {
   return async (dispatch) => {
     try {
       const { data } = await axios.get(
-        "http://localhost:8080/api/v1/validateToken",
+        "http://localhost:8080/api/v1/genre/all",
         {
           headers: {
-            Authorization: `Bearer ${localStorage.getItem("token")}`,
             "Content-Type": "application/x-www-form-urlencoded",
+            Authorization: `Bearer ${localStorage.getItem("token")}`,
           },
         }
       );
-
       console.log(data);
     } catch (error) {
-      dispatch({ type: "ERROR" });
+      dispatch({ type: ERROR });
+    }
+  };
+};
+
+export const getUserDetails = (id) => {
+  return async (dispatch) => {
+    try {
+      const { data } = await axios.get(`${API}/user/${id}`, {
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+          Authorization: `Bearer ${localStorage.getItem("token")}`,
+        },
+      });
+
+      dispatch({ type: USER_DETAILS, payload: data.payload.data });
+    } catch (error) {
+      dispatch({ type: ERROR });
     }
   };
 };

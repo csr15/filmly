@@ -27,8 +27,43 @@
     padding: 0px;
     margin: 0px;
     @extend .center;
+
     li {
       position: relative;
+      cursor: pointer;
+
+      .f_profile {
+        position: absolute;
+        top: 140%;
+        right: 100%;
+        transform: translate(50%, 0%);
+        width: 180px;
+        height: 200px;
+        background: rgb(24, 24, 24);
+        padding: 15px 10px;
+        border-radius: 5px;
+
+        .f_profile_section {
+          margin-bottom: 15px;
+          border-bottom: 1px solid rgb(53, 53, 53);
+
+          &:last-child {
+            border-bottom: none;
+          }
+          h6 {
+            font-size: 14px;
+            font-weight: 400px;
+            color: $f_accent;
+            margin: 0;
+            @extend .f_text_wrap;
+          }
+          p {
+            margin: 0;
+            @extend .f_text_wrap;
+          }
+        }
+      }
+
       p {
         color: $f_white;
         text-decoration: none;

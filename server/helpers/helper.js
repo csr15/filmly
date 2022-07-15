@@ -4,7 +4,10 @@ const {
   ACCESS_TOKEN_EXPIRED,
   BAD_REQUEST_CODE,
   FORBIDDEN,
+  SERVER_ERROR,
 } = require("../constants/constants");
+
+const jwt = require("jsonwebtoken");
 
 exports.successReplyMessage = (data, message) => {
   return {
@@ -29,7 +32,7 @@ exports.catchReplyMessage = (message, status) => {
   return {
     message: message ? message : "Server error",
     status: status ? status : INTERNAL_SERVER_ERROR_CODE,
-    type: SERVER_ERROR
+    type: SERVER_ERROR,
   };
 };
 
@@ -39,4 +42,35 @@ exports.accessTokenExpired = (message, status) => {
     status: FORBIDDEN,
     type: ACCESS_TOKEN_EXPIRED,
   };
+};
+
+exports.validateTokenHandler = (request) => {
+  const authHeader = request.headers["authorization"];
+  const token = authHeader && authHeader.split(" ")[1];
+  if (
+    request.url.pathname === "/api/v1/login" ||
+    request.url.pathname === "/api/v1/signup"
+  ) {
+    reply.continue();
+  } else {
+    if (token !== undefined) {
+      jwt.verify(token, process.env.ACCESS_TOKEN, (err, user) => {
+        if (err) {
+          reply(accessTokenExpired());
+
+          logger.log("error", "Access token expired", err);
+        } else {
+          if (user === null) {
+            logger.log("error", "Access token expired");
+            return reply(accessTokenExpired());
+          } else {
+            logger.log("info", "Request granted");
+            return reply.continue();
+          }
+        }
+      });
+    } else {
+      reply(catchReplyMessage("Please provide access token"));
+    }
+  }
 };

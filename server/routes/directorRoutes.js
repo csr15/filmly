@@ -12,31 +12,31 @@ exports.directorRoutes = [
     path: `${API_VERSION}/director/all`,
     config: {
       cors: true,
-      handler: getAllDirector,
     },
+    handler: getAllDirector,
   },
   {
     method: "GET",
     path: `${API_VERSION}/director/movie/all`,
     config: {
       cors: true,
-      handler: getAllMoviesOfAllDirector,
     },
+    handler: getAllMoviesOfAllDirector,
   },
   {
     method: "POST",
     path: `${API_VERSION}/director/movie`,
     config: {
       cors: true,
-      handler: getAllMoviesOfDirector,
     },
+    handler: getAllMoviesOfDirector,
   },
   {
     method: "POST",
     path: `${API_VERSION}/director/add`,
     config: {
       cors: true,
-      handler: addDirector,
     },
+    handler: addDirector,
   },
 ];

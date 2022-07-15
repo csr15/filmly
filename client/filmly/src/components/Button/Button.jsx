@@ -1,11 +1,22 @@
 import React from "react";
+import { useHistory } from "react-router";
 
-const Button = ({ type, icon, title }) => {
+import "./Button.css";
+
+const Button = ({ type, icon, title, onClickHandler, styles }) => {
+  const history = useHistory();
+
   return (
-    <button className={`btn ${type}`}>
-      <span>
-        <img src={icon} alt="Filmly" />
-      </span>
+    <button
+      className={`${type}`}
+      onClick={onClickHandler ? onClickHandler : () => history.push("/video")}
+      style={styles}
+    >
+      {icon && (
+        <span>
+          <img src={icon} alt="Filmly" />
+        </span>
+      )}
       {title}
     </button>
   );

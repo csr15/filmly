@@ -1,0 +1,12 @@
+@import "../../utilities/scss-variables/variables.scss";
+
+.f_btn_pri {
+  @extend .f_btn_solid;
+  background: $f_white;
+  color: $f_black;
+}
+.f_btn_sec {
+  background: $f_accent;
+  color: $f_white;
+  @extend .f_btn_solid;
+}

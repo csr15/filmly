@@ -1,34 +1,50 @@
+import {
+  INVALID_CREDENTIALS,
+  LOGOUT,
+  RESET_SIGNUP,
+  SIGIN_IN,
+  SIGN_UP,
+  USER_DETAILS,
+} from "../actionTypes";
+
 const initialState = {
   isAuthenticated: false,
   isSignedUp: false,
-  isInvalidCredentials: false
+  isInvalidCredentials: false,
+  userData: "",
+  userDetails: ""
 };
 
 const authReducer = (state = initialState, action) => {
   switch (action.type) {
-    case "SIGNIN":
+    case SIGIN_IN:
       return {
         ...state,
         isAuthenticated: true,
-        mail: action.payload.mail,
-        id: action.payload.id,
+        userDetails: action.payload
       };
-    case "INVALID_CREDENTIALS":
+    case INVALID_CREDENTIALS:
       return {
         ...state,
         isInvalidCredentials: true,
       };
-    case "SIGNUP":
+    case SIGN_UP:
       return {
         ...state,
         isSignedUp: true,
       };
-    case "RESET_SIGNUP":
+    case RESET_SIGNUP:
       return {
         ...state,
         isSignedUp: false,
       };
-    case "LOGOUT":
+    case USER_DETAILS:
+      return {
+        ...state,
+        isAuthenticated: true,
+        userDetails: action.payload
+      };
+    case LOGOUT:
       return {
         ...state,
         isAuthenticated: false,

@@ -1,0 +1,23 @@
+@import "../../utilities/scss-variables/variables.scss";
+
+.f_backdrop {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(24, 24, 24, 0.5);
+  overflow: hidden;
+
+  .f_backdrop_container {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    overflow: scroll;
+    background: $f_black;
+  }
+}

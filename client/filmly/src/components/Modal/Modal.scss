@@ -1,0 +1,77 @@
+@import "../../utilities/scss-variables/variables.scss";
+
+.f_modal_body {
+  padding: 10px 50px 0px 50px;
+  height: 70%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-direction: column;
+
+  .f_title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-left: 0;
+    color: $f_white;
+  }
+
+  .f_modal_close {
+    top: 10%;
+    right: 2%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+
+    i {
+      cursor: pointer;
+      font-size: 3rem;
+      color: #d0d0d0;
+    }
+  }
+}
+
+.f_modal_footer {
+  padding: 10px 50px 0px 50px;
+  margin-top: 30px;
+  @extend .center;
+  gap: 50px;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  .f_footer_left {
+    flex: 2;
+
+    p {
+      color: #d0d0d0;
+      font-size: 14px;
+    }
+  }
+
+  .f_footer_right {
+    flex: 1;
+    @extend .center;
+    justify-content: flex-end;
+    align-items: flex-start;
+
+    .f_footer_details {
+      @extend .center;
+      justify-content: flex-start;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+
+      .f_footer_detail_title {
+        color: #777777;
+        cursor: default;
+      }
+
+      span {
+        font-size: 14px;
+        color: #d0d0d0;
+        cursor: pointer;
+      }
+    }
+  }
+}

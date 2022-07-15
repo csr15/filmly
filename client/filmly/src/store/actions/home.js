@@ -1,26 +1,42 @@
 import axios from "axios";
+import { HOME_DATA, MOVIE_DETAILS } from "../actionTypes";
 
 export const getTopMoviesOfTop = () => {
   return async (dispatch) => {
     try {
-      const data = await Promise.all([
-        axios.post("http://localhost:8080/api/v1/genre/movie/Action", {
-          page: 0,
-          pageSize: 10,
-        }),
-        axios.post("http://localhost:8080/api/v1/genre/movie/Triller", {
-          page: 0,
-          pageSize: 10,
-        }),
-        axios.post("http://localhost:8080/api/v1/genre/movie/Comedy", {
-          page: 0,
-          pageSize: 10,
-        }),
-      ]);
+      const { data } = await axios({
+        method: "POST",
+        url: "http://localhost:8080/api/v1/movie/home",
+        data: {
+          gen1: "Action",
+          gen2: "Thriller",
+          gen3: "Comedy",
+        },
+        headers: {
+          Authorization: `Bearer ${localStorage.getItem("token")}`,
+        },
+      });
 
-      console.log(data);
+      dispatch({ type: HOME_DATA, payload: data.payload.data });
     } catch (error) {
-      console.log(error);
+      dispatch({ type: "ERROR" });
+    }
+  };
+};
+export const getMovieDetails = (id) => {
+  return async (dispatch) => {
+    try {
+      const { data } = await axios({
+        method: "GET",
+        url: `http://localhost:8080/api/v1/movie/details/${id}`,
+        headers: {
+          Authorization: `Bearer ${localStorage.getItem("token")}`,
+        },
+      });
+
+      dispatch({ type: MOVIE_DETAILS, payload: data.payload.data });
+    } catch (error) {
+      dispatch({ type: "ERROR" });
     }
   };
 };

@@ -1,0 +1,27 @@
+@import "../../utilities/scss-variables/variables.scss";
+
+.f_movie_card {
+  width: 300px;
+  height: 150px;
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-right: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 5px 12px;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+  }
+
+  h5 {
+    color: $f_white;
+    width: 288px;
+    @extend .f_text_wrap;
+  }
+}

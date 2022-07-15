@@ -23,7 +23,7 @@ button:hover {
   outline: none;
 }
 
-.center, .f_home_movie_container .f_chevron_icon {
+.center, .f_home_movie_container .f_chevron_icon, .f_btn_solid {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,14 +40,38 @@ button:hover {
   align-items: center;
 }
 
+.f_btn_solid {
+  padding: 0.5rem 1.2rem 0.5rem 1.2rem;
+  border: none;
+  border-radius: 4px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.f_btn_solid span {
+  margin-right: 10px;
+}
+.f_btn_solid span img {
+  margin-bottom: 3px;
+}
+.f_btn_solid:hover {
+  transition: all 0.3s ease;
+  transform: scale(0.98);
+}
+.f_btn_solid:focus {
+  outline: none;
+  box-shadow: none;
+}
+
 .f_home_movie_container {
   padding: 1rem 0 1rem 1rem;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
   margin-bottom: 30px;
+  overflow: visible;
 }
 .f_home_movie_container .f_movie_card_sections {
   position: relative;
+  padding: 0px 15px;
 }
 .f_home_movie_container::-webkit-scrollbar {
   display: none;
@@ -55,29 +79,8 @@ button:hover {
 .f_home_movie_container h1 {
   font-size: 28px;
   font-weight: 500;
-  margin: 20px 0px;
+  margin: 20px 0px 20px 15px;
   color: #ffffff;
-}
-.f_home_movie_container .f_movie_card {
-  width: 300px;
-  height: 150px;
-  border-radius: 4px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url("https://m.media-amazon.com/images/M/MV5BNjQzNmEyYTYtMWE4MC00NmQxLTgzN2QtMjY3NTNkMTVjZmVhXkEyXkFqcGdeQXVyOTY5MTE4MjA@._V1_.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  margin-right: 20px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
-  padding: 5px 12px;
-}
-.f_home_movie_container .f_movie_card h5 {
-  color: #ffffff;
-  width: 288px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 .f_home_movie_container .f_chevron_icon {
   position: absolute;
@@ -89,13 +92,13 @@ button:hover {
   color: #ffffff;
 }
 .f_home_movie_container .f_chevron_left {
-  left: -1%;
+  left: 0%;
   top: 0%;
   background: linear-gradient(90deg, rgb(0, 0, 0), rgba(0, 0, 0, 0));
   transform: translate(0%, 0%);
 }
 .f_home_movie_container .f_chevron_right {
-  right: -1%;
+  right: 0%;
   top: 0%;
   background: linear-gradient(-90deg, rgb(0, 0, 0), rgba(0, 0, 0, 0));
   transform: translate(0%, 0%);

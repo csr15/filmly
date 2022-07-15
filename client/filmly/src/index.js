@@ -16,10 +16,14 @@ import "./App.css";
 
 // Reducers
 import authReducer from "./store/reducers/auth";
+import homeReducer from "./store/reducers/home";
+import genreReducer from "./store/reducers/genre";
 
 // Combine all reducers
 const rootReducer = combineReducers({
   auth: authReducer,
+  home: homeReducer,
+  genre: genreReducer
 });
 
 // Creating redux store with redux-thunk as a middleware

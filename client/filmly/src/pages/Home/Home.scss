@@ -1,34 +1,5 @@
 @import "../../utilities/scss-variables/variables.scss";
 
-.f_btn_solid {
-  padding: 0.5rem 1.2rem 0.5rem 1.2rem;
-  border: none;
-  border-radius: 4px;
-  font-family: $f_pop;
-  font-size: 16px;
-  font-weight: 500;
-  text-transform: capitalize;
-  @extend .center;
-
-  span {
-    margin-right: 10px;
-
-    img {
-      margin-bottom: 3px;
-    }
-  }
-
-  &:hover {
-    transition: all 0.3s ease;
-    transform: scale(0.98);
-  }
-
-  &:focus {
-    outline: none;
-    box-shadow: none;
-  }
-}
-
 .f_home_cotainer {
   .f_home_header {
     @extend .f_jumbotron;
@@ -56,16 +27,6 @@
         @extend .center;
         justify-content: flex-start;
         gap: 10px;
-      }
-      .f_btn_pri {
-        @extend .f_btn_solid;
-        background: $f_white;
-        color: $f_black;
-      }
-      .f_btn_sec {
-        background: $f_accent;
-        color: $f_white;
-        @extend .f_btn_solid;
       }
     }
   }

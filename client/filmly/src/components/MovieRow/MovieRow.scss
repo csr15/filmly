@@ -2,12 +2,12 @@
 
 .f_home_movie_container {
   padding: 1rem 0 1rem 1rem;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
   margin-bottom: 30px;
+  overflow: visible;
 
   .f_movie_card_sections {
     position: relative;
+    padding: 0px 15px;
   }
   &::-webkit-scrollbar {
     display: none;
@@ -16,32 +16,8 @@
   h1 {
     font-size: 28px;
     font-weight: 500;
-    margin: 20px 0px;
+    margin: 20px 0px 20px 15px;
     color: $f_white;
-  }
-
-  .f_movie_card {
-    width: 300px;
-    height: 150px;
-    border-radius: 4px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)),
-      url("https://m.media-amazon.com/images/M/MV5BNjQzNmEyYTYtMWE4MC00NmQxLTgzN2QtMjY3NTNkMTVjZmVhXkEyXkFqcGdeQXVyOTY5MTE4MjA@._V1_.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    margin-right: 20px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-    padding: 5px 12px;
-
-    h5 {
-      color: $f_white;
-      width: 288px;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
   }
 
   .f_chevron_icon {
@@ -57,14 +33,14 @@
   }
 
   .f_chevron_left {
-    left: -1%;
+    left: 0%;
     top: 0%;
     background: linear-gradient(90deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
     transform: translate(0%, 0%);
   }
 
   .f_chevron_right {
-    right: -1%;
+    right: 0%;
     top: 0%;
     background: linear-gradient(-90deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
     transform: translate(0%, 0%);

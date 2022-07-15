@@ -5,6 +5,8 @@ const {
   getMovieByLanguage,
   getMovieReleasedThisMonth,
   addNewMovie,
+  getDataForHome,
+  getFullMovieDetails,
 } = require("../controllers/movieController");
 
 exports.movieRoutes = [
@@ -13,39 +15,55 @@ exports.movieRoutes = [
     path: `${API_VERSION}/movie/all`,
     config: {
       cors: true,
-      handler: getAllMovie,
     },
+    handler: getAllMovie,
   },
   {
     method: "GET",
     path: `${API_VERSION}/movie/{id}`,
     config: {
       cors: true,
-      handler: getMovie,
     },
+    handler: getMovie,
   },
   {
     method: "GET",
     path: `${API_VERSION}/movie/currentMonth`,
     config: {
       cors: true,
-      handler: getMovieReleasedThisMonth,
     },
+    handler: getMovieReleasedThisMonth,
   },
   {
     method: "POST",
     path: `${API_VERSION}/movie/language`,
     config: {
       cors: true,
-      handler: getMovieByLanguage,
     },
+    handler: getMovieByLanguage,
   },
   {
     method: "POST",
     path: `${API_VERSION}/movie/add`,
     config: {
       cors: true,
-      handler: addNewMovie,
     },
+    handler: addNewMovie,
+  },
+  {
+    method: "POST",
+    path: `${API_VERSION}/movie/home`,
+    config: {
+      cors: true,
+    },
+    handler: getDataForHome,
+  },
+  {
+    method: "GET",
+    path: `${API_VERSION}/movie/details/{id}`,
+    config: {
+      cors: true,
+    },
+    handler: getFullMovieDetails,
   },
 ];

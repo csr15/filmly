@@ -3,6 +3,7 @@ const {
   loginHandler,
   signupHandler,
   validateToken,
+  getUserDetails,
 } = require("../controllers/userController");
 
 exports.userRoutes = [
@@ -11,23 +12,31 @@ exports.userRoutes = [
     path: `${API_VERSION}/login`,
     config: {
       cors: true,
-      handler: loginHandler,
     },
+    handler: loginHandler,
   },
   {
     method: "POST",
     path: `${API_VERSION}/signup`,
     config: {
       cors: true,
-      handler: signupHandler,
     },
+    handler: signupHandler,
   },
   {
     method: "GET",
     path: `${API_VERSION}/validateToken`,
     config: {
       cors: true,
-      handler: validateToken,
     },
+    handler: validateToken,
+  },
+  {
+    method: "GET",
+    path: `${API_VERSION}/user/{id}`,
+    config: {
+      cors: true,
+    },
+    handler: getUserDetails,
   },
 ];

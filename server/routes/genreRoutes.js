@@ -8,34 +8,35 @@ const {
 
 exports.genreRoutes = [
   {
-    method: "POST",
+    method: "GET",
     path: `${API_VERSION}/genre/all`,
     config: {
       cors: true,
-      handler: getAllGenre,
     },
+    handler: getAllGenre,
   },
   {
     method: "GET",
     path: `${API_VERSION}/genre/movie/all`,
     config: {
       cors: true,
-      handler: getAllMoviesGenre,
     },
+    handler: getAllMoviesGenre,
   },
   {
     method: "POST",
     path: `${API_VERSION}/genre/movie/{title}`,
     config: {
-      handler: getAllMoviesOfSingleGenre,
+      cors: true,
     },
+    handler: getAllMoviesOfSingleGenre,
   },
   {
     method: "POST",
     path: `${API_VERSION}/genre/add`,
     config: {
       cors: true,
-      handler: addGenre,
     },
+    handler: addGenre,
   },
 ];

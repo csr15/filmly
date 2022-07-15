@@ -5,6 +5,7 @@ import { validateEmail } from "../../helper/helper";
 import { signupAction } from "../../store";
 
 import AuthBackdrop from "../../components/AuthBackdrop/AuthBackdrop";
+import { RESET_SIGNUP } from "../../store/actionTypes";
 
 import "../../components/AuthBackdrop/AuthBackdrop.css";
 
@@ -73,7 +74,7 @@ function Signup() {
   useEffect(() => {
     if (state.auth.isSignedUp) {
       history.push("/signin");
-      dispatch({type: "RESET_SIGNUP"})
+      dispatch({type: RESET_SIGNUP})
     }
   }, [state.auth]);
 

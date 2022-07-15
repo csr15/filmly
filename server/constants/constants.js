@@ -8,6 +8,7 @@ const CONSTANTS = {
   ACCESS_TOKEN_EXPIRED: "accessTokenExpired",
   FORBIDDEN: 403,
   UN_AUTHORIZED: 401,
+  SERVER_ERROR: 500,
 };
 
 module.exports = CONSTANTS;

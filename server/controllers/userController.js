@@ -41,7 +41,7 @@ exports.loginHandler = async (request, reply) => {
               data.dataValues,
               process.env.ACCESS_TOKEN,
               {
-                expiresIn: "20d",
+                expiresIn: "60s",
                 algorithm: "HS256",
               }
             );
@@ -49,6 +49,7 @@ exports.loginHandler = async (request, reply) => {
             const userData = {
               id: data.id,
               mail: data.mail,
+              name: data.name,
               token: accessToken,
             };
 
@@ -81,9 +82,23 @@ exports.signupHandler = async (request, reply) => {
   }
 };
 
-exports.validateToken = async (request, response) => {
+exports.validateToken = async (request, reply) => {
   try {
     reply(successReplyMessage("Token verified"));
+  } catch (error) {
+    reply(catchReplyMessage());
+  }
+};
+
+exports.getUserDetails = async (request, reply) => {
+  try {
+    const data = await db.users.findOne({
+      where: {
+        id: request.params.id,
+      },
+    });
+
+    reply(successReplyMessage(data));
   } catch (error) {
     reply(catchReplyMessage());
   }

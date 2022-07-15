@@ -8,15 +8,9 @@ const Movie = db.movie;
 
 exports.getAllGenre = async (request, reply) => {
   try {
-    const { page, pageSize } = request.payload;
-    const offset = page * pageSize;
+    const data = await Genre.findAll();
 
-    const data = await Genre.findAll({
-      offset: offset,
-      limit: pageSize,
-    });
-
-    reply(successReplyMessage(data));;
+    reply(successReplyMessage(data));
 
     logger.log("info", "Successfully got list of genres");
   } catch (error) {
@@ -36,10 +30,10 @@ exports.getAllMoviesGenre = async (request, reply) => {
       });
 
       await client.set("all_movie_genre", JSON.stringify(data));
-      reply(successReplyMessage(data));;
+      reply(successReplyMessage(data));
       logger.log("info", "Successfully got list of movies of all genre");
     } else {
-      reply(successReplyMessage(JSON.parse(allMovieGenre)));;
+      reply(successReplyMessage(JSON.parse(allMovieGenre)));
       logger.log("info", "Successfully got list of movies of all genre");
     }
   } catch (error) {
@@ -53,7 +47,6 @@ exports.getAllMoviesOfSingleGenre = async (request, reply) => {
     const { page, pageSize } = request.payload;
     const offset = page * pageSize;
 
-    console.log(offset, pageSize)
     const result = await Genre.findAll({
       include: Movie,
       where: {
@@ -63,7 +56,7 @@ exports.getAllMoviesOfSingleGenre = async (request, reply) => {
       limit: pageSize,
     });
 
-    reply(successReplyMessage(result));;
+    reply(successReplyMessage(result));
     logger.log("info", "Successfully got list of movies by genre");
   } catch (error) {
     console.log(error);
@@ -77,7 +70,7 @@ exports.addGenre = async (request, reply) => {
     await Genre.create({
       ...request.payload,
     });
-    reply(successReplyMessage("", "Genre added successfully!"));;
+    reply(successReplyMessage("", "Genre added successfully!"));
 
     logger.log("info", "Successfully created a new genre");
   } catch (error) {
