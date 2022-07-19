@@ -24,8 +24,8 @@ exports.directorRoutes = [
     handler: getAllMoviesOfAllDirector,
   },
   {
-    method: "POST",
-    path: `${API_VERSION}/director/movie`,
+    method: "GET",
+    path: `${API_VERSION}/director/movie/{id}`,
     config: {
       cors: true,
     },

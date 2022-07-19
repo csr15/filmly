@@ -7,6 +7,7 @@ const {
   addNewMovie,
   getDataForHome,
   getFullMovieDetails,
+  getMovieBySearchTerm,
 } = require("../controllers/movieController");
 
 exports.movieRoutes = [
@@ -25,6 +26,14 @@ exports.movieRoutes = [
       cors: true,
     },
     handler: getMovie,
+  },
+  {
+    method: "POST",
+    path: `${API_VERSION}/movie/search`,
+    config: {
+      cors: true,
+    },
+    handler: getMovieBySearchTerm,
   },
   {
     method: "GET",

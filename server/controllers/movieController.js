@@ -206,3 +206,50 @@ exports.getFullMovieDetails = async (request, reply) => {
     reply(catchReplyMessage());
   }
 };
+
+exports.getMovieBySearchTerm = async (request, reply) => {
+  try {
+    const selectedOption = request.payload.selectedOption;
+    let data = "";
+
+    const { page, pageSize } = request.payload;
+    const offset = page * pageSize;
+
+    if (selectedOption === "Movie") {
+      data = await Movie.findAll({
+        where: {
+          mov_title: {
+            [Op.like]: `%${request.payload.searchTerm}%`,
+          },
+        },
+        limit: pageSize,
+        offset: offset,
+      });
+    } else if (selectedOption === "Director") {
+      data = await Director.findAll({
+        where: {
+          dir_name: {
+            [Op.like]: `%${request.payload.searchTerm}%`,
+          },
+        },
+        limit: pageSize,
+        offset: offset,
+      });
+    } else if (selectedOption === "Actor") {
+      data = await Actor.findAll({
+        where: {
+          act_name: {
+            [Op.like]: `%${request.payload.searchTerm}%`,
+          },
+        },
+        limit: pageSize,
+        offset: offset,
+      });
+    }
+
+    reply(successReplyMessage(data));
+  } catch (error) {
+    console.log(error);
+    reply(catchReplyMessage());
+  }
+};

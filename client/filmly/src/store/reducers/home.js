@@ -1,8 +1,9 @@
-import { HOME_DATA, MOVIE_DETAILS } from "../actionTypes";
+import { ALL_MOVIE_OF_ACTOR, HOME_DATA, MOVIE_DETAILS } from "../actionTypes";
 
 const initialState = {
   homeData: [],
   movieDetails: "",
+  allMoviesOfActor: "",
 };
 
 const homeReducer = (state = initialState, action) => {
@@ -16,6 +17,11 @@ const homeReducer = (state = initialState, action) => {
       return {
         ...state,
         movieDetails: action.payload,
+      };
+    case ALL_MOVIE_OF_ACTOR:
+      return {
+        ...state,
+        allMoviesOfActor: action.payload,
       };
     default:
       return state;

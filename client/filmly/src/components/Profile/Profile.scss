@@ -1,0 +1,39 @@
+@import "../../utilities/scss-variables/variables.scss";
+
+.f_profile {
+  background: rgb(40, 40, 40);
+  width: 200px;
+  min-height: 150px;
+  border-radius: 5px;
+  @extend .center;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  margin: 10px 20px 50px 20px;
+
+  .f_profile_header {
+    margin-top: -50px;
+    margin-bottom: 20px;
+  }
+
+  .f_profile_body {
+    margin-bottom: 20px;
+
+    h6 {
+      color: $f_white;
+      font-weight: 500;
+    }
+  }
+
+  .f_profile_footer {
+    background-color: rgba(24, 24, 24);
+    // padding: 10px 0 0 ;
+    padding-top: 15px;
+    width: 100%;
+    @extend .center;
+
+    p {
+      color: rgb(155, 155, 155);
+    }
+  }
+}

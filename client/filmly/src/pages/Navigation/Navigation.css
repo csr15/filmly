@@ -84,6 +84,9 @@ button:hover {
   outline: none;
   text-decoration: none;
 }
+.f_nav_container .navbar a {
+  text-decoration: none;
+}
 .f_nav_container .navbar-brand span {
   font-weight: 600;
   color: #e50815;
@@ -112,7 +115,6 @@ button:hover {
 }
 .f_nav_container .navbar-nav li .f_profile .f_profile_section {
   margin-bottom: 15px;
-  border-bottom: 1px solid rgb(53, 53, 53);
 }
 .f_nav_container .navbar-nav li .f_profile .f_profile_section:last-child {
   border-bottom: none;

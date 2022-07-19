@@ -77,6 +77,20 @@ button:hover {
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
+  background: #000000;
+}
+.f_video .f_modal_close {
+  top: 10%;
+  right: 2%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  z-index: 99;
+}
+.f_video .f_modal_close i {
+  cursor: pointer;
+  font-size: 3rem;
+  color: #d0d0d0;
+  opacity: 0.3;
 }
 .f_video video {
   width: 100%;

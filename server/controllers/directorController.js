@@ -43,7 +43,7 @@ exports.getAllMoviesOfDirector = async (request, reply) => {
     const result = await Director.findAll({
       include: Movie,
       where: {
-        id: request.payload.directorId,
+        id: request.params.id,
       },
     });
 

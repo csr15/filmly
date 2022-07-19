@@ -64,6 +64,12 @@ button:hover {
   box-shadow: none;
 }
 
+.f_text_wrap {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .f_btn_pri {
   background: #ffffff;
   color: #000000;

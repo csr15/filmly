@@ -4,6 +4,7 @@ const {
   getAllMoviesofAllActor,
   addActor,
   getActorMovieCountByThisYear,
+  getAllMoviesofActor,
 } = require("../controllers/actorController");
 
 exports.actorRoutes = [
@@ -38,5 +39,13 @@ exports.actorRoutes = [
       cors: true,
     },
     handler: addActor,
+  },
+  {
+    method: "POST",
+    path: `${API_VERSION}/actor/movie/{id}`,
+    config: {
+      cors: true,
+    },
+    handler: getAllMoviesofActor,
   },
 ];

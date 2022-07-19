@@ -26,7 +26,10 @@ const NavItem = ({ name, isDropDown, route, genresList }) => {
       </div>
     </li>
   ) : (
-    <li className="nav-item" onClick={() => history.push(`/${route}`)}>
+    <li
+      className="nav-item"
+      onClick={() => history.push(route === "home" ? "/" : `/${route}`)}
+    >
       <p>{name}</p>
     </li>
   );

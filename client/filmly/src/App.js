@@ -1,4 +1,4 @@
-import Container from "./container/Container";
+import Container from "./container";
 
 import "./App.css";
 

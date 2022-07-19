@@ -12,6 +12,11 @@
     text-decoration: none;
   }
 
+  .navbar {
+    a {
+      text-decoration: none;
+    }
+  }
   .navbar-brand {
     @extend .center;
     span {
@@ -45,7 +50,6 @@
 
         .f_profile_section {
           margin-bottom: 15px;
-          border-bottom: 1px solid rgb(53, 53, 53);
 
           &:last-child {
             border-bottom: none;

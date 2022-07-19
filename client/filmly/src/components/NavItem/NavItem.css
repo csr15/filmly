@@ -64,6 +64,12 @@ button:hover {
   box-shadow: none;
 }
 
+.f_text_wrap {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .dropdown-item {
   padding: 0.5rem 1rem !important;
 }/*# sourceMappingURL=NavItem.css.map */

@@ -1,0 +1,72 @@
+@import "../../utilities/scss-variables/variables.scss";
+
+.f_search {
+  padding: 20px 50px;
+  .f_search_title {
+    h1 {
+      color: $f_white;
+      font-weight: bold;
+    }
+  }
+
+  .f_search_container {
+    width: 100%;
+    @extend .center;
+
+    .f_search_wrapper {
+      background: rgb(40, 40, 40);
+      width: 60%;
+      @extend .center;
+      justify-content: space-between;
+      border-radius: 5px;
+      overflow: hidden;
+      margin-top: 30px;
+
+      .f_search_options {
+        background: rgb(84, 84, 84);
+        flex: 1;
+        height: 60px;
+        @extend .center;
+        padding-top: 15px;
+
+        a {
+          cursor: pointer;
+        }
+
+        p {
+          color: $f_white;
+          @extend .center;
+          font-weight: 500;
+
+          i {
+            font-size: 1rem !important;
+            margin-left: 3px;
+            font-weight: 800;
+          }
+        }
+      }
+
+      input {
+        flex: 5;
+        width: 100%;
+        background: none;
+        border: none;
+        height: 60px;
+        padding: 0px 15px;
+        color: $f_white;
+
+        &:focus {
+          outline: none;
+          box-shadow: none;
+        }
+      }
+    }
+  }
+
+  .f_search_result {
+    margin: 70px 0 30px 0;
+    @extend .center;
+    // justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+}

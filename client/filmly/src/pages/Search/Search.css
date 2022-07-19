@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap");
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #000000;
+}
+
+p,
+a {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  color: #686b78;
+  text-decoration: none;
+}
+
+button:hover {
+  box-shadow: none;
+  outline: none;
+}
+
+.center, .f_search .f_search_result, .f_search .f_search_container .f_search_wrapper .f_search_options p, .f_search .f_search_container .f_search_wrapper .f_search_options, .f_search .f_search_container .f_search_wrapper, .f_search .f_search_container, .f_btn_solid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.f_jumbotron {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 90vh;
+  max-height: 90vh;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+}
+
+.f_btn_solid {
+  padding: 0.5rem 1.2rem 0.5rem 1.2rem;
+  border: none;
+  border-radius: 4px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.f_btn_solid span {
+  margin-right: 10px;
+}
+.f_btn_solid span img {
+  margin-bottom: 3px;
+}
+.f_btn_solid:hover {
+  transition: all 0.3s ease;
+  transform: scale(0.98);
+}
+.f_btn_solid:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.f_text_wrap {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.f_search {
+  padding: 20px 50px;
+}
+.f_search .f_search_title h1 {
+  color: #ffffff;
+  font-weight: bold;
+}
+.f_search .f_search_container {
+  width: 100%;
+}
+.f_search .f_search_container .f_search_wrapper {
+  background: rgb(40, 40, 40);
+  width: 60%;
+  justify-content: space-between;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 30px;
+}
+.f_search .f_search_container .f_search_wrapper .f_search_options {
+  background: rgb(84, 84, 84);
+  flex: 1;
+  height: 60px;
+  padding-top: 15px;
+}
+.f_search .f_search_container .f_search_wrapper .f_search_options a {
+  cursor: pointer;
+}
+.f_search .f_search_container .f_search_wrapper .f_search_options p {
+  color: #ffffff;
+  font-weight: 500;
+}
+.f_search .f_search_container .f_search_wrapper .f_search_options p i {
+  font-size: 1rem !important;
+  margin-left: 3px;
+  font-weight: 800;
+}
+.f_search .f_search_container .f_search_wrapper input {
+  flex: 5;
+  width: 100%;
+  background: none;
+  border: none;
+  height: 60px;
+  padding: 0px 15px;
+  color: #ffffff;
+}
+.f_search .f_search_container .f_search_wrapper input:focus {
+  outline: none;
+  box-shadow: none;
+}
+.f_search .f_search_result {
+  margin: 70px 0 30px 0;
+  flex-wrap: wrap;
+}/*# sourceMappingURL=Search.css.map */

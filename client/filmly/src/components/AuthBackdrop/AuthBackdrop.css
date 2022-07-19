@@ -64,6 +64,12 @@ button:hover {
   box-shadow: none;
 }
 
+.f_text_wrap {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .auth {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../assets/images/home-bg.jpeg");
   padding: 10px 50px 0px 50px;

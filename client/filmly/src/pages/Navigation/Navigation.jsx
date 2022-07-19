@@ -47,6 +47,14 @@ const Navigation = React.memo(() => {
     });
   }, []);
 
+  window.addEventListener("click", (e) => {
+    if (document.querySelector(".container_routes").contains(e.target)) {
+      if (openProfile) {
+        setOpenProfile(false);
+      }
+    }
+  });
+
   return (
     <div className="f_nav_container">
       <nav className="navbar navbar-expand-lg">
@@ -58,10 +66,8 @@ const Navigation = React.memo(() => {
         <div className="collapse navbar-collapse">
           {state.auth.isAuthenticated ? (
             <ul className="navbar-nav">
-              <NavItem name="Home" route="/" />
-              <NavItem name="Search" />
-              <NavItem name="Help" />
-              <NavItem name="Profile" />
+              <NavItem name="Home" route="home" />
+              <NavItem name="Search" route="search" />
               <NavItem name="All Genres" isDropDown genresList={allGenres} />
             </ul>
           ) : null}

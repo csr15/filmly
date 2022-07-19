@@ -33,7 +33,7 @@ function Genre() {
 
   useEffect(() => {
     dispatch(getAllMoviesOfGenre(genreTitle));
-  }, []);
+  }, [genreTitle]);
 
   useEffect(() => {
     if (genre.allMoviesOfGenre && genre.allMoviesOfGenre.length > 0) {
