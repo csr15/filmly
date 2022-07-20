@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router";
+
 import Modal from "../../components/Modal/Modal";
 import MovieCard from "../../components/MovieCard/MovieCard";
 import { getAllMoviesOfGenre } from "../../store/actions/genres";
@@ -21,16 +22,6 @@ function Genre() {
   const [movieId, setMovieId] = useState("");
   const [movies, setMovies] = useState([]);
 
-  const movieCardHandler = (id) => {
-    setMovieId(id);
-    setMovieModal(true);
-  };
-
-  const hideModalhandler = () => {
-    setMovieModal(false);
-    setMovieId("");
-  };
-
   useEffect(() => {
     dispatch(getAllMoviesOfGenre(genreTitle));
   }, [genreTitle]);
@@ -40,6 +31,16 @@ function Genre() {
       setMovies(genre.allMoviesOfGenre[0].movies);
     }
   }, [genre]);
+
+  const movieCardHandler = (id) => {
+    setMovieId(id);
+    setMovieModal(true);
+  };
+
+  const hideModalhandler = () => {
+    setMovieModal(false);
+    setMovieId("");
+  };
 
   return (
     <div className="f_genre">

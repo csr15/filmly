@@ -1,13 +1,13 @@
+const jwt = require("jsonwebtoken");
+const { v4: uuidv4 } = require("uuid");
+const bcrypt = require("bcrypt");
 const {
   catchReplyMessage,
   errorReplyMessage,
   successReplyMessage,
 } = require("../helpers/helper");
 const logger = require("../logger");
-const jwt = require("jsonwebtoken");
 const db = require("../models");
-const { v4: uuidv4 } = require("uuid");
-const bcrypt = require("bcrypt");
 
 require("dotenv").config({ path: "../config/.env" });
 
@@ -20,6 +20,7 @@ exports.loginHandler = async (request, reply) => {
     });
 
     if (data === null) {
+      logger.log("error", "Bad credentials, Invalid email or password.");
       reply(
         errorReplyMessage("Invalid email or password", "", "invalidCredentials")
       );
@@ -41,7 +42,7 @@ exports.loginHandler = async (request, reply) => {
               data.dataValues,
               process.env.ACCESS_TOKEN,
               {
-                expiresIn: "60s",
+                expiresIn: "20d",
                 algorithm: "HS256",
               }
             );
@@ -53,12 +54,14 @@ exports.loginHandler = async (request, reply) => {
               token: accessToken,
             };
 
+            logger.log("info", "Logged in successfully!");
             reply(successReplyMessage(userData, ""));
           }
         }
       );
     }
   } catch (error) {
+    logger.log("error", "Error while logging in.");
     reply(catchReplyMessage());
   }
 };
@@ -75,9 +78,11 @@ exports.signupHandler = async (request, reply) => {
         mail: mail,
       });
 
+      logger.log("info", "Account created successfully!");
       return reply(successReplyMessage("", "Account created successfully!"));
     });
   } catch (error) {
+    logger.log("error", "Error while creating account.");
     reply(catchReplyMessage());
   }
 };
@@ -98,8 +103,10 @@ exports.getUserDetails = async (request, reply) => {
       },
     });
 
+    logger.log("info", "Single user data retrieved successfully!");
     reply(successReplyMessage(data));
   } catch (error) {
+    logger.log("error", "Error while a user details.");
     reply(catchReplyMessage());
   }
 };

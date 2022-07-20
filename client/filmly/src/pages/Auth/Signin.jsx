@@ -1,14 +1,23 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useHistory } from "react-router";
+
 import { validateEmail } from "../../helper/helper";
 import { loginAction } from "../../store";
-
 import AuthBackdrop from "../../components/AuthBackdrop/AuthBackdrop";
 
 import "../../components/AuthBackdrop/AuthBackdrop.css";
 
 function Signin() {
+  const dispatch = useDispatch();
+  const history = useHistory();
+
+  const state = useSelector((state) => {
+    return {
+      auth: state.auth,
+    };
+  });
+
   const [userData, setUserData] = useState({
     mail: "",
     password: "",
@@ -18,12 +27,20 @@ function Signin() {
   const [isPasswordError, setIsPasswordError] = useState(false);
   const [isInvalidCredentials, setIsInvalidCredentials] = useState(false);
 
-  const dispatch = useDispatch();
+  useEffect(() => {
+    if (state.auth.isAuthenticated && localStorage.getItem("token") !== null) {
+      history.push("/");
+    }
+
+    if (state.auth.isInvalidCredentials) {
+      setIsInvalidCredentials(true);
+    }
+  }, [state.auth]);
 
   const onChangeHandler = (name, e) => {
     if (name === "mail" && isMailError) setIsMailError(false);
     if (name === "password" && isPasswordError) setIsPasswordError(false);
-    if(isInvalidCredentials) setIsInvalidCredentials(false)
+    if (isInvalidCredentials) setIsInvalidCredentials(false);
 
     setUserData({
       ...userData,
@@ -50,23 +67,6 @@ function Signin() {
       dispatch(loginAction(userData));
     }
   };
-
-  const state = useSelector((state) => {
-    return {
-      auth: state.auth,
-    };
-  });
-
-  const history = useHistory();
-  useEffect(() => {
-    if (state.auth.isAuthenticated && localStorage.getItem("token") !== null) {
-      history.push("/");
-    }
-
-    if (state.auth.isInvalidCredentials) {
-      setIsInvalidCredentials(true);
-    }
-  }, [state.auth]);
 
   return (
     <AuthBackdrop>

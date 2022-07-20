@@ -7,7 +7,7 @@ export const searchHandler = (searchTerm, selectedOption) => {
     try {
       const { data } = await axios({
         method: "POST",
-        url: `http://localhost:8080/api/v1/movie/search`,
+        url: `${API}/movie/search`,
         data: {
           searchTerm: searchTerm,
           selectedOption: selectedOption,
@@ -19,7 +19,6 @@ export const searchHandler = (searchTerm, selectedOption) => {
         },
       });
 
-      console.log(data);
       dispatch({
         type: SEARCH,
         payload: data.payload.data,

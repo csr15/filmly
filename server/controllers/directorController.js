@@ -1,4 +1,3 @@
-const { PAGE_SIZE } = require("../constants/constants");
 const { successReplyMessage, catchReplyMessage } = require("../helpers/helper");
 const db = require("../models");
 
@@ -15,8 +14,7 @@ exports.getAllDirector = async (request, reply) => {
       limit: pageSize,
     });
 
-    reply(successReplyMessage(data));;
-
+    reply(successReplyMessage(data));
     logger.log("info", "Successfully got list of directors");
   } catch (error) {
     reply(catchReplyMessage());

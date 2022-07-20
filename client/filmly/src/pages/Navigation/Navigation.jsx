@@ -11,9 +11,8 @@ import { LOGOUT } from "../../store/actionTypes";
 import "./Navigation.css";
 
 const Navigation = React.memo(() => {
-  const [allGenres, setAllGenres] = useState([]);
-  const [openProfile, setOpenProfile] = useState(false);
-
+  const history = useHistory();
+  const dispatch = useDispatch();
   const state = useSelector((state) => {
     return {
       auth: state.auth,
@@ -21,9 +20,8 @@ const Navigation = React.memo(() => {
     };
   });
 
-  const history = useHistory();
-
-  const dispatch = useDispatch();
+  const [allGenres, setAllGenres] = useState([]);
+  const [openProfile, setOpenProfile] = useState(false);
 
   useEffect(() => {
     if (state.genre.allGenres && state.genre.allGenres.length === 0) {
@@ -32,12 +30,6 @@ const Navigation = React.memo(() => {
       setAllGenres(state.genre.allGenres);
     }
   }, [state.genre]);
-
-  const logoutHandler = () => {
-    localStorage.clear();
-    dispatch({ type: LOGOUT });
-    history.push("/signin");
-  };
 
   useEffect(() => {
     window.addEventListener("click", (e) => {
@@ -54,6 +46,12 @@ const Navigation = React.memo(() => {
       }
     }
   });
+  
+  const logoutHandler = () => {
+    localStorage.clear();
+    dispatch({ type: LOGOUT });
+    history.push("/signin");
+  };
 
   return (
     <div className="f_nav_container">
@@ -79,22 +77,22 @@ const Navigation = React.memo(() => {
                     <CustomAvatar width={50} height={50} />
                   </div>
                   {openProfile && (
-                    <div className="f_profile">
-                      <div className="f_profile_section">
+                    <div className="f_nav_profile">
+                      <div className="f_nav_profile_section">
                         <h6>Mail</h6>
                         <p>
                           {state.auth.userDetails &&
                             state.auth.userDetails.mail}
                         </p>
                       </div>
-                      <div className="f_profile_section">
+                      <div className="f_nav_profile_section">
                         <h6>Name</h6>
                         <p>
                           {state.auth.userDetails &&
                             state.auth.userDetails.name}
                         </p>
                       </div>
-                      <div className="f_profile_section">
+                      <div className="f_nav_profile_section">
                         <Button
                           type={"f_btn_pri"}
                           title="Logout"

@@ -5,6 +5,7 @@ import "./NavItem.css";
 
 const NavItem = ({ name, isDropDown, route, genresList }) => {
   const history = useHistory();
+  
   return isDropDown ? (
     <li className="nav-item">
       <p type="button" id="dropdownMenuButton" data-toggle="dropdown">

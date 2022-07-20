@@ -1,6 +1,5 @@
 const Hapi = require("hapi");
 const logger = require("./logger");
-const db = require("./models");
 
 // Routes
 const { actorRoutes } = require("./routes/actorRoutes");
@@ -24,10 +23,6 @@ server.route(genreRoutes);
 server.route(directorRoutes);
 server.route(actorRoutes);
 server.route(userRoutes);
-
-server.ext("onRequest", (request, reply) => {
-  reply.continue();
-});
 
 server.start((err) => {
   if (err) {

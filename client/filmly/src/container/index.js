@@ -4,7 +4,6 @@ import { useDispatch } from "react-redux";
 
 import { LOGOUT } from "../store/actionTypes";
 import { getUserDetails } from "../store/actions/auth";
-
 import asyncComponent from "../HOC/AsyncComponent";
 
 function Container(props) {
@@ -61,11 +60,7 @@ function Container(props) {
           <Route path="/help" exact component={HelpComponent} />
           <Route path="/genre/:genreTitle" exact component={GenreComponent} />
           <Route path="/video" exact component={VideoComponent} />
-          <Route
-            path="/list/:occupation/:id"
-            exact
-            component={ListComponent}
-          />
+          <Route path="/list/:occupation/:id" exact component={ListComponent} />
           <Route path="/signin" exact component={SigninComponent} />
           <Route path="/signup" exact component={SignupComponent} />
         </Switch>

@@ -5,7 +5,7 @@
 //     config: {
 //       handler: async (request, reply) => {
 //         try {
-//           const newMovie = await Movie.findByPk(13);
+        //   const newMovie = await Movie.findByPk(13);
 
 //           await newMovie.addGenre(1, {
 //             through: { selfGranted: false },

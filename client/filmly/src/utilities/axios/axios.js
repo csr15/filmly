@@ -19,7 +19,6 @@ const request = async ({ method, url, body }) => {
       };
     }
 
-    console.log(requestModel);
 
     const { data } = await axios(requestModel);
     return data;

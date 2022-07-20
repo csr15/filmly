@@ -1,4 +1,5 @@
 const { Op } = require("sequelize");
+
 const { successReplyMessage, catchReplyMessage } = require("../helpers/helper");
 const { Sequelize } = require("../models");
 const db = require("../models");
@@ -17,7 +18,6 @@ exports.getAllActor = async (request, reply) => {
     });
 
     reply(successReplyMessage(data));
-
     logger.log("info", "Successfully got list of directors");
   } catch (error) {
     reply(catchReplyMessage());
@@ -31,6 +31,7 @@ exports.getAllMoviesofAllActor = async (request, reply) => {
       include: Movie,
       raw: true,
     });
+
     reply(successReplyMessage(data));
     logger.log("info", "Successfully got list of movies af all actor");
   } catch (error) {
@@ -41,8 +42,6 @@ exports.getAllMoviesofAllActor = async (request, reply) => {
 
 exports.getAllMoviesofActor = async (request, reply) => {
   try {
-    console.log("request.payload", request.payload);
-
     const { page, pageSize } = request.payload;
     const offset = page * pageSize;
     const data = await Actor.findAll({
@@ -53,6 +52,7 @@ exports.getAllMoviesofActor = async (request, reply) => {
       limit: pageSize,
       offset: offset,
     });
+
     reply(successReplyMessage(data));
     logger.log("info", "Successfully got list of movies af an actor");
   } catch (error) {
@@ -71,6 +71,7 @@ exports.getActorMovieCountByThisYear = async (request, reply) => {
         id: request.params.id,
       },
     });
+
     reply(successReplyMessage({ count: data }));
     logger.log("info", "Successfully got movie count of an actor");
   } catch (error) {

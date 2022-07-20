@@ -1,4 +1,5 @@
 const { Op } = require("sequelize");
+
 const { successReplyMessage, catchReplyMessage } = require("../helpers/helper");
 const { Sequelize } = require("../models");
 const db = require("../models");
@@ -23,7 +24,6 @@ exports.getAllMovie = async (request, reply) => {
     logger.log("info", "Successfully got list of movies");
   } catch (error) {
     reply(catchReplyMessage());
-
     logger.log("error", "Error getting list of movies", error);
   }
 };
@@ -35,8 +35,8 @@ exports.getMovie = async (request, reply) => {
         id: request.params.id,
       },
     });
-    reply(successReplyMessage(data));
 
+    reply(successReplyMessage(data));
     logger.log("info", "Successfully got a movie with ID");
   } catch (error) {
     reply(catchReplyMessage());
@@ -51,8 +51,8 @@ exports.getMovieReleasedThisMonth = async (request, reply) => {
         [Op.and]: [Sequelize.fn('EXTRACT(MONTH from "mov_year") =', 6)],
       },
     });
-    reply(successReplyMessage(data));
 
+    reply(successReplyMessage(data));
     logger.log("info", "Successfully got movies released this month");
   } catch (error) {
     reply(catchReplyMessage());
@@ -69,8 +69,8 @@ exports.getMovieByLanguage = async (request, reply) => {
         },
       },
     });
-    reply(successReplyMessage(data));
 
+    reply(successReplyMessage(data));
     logger.log("info", "Successfully got list of movies by languages");
   } catch (error) {
     reply(catchReplyMessage());
@@ -103,7 +103,6 @@ exports.addNewMovie = async (request, reply) => {
     });
 
     reply(successReplyMessage("", "Movie created successfully!"));
-
     logger.log("info", "Movie created successfully!");
   } catch (error) {
     reply(catchReplyMessage());
@@ -160,8 +159,9 @@ exports.getDataForHome = async (request, reply) => {
     };
 
     reply(successReplyMessage(data));
+    logger.log("info", "Data for home page retrieved successfully!");
   } catch (error) {
-    console.log(error);
+    logger.log("error", "Error creating a movie", error);
     reply(catchReplyMessage());
   }
 };
@@ -202,7 +202,9 @@ exports.getFullMovieDetails = async (request, reply) => {
     };
 
     reply(successReplyMessage(data));
+    logger.log("info", "Full movie details retrieved successfully!!");
   } catch (error) {
+    logger.log("error", "Error creating a movie", error);
     reply(catchReplyMessage());
   }
 };
@@ -248,8 +250,9 @@ exports.getMovieBySearchTerm = async (request, reply) => {
     }
 
     reply(successReplyMessage(data));
+    logger.log("info", "Got movie for search successfully!");
   } catch (error) {
-    console.log(error);
+    logger.log("error", "Error creating a movie", error);
     reply(catchReplyMessage());
   }
 };

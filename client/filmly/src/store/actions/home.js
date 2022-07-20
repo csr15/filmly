@@ -1,4 +1,6 @@
 import axios from "axios";
+
+import { API } from "../../utilities/constants/constants";
 import { HOME_DATA, MOVIE_DETAILS, ALL_MOVIE_OF_ACTOR } from "../actionTypes";
 
 export const getTopMoviesOfTop = () => {
@@ -6,7 +8,7 @@ export const getTopMoviesOfTop = () => {
     try {
       const { data } = await axios({
         method: "POST",
-        url: "http://localhost:8080/api/v1/movie/home",
+        url: `${API}/movie/home`,
         data: {
           gen1: "Action",
           gen2: "Thriller",
@@ -28,7 +30,7 @@ export const getMovieDetails = (id) => {
     try {
       const { data } = await axios({
         method: "GET",
-        url: `http://localhost:8080/api/v1/movie/details/${id}`,
+        url: `${API}/movie/details/${id}`,
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },
@@ -46,7 +48,7 @@ export const getAllMoviesOfActor = (id) => {
     try {
       const { data } = await axios({
         method: "POST",
-        url: `http://localhost:8080/api/v1/actor/movie/${id}`,
+        url: `${API}/actor/movie/${id}`,
         data: {
           page: 0,
           pageSize: 30,
@@ -56,7 +58,6 @@ export const getAllMoviesOfActor = (id) => {
         },
       });
 
-      console.log(data);
       dispatch({ type: ALL_MOVIE_OF_ACTOR, payload: data.payload.data });
     } catch (error) {
       dispatch({ type: "ERROR" });
@@ -69,13 +70,12 @@ export const getAllMoviesOfDirector = (id) => {
     try {
       const { data } = await axios({
         method: "GET",
-        url: `http://localhost:8080/api/v1/director/movie/${id}`,
+        url: `${API}/director/movie/${id}`,
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },
       });
 
-      console.log(data);
       dispatch({ type: ALL_MOVIE_OF_ACTOR, payload: data.payload.data });
     } catch (error) {
       dispatch({ type: "ERROR" });

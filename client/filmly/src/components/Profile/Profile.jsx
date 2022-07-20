@@ -1,5 +1,6 @@
 import React from "react";
 import { useHistory } from "react-router";
+
 import CustomAvatar from "../Avatar/Avatar";
 
 import "./Profile.css";

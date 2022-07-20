@@ -23,7 +23,7 @@ button:hover {
   outline: none;
 }
 
-.center, .f_home_movie_container .f_chevron_icon, .f_btn_solid {
+.center, .f_error .f_error_container, .f_btn_solid {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -70,43 +70,31 @@ button:hover {
   text-overflow: ellipsis;
 }
 
-.f_home_movie_container {
-  padding: 1rem 0 1rem 1rem;
-  margin-bottom: 30px;
-  overflow: visible;
+.f_error {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background: none;
+  z-index: 999;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
 }
-.f_home_movie_container .f_movie_card_sections {
-  position: relative;
-  padding: 0px 15px;
-}
-.f_home_movie_container::-webkit-scrollbar {
-  display: none;
-}
-.f_home_movie_container h1 {
-  font-size: 28px;
-  font-weight: 500;
-  margin: 20px 0px 20px 15px;
-  color: #ffffff;
-}
-.f_home_movie_container .f_chevron_icon {
+.f_error .f_error_container {
   position: absolute;
-  z-index: 99;
-  height: 100%;
-  cursor: pointer;
+  background: rgb(221, 68, 68);
+  z-index: 999;
+  transform: translate(-50%, -50%);
+  left: 10%;
+  bottom: 0%;
+  width: 250px;
+  padding: 15px 15px;
+  border-radius: 5px;
+  -webkit-animation: all 0.3s ease;
+          animation: all 0.3s ease;
 }
-.f_home_movie_container .f_chevron_icon i {
-  font-size: 3rem !important;
+.f_error .f_error_container p {
+  margin: 0;
   color: #ffffff;
-}
-.f_home_movie_container .f_chevron_left {
-  left: 0%;
-  top: 0%;
-  background: linear-gradient(90deg, rgb(0, 0, 0), rgba(0, 0, 0, 0));
-  transform: translate(0%, 0%);
-}
-.f_home_movie_container .f_chevron_right {
-  right: 0%;
-  top: 0%;
-  background: linear-gradient(-90deg, rgb(0, 0, 0), rgba(0, 0, 0, 0));
-  transform: translate(0%, 0%);
-}/*# sourceMappingURL=MovieRow.css.map */
+  font-weight: 500;
+}/*# sourceMappingURL=Error.css.map */

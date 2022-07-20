@@ -4,7 +4,6 @@ import { ScrollMenu } from "react-horizontal-scrolling-menu";
 import Arrow from "../Arrow/Arrow";
 import Modal from "../Modal/Modal";
 import MovieCard from "../MovieCard/MovieCard";
-import NavItem from "../NavItem/NavItem";
 
 import "./MovieRow.css";
 

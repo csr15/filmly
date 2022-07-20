@@ -37,7 +37,7 @@
       position: relative;
       cursor: pointer;
 
-      .f_profile {
+      .f_nav_profile {
         position: absolute;
         top: 140%;
         right: 100%;
@@ -48,7 +48,7 @@
         padding: 15px 10px;
         border-radius: 5px;
 
-        .f_profile_section {
+        .f_nav_profile_section {
           margin-bottom: 15px;
 
           &:last-child {

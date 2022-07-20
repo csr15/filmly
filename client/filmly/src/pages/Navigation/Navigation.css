@@ -64,7 +64,7 @@ button:hover {
   box-shadow: none;
 }
 
-.f_text_wrap, .f_nav_container .navbar-nav li .f_profile .f_profile_section p, .f_nav_container .navbar-nav li .f_profile .f_profile_section h6 {
+.f_text_wrap, .f_nav_container .navbar-nav li .f_nav_profile .f_nav_profile_section p, .f_nav_container .navbar-nav li .f_nav_profile .f_nav_profile_section h6 {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -102,7 +102,7 @@ button:hover {
   position: relative;
   cursor: pointer;
 }
-.f_nav_container .navbar-nav li .f_profile {
+.f_nav_container .navbar-nav li .f_nav_profile {
   position: absolute;
   top: 140%;
   right: 100%;
@@ -113,19 +113,19 @@ button:hover {
   padding: 15px 10px;
   border-radius: 5px;
 }
-.f_nav_container .navbar-nav li .f_profile .f_profile_section {
+.f_nav_container .navbar-nav li .f_nav_profile .f_nav_profile_section {
   margin-bottom: 15px;
 }
-.f_nav_container .navbar-nav li .f_profile .f_profile_section:last-child {
+.f_nav_container .navbar-nav li .f_nav_profile .f_nav_profile_section:last-child {
   border-bottom: none;
 }
-.f_nav_container .navbar-nav li .f_profile .f_profile_section h6 {
+.f_nav_container .navbar-nav li .f_nav_profile .f_nav_profile_section h6 {
   font-size: 14px;
   font-weight: 400px;
   color: #686b78;
   margin: 0;
 }
-.f_nav_container .navbar-nav li .f_profile .f_profile_section p {
+.f_nav_container .navbar-nav li .f_nav_profile .f_nav_profile_section p {
   margin: 0;
 }
 .f_nav_container .navbar-nav li p {

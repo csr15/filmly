@@ -11,11 +11,9 @@ exports.getAllGenre = async (request, reply) => {
     const data = await Genre.findAll();
 
     reply(successReplyMessage(data));
-
     logger.log("info", "Successfully got list of genres");
   } catch (error) {
     reply(catchReplyMessage());
-
     logger.log("error", "Error getting list of genres", error);
   }
 };
@@ -70,12 +68,11 @@ exports.addGenre = async (request, reply) => {
     await Genre.create({
       ...request.payload,
     });
-    reply(successReplyMessage("", "Genre added successfully!"));
 
+    reply(successReplyMessage("", "Genre added successfully!"));
     logger.log("info", "Successfully created a new genre");
   } catch (error) {
     reply(catchReplyMessage());
-
     logger.log("error", "Error while creating a new genre", error);
   }
 };

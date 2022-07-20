@@ -25,6 +25,7 @@
     z-index: 99;
     height: 100%;
     @extend .center;
+    cursor: pointer;
 
     i {
       font-size: 3rem !important;

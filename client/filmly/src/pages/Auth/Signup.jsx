@@ -10,6 +10,14 @@ import { RESET_SIGNUP } from "../../store/actionTypes";
 import "../../components/AuthBackdrop/AuthBackdrop.css";
 
 function Signup() {
+  const dispatch = useDispatch();
+  const history = useHistory();
+  const state = useSelector((state) => {
+    return {
+      auth: state.auth,
+    };
+  });
+
   const [userData, setUserData] = useState({
     mail: "",
     password: "",
@@ -19,6 +27,13 @@ function Signup() {
   const [isMailError, setIsMailError] = useState(false);
   const [isPasswordError, setIsPasswordError] = useState(false);
   const [isNameError, setIsNameError] = useState(false);
+
+  useEffect(() => {
+    if (state.auth.isSignedUp) {
+      history.push("/signin");
+      dispatch({ type: RESET_SIGNUP });
+    }
+  }, [state.auth]);
 
   const onChangeHandler = (name, e) => {
     if (name === "mail" && isMailError) setIsMailError(false);
@@ -34,8 +49,6 @@ function Signup() {
   const visibilityHandler = () => {
     setShowPassword(!showPassword);
   };
-
-  const dispatch = useDispatch();
 
   const signupHandler = (e) => {
     e.preventDefault();
@@ -62,21 +75,6 @@ function Signup() {
       dispatch(signupAction(userData));
     }
   };
-
-  const history = useHistory();
-
-  const state = useSelector((state) => {
-    return {
-      auth: state.auth,
-    };
-  });
-
-  useEffect(() => {
-    if (state.auth.isSignedUp) {
-      history.push("/signin");
-      dispatch({type: RESET_SIGNUP})
-    }
-  }, [state.auth]);
 
   return (
     <AuthBackdrop>

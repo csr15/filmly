@@ -1,4 +1,5 @@
 import axios from "axios";
+
 import { API } from "../../utilities/constants/constants";
 import { ALL_GENRES, ALL_MOVIES_OF_GENRE, ERROR } from "../actionTypes";
 

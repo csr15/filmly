@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useHistory } from "react-router";
 
 import Video from "../../assets/videos/trailer.mp4";
+
 import "./VideoPlayer.css";
 
 function VideoPlayer() {

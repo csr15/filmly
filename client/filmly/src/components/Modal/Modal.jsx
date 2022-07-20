@@ -1,24 +1,36 @@
 import React, { useEffect, useState } from "react";
-import Button from "../Button/Button";
+import { useDispatch, useSelector } from "react-redux";
+import { useHistory } from "react-router";
 
-import "./Modal.css";
+import Button from "../Button/Button";
 import Play from "../../assets/svg/play.svg";
 import Backdrop from "../Backdrop/Backdrop";
-import { useDispatch, useSelector } from "react-redux";
 import { getMovieDetails } from "../../store/actions/home";
 
-const SpanName = ({ name }) => <span>{name}, </span>;
+import "./Modal.css";
 
-function Modal({ hideModal, width, height, movieId }) {
-  const [movieDetails, setMovieDetails] = useState("");
+const SpanName = ({ name, onClick, hideModal }) => (
+  <span
+    onClick={() => {
+      hideModal();
+      onClick();
+    }}
+  >
+    {name},
+  </span>
+);
 
+function Modal({ hideModal, movieId }) {
   const dispatch = useDispatch();
+  const history = useHistory();
 
   const state = useSelector((state) => {
     return {
       home: state.home,
     };
   });
+
+  const [movieDetails, setMovieDetails] = useState("");
 
   useEffect(() => {
     dispatch(getMovieDetails(movieId));
@@ -66,7 +78,13 @@ function Modal({ hideModal, width, height, movieId }) {
                 <span className="f_footer_detail_title">Cast: </span>
                 {movieDetails.cast.map((item, index) => {
                   return (
-                    <SpanName name={item.act_name} key={index} index={index} />
+                    <SpanName
+                      name={item.act_name}
+                      key={index}
+                      index={index}
+                      onClick={() => history.push(`/list/actor/${item.id}`)}
+                      hideModal={hideModal}
+                    />
                   );
                 })}
               </div>
@@ -74,7 +92,13 @@ function Modal({ hideModal, width, height, movieId }) {
                 <span className="f_footer_detail_title">Director: </span>
                 {movieDetails.director.directors.map((item, index) => {
                   return (
-                    <SpanName name={item.dir_name} key={index} index={index} />
+                    <SpanName
+                      name={item.dir_name}
+                      key={index}
+                      index={index}
+                      onClick={() => history.push(`/list/director/${item.id}`)}
+                      hideModal={hideModal}
+                    />
                   );
                 })}{" "}
               </div>
@@ -82,7 +106,13 @@ function Modal({ hideModal, width, height, movieId }) {
                 <span className="f_footer_detail_title">Genres: </span>
                 {movieDetails.genre.map((item, index) => {
                   return (
-                    <SpanName name={item.gen_title} key={index} index={index} />
+                    <SpanName
+                      name={item.gen_title}
+                      key={index}
+                      index={index}
+                      onClick={() => history.push(`/genre/${item.gen_title}`)}
+                      hideModal={hideModal}
+                    />
                   );
                 })}
               </div>

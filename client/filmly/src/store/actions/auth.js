@@ -1,14 +1,12 @@
 import axios from "axios";
+
 import { API } from "../../utilities/constants/constants";
 import { SIGIN_IN, ERROR, USER_DETAILS } from "../actionTypes";
 
 export const loginAction = (userData) => {
   return async (dispatch) => {
     try {
-      const { data } = await axios.post(
-        "http://localhost:8080/api/v1/login",
-        userData
-      );
+      const { data } = await axios.post(`${API}/login`, userData);
 
       if (data.type === "invalidCredentials") {
         dispatch({ type: "INVALID_CREDENTIALS" });
@@ -31,35 +29,13 @@ export const loginAction = (userData) => {
 export const signupAction = (userData) => {
   return async (dispatch) => {
     try {
-      const { data } = await axios.post(
-        "http://localhost:8080/api/v1/signup",
-        userData
-      );
+      const { data } = await axios.post(`${API}/signup`, userData);
 
       if (data.type === "success") {
         dispatch({ type: "SIGNUP", payload: data });
       }
     } catch (error) {
       dispatch({ type: "ERROR" });
-    }
-  };
-};
-
-export const validateToken = () => {
-  return async (dispatch) => {
-    try {
-      const { data } = await axios.get(
-        "http://localhost:8080/api/v1/genre/all",
-        {
-          headers: {
-            "Content-Type": "application/x-www-form-urlencoded",
-            Authorization: `Bearer ${localStorage.getItem("token")}`,
-          },
-        }
-      );
-      console.log(data);
-    } catch (error) {
-      dispatch({ type: ERROR });
     }
   };
 };
@@ -80,3 +56,19 @@ export const getUserDetails = (id) => {
     }
   };
 };
+
+// export const validateToken = () => {
+//   return async (dispatch) => {
+//     try {
+//       const { data } = await axios.get(`${API}/genre/all`, {
+//         headers: {
+//           "Content-Type": "application/x-www-form-urlencoded",
+//           Authorization: `Bearer ${localStorage.getItem("token")}`,
+//         },
+//       });
+//       console.log(data);
+//     } catch (error) {
+//       dispatch({ type: ERROR });
+//     }
+//   };
+// };

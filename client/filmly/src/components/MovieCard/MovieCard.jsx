@@ -2,7 +2,7 @@ import React from "react";
 
 import "./MovieCard.css";
 
-function MovieCard({ item, setMovieHandler, width, height }) {
+function MovieCard({ item, setMovieHandler, width, height, styles }) {
   return (
     <div
       className="f_movie_card"
@@ -15,6 +15,7 @@ function MovieCard({ item, setMovieHandler, width, height }) {
     `,
         width: width ? width : "300px",
         height: height ? height : "150px",
+        ...styles
       }}
     >
       <h5>{item.mov_title}</h5>

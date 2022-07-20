@@ -1,22 +1,16 @@
 import React, { useEffect, useState } from "react";
-import { useHistory } from "react-router";
 import { useDispatch, useSelector } from "react-redux";
 
 import Play from "../../assets/svg/play.svg";
 import Info from "../../assets/svg/info.svg";
 import Button from "../../components/Button/Button";
-
 import MovieRow from "../../components/MovieRow/MovieRow";
-
-import "./Home.css";
-import { getTopMoviesOfTop, validateToken } from "../../store";
+import { getTopMoviesOfTop } from "../../store";
 import Modal from "../../components/Modal/Modal";
 
-function Home() {
-  const [movieData, setMovieData] = useState({});
-  const [genres, setGenres] = useState("");
-  const [movieModal, setMovieModal] = useState(false);
+import "./Home.css";
 
+function Home() {
   const dispatch = useDispatch();
 
   const { home, auth } = useSelector((state) => {
@@ -25,6 +19,10 @@ function Home() {
       auth: state.auth,
     };
   });
+
+  const [movieData, setMovieData] = useState({});
+  const [genres, setGenres] = useState("");
+  const [movieModal, setMovieModal] = useState(false);
 
   useEffect(() => {
     if (auth.isAuthenticated) {

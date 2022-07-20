@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router";
+
 import Modal from "../../components/Modal/Modal";
 import MovieCard from "../../components/MovieCard/MovieCard";
 import {
@@ -13,7 +14,6 @@ import "./List.css";
 function List() {
   const { id, occupation } = useParams();
   const dispatch = useDispatch();
-
   const { home } = useSelector((state) => {
     return {
       home: state.home,

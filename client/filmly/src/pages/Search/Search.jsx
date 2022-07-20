@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
+
 import Modal from "../../components/Modal/Modal";
 import MovieCard from "../../components/MovieCard/MovieCard";
 import Profile from "../../components/Profile/Profile";
@@ -15,20 +16,19 @@ const Option = ({ option, onClickHandler }) => (
 );
 
 function Search() {
+  const dispatch = useDispatch();
+  const state = useSelector((state) => {
+    return {
+      search: state.search,
+    };
+  });
+
   const [selectedOption, setSelectedOption] = useState("Movie");
   const [searchTerm, setSearchTerm] = useState("");
   const [data, setData] = useState([]);
   const [movieModal, setMovieModal] = useState(false);
   const [movieId, setMovieId] = useState("");
   const [page, setPage] = useState(0);
-
-  const dispatch = useDispatch();
-
-  const state = useSelector((state) => {
-    return {
-      search: state.search,
-    };
-  });
 
   useEffect(() => {
     if (searchTerm !== "") {
@@ -39,6 +39,7 @@ function Search() {
       return () => clearTimeout(delayDebounceFn);
     } else {
       setData([]);
+      dispatch({ type: RESET_SEARCH });
     }
   }, [searchTerm]);
 
@@ -53,7 +54,11 @@ function Search() {
   }, [state.search]);
 
   useEffect(() => {
-    if (page > 0) {
+    if (
+      page > 0 &&
+      state.search.searchData &&
+      state.search.searchData.length > 0
+    ) {
       dispatch(searchHandler(searchTerm, selectedOption, page));
     }
   }, [page]);
@@ -82,10 +87,6 @@ function Search() {
   };
 
   window.onscroll = function (ev) {
-    console.log(
-      window.innerHeight + window.scrollY,
-      document.body.offsetHeight
-    );
     if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 1) {
       setPage(page + 1);
     }
@@ -133,14 +134,19 @@ function Search() {
       <div className="f_search_result">
         {selectedOption === "Movie"
           ? data &&
-            data.length > 0 && (
-              <MovieCard
-                item={data[0]}
-                setMovieHandler={() => movieCardHandler(data[0].id)}
-                width="700px"
-                height="400px"
-              />
-            )
+            data.length > 0 &&
+            data.map((item, index) => {
+              return (
+                <MovieCard
+                  item={item}
+                  setMovieHandler={() => movieCardHandler(item.id)}
+                  key={index}
+                  styles={{
+                    marginTop: "30px",
+                  }}
+                />
+              );
+            })
           : selectedOption === "Director"
           ? data &&
             data.length > 0 &&
