@@ -1,4 +1,4 @@
-export { loginAction, signupAction, validateToken } from "./actions/auth";
+export { loginAction, signupAction } from "./actions/auth";
 
 export { getTopMoviesOfTop, getAllMoviesOfActor, getMovieDetails } from "./actions/home";
 

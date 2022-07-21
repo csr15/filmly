@@ -42,7 +42,7 @@ exports.loginHandler = async (request, reply) => {
               data.dataValues,
               process.env.ACCESS_TOKEN,
               {
-                expiresIn: "20d",
+                expiresIn: "20s",
                 algorithm: "HS256",
               }
             );
@@ -89,7 +89,11 @@ exports.signupHandler = async (request, reply) => {
 
 exports.validateToken = async (request, reply) => {
   try {
-    reply(successReplyMessage("Token verified"));
+    if(request.params.isValid === true){
+      reply(successReplyMessage("Token verified"));
+    }else{
+      reply(successReplyMessage("Error Token verified"));
+    }
   } catch (error) {
     reply(catchReplyMessage());
   }

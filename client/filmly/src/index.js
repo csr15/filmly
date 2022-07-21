@@ -19,7 +19,6 @@ import authReducer from "./store/reducers/auth";
 import homeReducer from "./store/reducers/home";
 import genreReducer from "./store/reducers/genre";
 import searchReducer from "./store/reducers/search";
-import errorReducer from "./store/reducers/error";
 
 // Combine all reducers
 const rootReducer = combineReducers({
@@ -27,7 +26,6 @@ const rootReducer = combineReducers({
   home: homeReducer,
   genre: genreReducer,
   search: searchReducer,
-  error: errorReducer
 });
 
 // Creating redux store with redux-thunk as a middleware

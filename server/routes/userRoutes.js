@@ -25,7 +25,7 @@ exports.userRoutes = [
   },
   {
     method: "GET",
-    path: `${API_VERSION}/validateToken`,
+    path: `${API_VERSION}/validateToken/{isValid}`,
     config: {
       cors: true,
     },

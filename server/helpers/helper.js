@@ -6,8 +6,10 @@ const {
   FORBIDDEN,
   SERVER_ERROR,
 } = require("../constants/constants");
+const client = require("../redis/index");
 
 const jwt = require("jsonwebtoken");
+const logger = require("../logger");
 
 exports.successReplyMessage = (data, message) => {
   return {
@@ -72,5 +74,35 @@ exports.validateTokenHandler = (request) => {
     } else {
       reply(catchReplyMessage("Please provide access token"));
     }
+  }
+};
+
+exports.rateLimiter = async (request, reply) => {
+  try {
+    const ip = request.info.remoteAddress;
+
+    const getData = await client.get(ip);
+    if (getData !== null) {
+      const count = JSON.parse(getData);
+
+      if (count == 10) {
+        reply({ error: 1, message: "Throttle Limit exceeded." });
+        logger.log("info", "Throttle limit exceeded.");
+      } else {
+        await client.incr(ip);
+        return reply.continue();
+      }
+    } else {
+      await client.set(ip, 0);
+      await client.expire(ip, 30);
+      logger.log(
+        "info",
+        `Rate limit for ${request.info.remoteAddress} limit exceeded.`
+      );
+      return reply.continue();
+    }
+  } catch (error) {
+    logger.log("error", "Error while checking rate limit");
+    return reply.continue();
   }
 };

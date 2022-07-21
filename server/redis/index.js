@@ -8,10 +8,11 @@ let client;
     client = redis.createClient();
     await client.connect();
 
-    logger.log("info", "Redis connected successfully");
+    console.log("Redis connected successfully.");
+    logger.log("info", "Redis connected successfully.");
   } catch (error) {
-    console.log("Error");
-    logger.log("error", "Error on connecting redis");
+    console.log("Error while connecting to Redis.");
+    logger.log("error", "Error on connecting redis.");
   }
 })();
 

@@ -22,6 +22,7 @@ export const getTopMoviesOfTop = () => {
       dispatch({ type: HOME_DATA, payload: data.payload.data });
     } catch (error) {
       dispatch({ type: "ERROR" });
+      console.log(error)
     }
   };
 };

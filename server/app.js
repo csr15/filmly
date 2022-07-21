@@ -1,28 +1,38 @@
 const Hapi = require("hapi");
-const logger = require("./logger");
 
-// Routes
-const { actorRoutes } = require("./routes/actorRoutes");
-const { directorRoutes } = require("./routes/directorRoutes");
-const { genreRoutes } = require("./routes/genreRoutes");
-const { movieRoutes } = require("./routes/movieRoutes");
-const { userRoutes } = require("./routes/userRoutes");
+const logger = require("./logger");
+const elasticClient = require("./elasticSearch/index");
+const { rateLimiter } = require("./helpers/helper");
+const routes = require("./routes");
+
+//Initialize Elastic Search
+elasticClient
+  .info()
+  .then((response) => console.log("Elastic search connected successfully!"))
+  .catch((error) => console.error(error));
 
 // Environment Initialization
 require("dotenv").config({ path: "./config/.env" });
 
+//Creating Hapi Server
 const server = new Hapi.Server();
-
 server.connection({
   host: process.env.LOCAL_HOST,
   port: process.env.PORT,
 });
 
-server.route(movieRoutes);
-server.route(genreRoutes);
-server.route(directorRoutes);
-server.route(actorRoutes);
-server.route(userRoutes);
+//Routes
+server.route(routes);
+
+//Rate limiter
+server.ext("onRequest", async (request, reply) => {
+  rateLimiter(request, reply);
+});
+
+server.ext("onRequest", async (request, reply) => {
+  logger.log("info", `Request to: ${request.url.pathname}`);
+  reply.continue();
+});
 
 server.start((err) => {
   if (err) {

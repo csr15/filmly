@@ -63,7 +63,10 @@ exports.movieRoutes = [
     method: "POST",
     path: `${API_VERSION}/movie/home`,
     config: {
-      cors: true,
+      cors: {
+        origin: ["*"],
+        additionalHeaders: ["*"],
+      },
     },
     handler: getDataForHome,
   },
@@ -71,7 +74,10 @@ exports.movieRoutes = [
     method: "GET",
     path: `${API_VERSION}/movie/details/{id}`,
     config: {
-      cors: true,
+      cors: {
+        origin: ["*"],
+        additionalHeaders: ["*"],
+      },
     },
     handler: getFullMovieDetails,
   },

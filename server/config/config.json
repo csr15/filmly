@@ -1,0 +1,14 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "shadow@15",
+    "database": "filmly",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "elastic": {
+    "cloudID": "filmly:dXMtY2VudHJhbDEuZ2NwLmNsb3VkLmVzLmlvJDIzYTA5MWY5ODE1NjRhZTJhMzVkNjMzYjdiZGMyN2I0JGQ2MTc2NWI0YmQyMjQ0MDQ5MWU3NWY5NGMwZjNjMDg4",
+    "username": "elastic",
+    "password": "3M5JPf6ZLgjtAMg8vjsAir5T"
+  }
+}

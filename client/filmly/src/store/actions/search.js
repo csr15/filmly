@@ -1,5 +1,6 @@
 import axios from "axios";
 
+import { API } from "../../utilities/constants/constants";
 const { SEARCH } = require("../actionTypes");
 
 export const searchHandler = (searchTerm, selectedOption) => {
