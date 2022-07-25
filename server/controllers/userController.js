@@ -8,13 +8,14 @@ const {
   accessTokenExpired,
 } = require("../helpers/helper");
 const logger = require("../logger");
-const db = require("../models");
+
+const { UserFindOne, UserCreate } = require("../utils/dbQuery");
 
 require("dotenv").config({ path: "../config/.env" });
 
 exports.loginHandler = async (request, reply) => {
   try {
-    const data = await db.users.findOne({
+    const data = await UserFindOne({
       where: {
         mail: request.payload.mail,
       },
@@ -72,7 +73,7 @@ exports.signupHandler = async (request, reply) => {
     const { name, password, mail } = request.payload;
     bcrypt.hash(password, 10, async (err, hash) => {
       if (err) throw Error;
-      await db.users.create({
+      await UserCreate({
         id: uuidv4(),
         name: name,
         password: hash,
@@ -117,7 +118,7 @@ exports.validateToken = async (request, reply) => {
 
 exports.getUserDetails = async (request, reply) => {
   try {
-    const data = await db.users.findOne({
+    const data = await UserFindOne({
       where: {
         id: request.params.id,
       },

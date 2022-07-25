@@ -27367,3 +27367,483 @@
 {"level":"info","message":"Rate limit for 127.0.0.1 limit exceeded.","timestamp":"2022-07-25T05:57:16.806Z"}
 {"level":"info","message":"Request to: /api/v1/movie/search","timestamp":"2022-07-25T05:57:16.807Z"}
 {"level":"info","message":"Got movie for search successfully!","timestamp":"2022-07-25T05:57:16.828Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T07:52:58.101Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T07:52:58.114Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T07:54:38.823Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T07:54:38.837Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T08:20:40.629Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T08:20:40.644Z"}
+{"level":"info","message":"Rate limit for 127.0.0.1 limit exceeded.","timestamp":"2022-07-25T08:20:42.511Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T08:20:42.511Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T08:20:42.524Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T08:20:42.535Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T08:20:42.683Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T08:20:42.685Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T08:20:42.700Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T08:20:42.700Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T08:20:42.719Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T08:20:42.733Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T08:20:58.613Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T08:20:58.630Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T08:21:37.777Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T08:21:37.797Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T08:21:58.137Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T08:21:58.156Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T08:21:59.145Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T08:21:59.163Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T08:22:48.218Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T08:22:48.234Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T08:23:32.717Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T08:23:32.737Z"}
+{"level":"info","message":"Rate limit for 127.0.0.1 limit exceeded.","timestamp":"2022-07-25T08:23:38.362Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T08:23:38.363Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T08:23:38.378Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T08:23:38.444Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T08:23:38.447Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T08:23:38.455Z"}
+{"level":"error","message":"Error creating a movie Found non-callable @@iterator","stack":"TypeError: Found non-callable @@iterator\n    at exports.MovieFindAll (/Users/ragulcs/Desktop/filmly/server/utils/query.js:6:28)\n    at exports.getDataForHome (/Users/ragulcs/Desktop/filmly/server/controllers/movieController.js:122:23)\n    at Object.internals.handler (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:99:36)\n    at /Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:30:23\n    at module.exports.internals.Protect.internals.Protect.run (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/protect.js:62:12)\n    at exports.execute (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:24:22)\n    at each (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/request.js:380:16)\n    at iterate (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/node_modules/items/lib/index.js:36:13)\n    at done (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/node_modules/items/lib/index.js:28:25)\n    at postValidate (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/validation.js:68:20)","timestamp":"2022-07-25T08:23:38.463Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T08:23:41.038Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T08:23:41.043Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T08:23:41.237Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T08:23:41.238Z"}
+{"level":"error","message":"Error creating a movie Found non-callable @@iterator","stack":"TypeError: Found non-callable @@iterator\n    at exports.MovieFindAll (/Users/ragulcs/Desktop/filmly/server/utils/query.js:6:28)\n    at exports.getDataForHome (/Users/ragulcs/Desktop/filmly/server/controllers/movieController.js:122:23)\n    at Object.internals.handler (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:99:36)\n    at /Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:30:23\n    at module.exports.internals.Protect.internals.Protect.run (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/protect.js:62:12)\n    at exports.execute (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:24:22)\n    at each (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/request.js:380:16)\n    at iterate (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/node_modules/items/lib/index.js:36:13)\n    at done (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/node_modules/items/lib/index.js:28:25)\n    at postValidate (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/validation.js:68:20)","timestamp":"2022-07-25T08:23:41.244Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T08:23:41.254Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T08:24:03.911Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T08:24:03.925Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T08:24:06.963Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T08:24:06.976Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T08:24:07.125Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T08:24:07.129Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T08:24:07.138Z"}
+{"level":"error","message":"Error creating a movie Found non-callable @@iterator","stack":"TypeError: Found non-callable @@iterator\n    at exports.MovieFindAll (/Users/ragulcs/Desktop/filmly/server/utils/query.js:6:28)\n    at exports.getDataForHome (/Users/ragulcs/Desktop/filmly/server/controllers/movieController.js:122:29)\n    at Object.internals.handler (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:99:36)\n    at /Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:30:23\n    at module.exports.internals.Protect.internals.Protect.run (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/protect.js:62:12)\n    at exports.execute (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:24:22)\n    at each (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/request.js:380:16)\n    at iterate (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/node_modules/items/lib/index.js:36:13)\n    at done (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/node_modules/items/lib/index.js:28:25)\n    at postValidate (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/validation.js:68:20)","timestamp":"2022-07-25T08:24:07.144Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T08:24:11.078Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T08:24:11.093Z"}
+{"level":"info","message":"Rate limit for 127.0.0.1 limit exceeded.","timestamp":"2022-07-25T08:27:16.587Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T08:27:16.588Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T08:27:16.598Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T08:27:16.617Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T08:27:16.630Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T08:27:16.639Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T08:27:16.645Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T08:27:16.689Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T08:27:16.701Z"}
+{"level":"error","message":"Error creating a movie Found non-callable @@iterator","stack":"TypeError: Found non-callable @@iterator\n    at exports.MovieFindAll (/Users/ragulcs/Desktop/filmly/server/utils/query.js:6:28)\n    at exports.getDataForHome (/Users/ragulcs/Desktop/filmly/server/controllers/movieController.js:122:29)\n    at Object.internals.handler (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:99:36)\n    at /Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:30:23\n    at module.exports.internals.Protect.internals.Protect.run (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/protect.js:62:12)\n    at exports.execute (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:24:22)\n    at each (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/request.js:380:16)\n    at iterate (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/node_modules/items/lib/index.js:36:13)\n    at done (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/node_modules/items/lib/index.js:28:25)\n    at postValidate (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/validation.js:68:20)","timestamp":"2022-07-25T08:27:16.706Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T08:30:37.180Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T08:30:37.190Z"}
+{"level":"info","message":"Rate limit for 127.0.0.1 limit exceeded.","timestamp":"2022-07-25T08:30:40.206Z"}
+{"level":"info","message":"Request to: /api/v1/user/0f9a7c00-add0-42e2-9af1-5e7b7243aa5f","timestamp":"2022-07-25T08:30:40.206Z"}
+{"level":"info","message":"Request to: /api/v1/user/0f9a7c00-add0-42e2-9af1-5e7b7243aa5f","timestamp":"2022-07-25T08:30:40.216Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T08:30:40.228Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T08:30:40.258Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T08:30:40.264Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T08:30:40.267Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T08:30:40.271Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T08:30:40.274Z"}
+{"level":"error","message":"Error creating a movie Found non-callable @@iterator","stack":"TypeError: Found non-callable @@iterator\n    at exports.MovieFindAll (/Users/ragulcs/Desktop/filmly/server/utils/query.js:6:28)\n    at exports.getDataForHome (/Users/ragulcs/Desktop/filmly/server/controllers/movieController.js:122:29)\n    at Object.internals.handler (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:99:36)\n    at /Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:30:23\n    at module.exports.internals.Protect.internals.Protect.run (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/protect.js:62:12)\n    at exports.execute (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:24:22)\n    at each (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/request.js:380:16)\n    at iterate (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/node_modules/items/lib/index.js:36:13)\n    at done (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/node_modules/items/lib/index.js:28:25)\n    at postValidate (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/validation.js:68:20)","timestamp":"2022-07-25T08:30:40.279Z"}
+{"level":"info","message":"Request to: /api/v1/user/0f9a7c00-add0-42e2-9af1-5e7b7243aa5f","timestamp":"2022-07-25T08:30:43.005Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T08:30:43.009Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T08:30:43.019Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T08:30:43.022Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T08:30:43.030Z"}
+{"level":"error","message":"Error creating a movie Found non-callable @@iterator","stack":"TypeError: Found non-callable @@iterator\n    at exports.MovieFindAll (/Users/ragulcs/Desktop/filmly/server/utils/query.js:6:28)\n    at exports.getDataForHome (/Users/ragulcs/Desktop/filmly/server/controllers/movieController.js:122:29)\n    at Object.internals.handler (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:99:36)\n    at /Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:30:23\n    at module.exports.internals.Protect.internals.Protect.run (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/protect.js:62:12)\n    at exports.execute (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:24:22)\n    at each (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/request.js:380:16)\n    at iterate (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/node_modules/items/lib/index.js:36:13)\n    at done (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/node_modules/items/lib/index.js:28:25)\n    at postValidate (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/validation.js:68:20)","timestamp":"2022-07-25T08:30:43.034Z"}
+{"level":"info","message":"Request to: /api/v1/user/0f9a7c00-add0-42e2-9af1-5e7b7243aa5f","timestamp":"2022-07-25T08:30:51.132Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T08:30:51.137Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T08:30:51.221Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T08:30:51.222Z"}
+{"level":"error","message":"Error creating a movie Found non-callable @@iterator","stack":"TypeError: Found non-callable @@iterator\n    at exports.MovieFindAll (/Users/ragulcs/Desktop/filmly/server/utils/query.js:6:28)\n    at exports.getDataForHome (/Users/ragulcs/Desktop/filmly/server/controllers/movieController.js:122:29)\n    at Object.internals.handler (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:99:36)\n    at /Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:30:23\n    at module.exports.internals.Protect.internals.Protect.run (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/protect.js:62:12)\n    at exports.execute (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:24:22)\n    at each (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/request.js:380:16)\n    at iterate (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/node_modules/items/lib/index.js:36:13)\n    at done (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/node_modules/items/lib/index.js:28:25)\n    at postValidate (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/validation.js:68:20)","timestamp":"2022-07-25T08:30:51.225Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T08:30:51.227Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T08:31:50.072Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T08:31:50.082Z"}
+{"level":"info","message":"Rate limit for 127.0.0.1 limit exceeded.","timestamp":"2022-07-25T08:31:51.167Z"}
+{"level":"info","message":"Request to: /api/v1/user/0f9a7c00-add0-42e2-9af1-5e7b7243aa5f","timestamp":"2022-07-25T08:31:51.167Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T08:31:51.183Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T08:31:51.262Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T08:31:51.264Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T08:31:51.285Z"}
+{"level":"error","message":"Error creating a movie Found non-callable @@iterator","stack":"TypeError: Found non-callable @@iterator\n    at exports.MovieFindAll (/Users/ragulcs/Desktop/filmly/server/utils/query.js:6:28)\n    at exports.getDataForHome (/Users/ragulcs/Desktop/filmly/server/controllers/movieController.js:122:29)\n    at Object.internals.handler (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:99:36)\n    at /Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:30:23\n    at module.exports.internals.Protect.internals.Protect.run (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/protect.js:62:12)\n    at exports.execute (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:24:22)\n    at each (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/request.js:380:16)\n    at iterate (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/node_modules/items/lib/index.js:36:13)\n    at done (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/node_modules/items/lib/index.js:28:25)\n    at postValidate (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/validation.js:68:20)","timestamp":"2022-07-25T08:31:51.291Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T08:32:03.320Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T08:32:03.339Z"}
+{"level":"info","message":"Request to: /api/v1/user/0f9a7c00-add0-42e2-9af1-5e7b7243aa5f","timestamp":"2022-07-25T08:32:05.530Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T08:32:05.544Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T08:32:05.636Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T08:32:05.641Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T08:32:05.668Z"}
+{"level":"error","message":"Error creating a movie Found non-callable @@iterator","stack":"TypeError: Found non-callable @@iterator\n    at exports.MovieFindAll (/Users/ragulcs/Desktop/filmly/server/utils/query.js:6:28)\n    at exports.getDataForHome (/Users/ragulcs/Desktop/filmly/server/controllers/movieController.js:122:29)\n    at Object.internals.handler (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:99:36)\n    at /Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:30:23\n    at module.exports.internals.Protect.internals.Protect.run (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/protect.js:62:12)\n    at exports.execute (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:24:22)\n    at each (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/request.js:380:16)\n    at iterate (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/node_modules/items/lib/index.js:36:13)\n    at done (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/node_modules/items/lib/index.js:28:25)\n    at postValidate (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/validation.js:68:20)","timestamp":"2022-07-25T08:32:05.674Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T08:32:18.855Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T08:32:18.871Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T08:32:56.152Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T08:32:56.167Z"}
+{"level":"info","message":"Rate limit for 127.0.0.1 limit exceeded.","timestamp":"2022-07-25T08:32:56.452Z"}
+{"level":"info","message":"Request to: /api/v1/user/0f9a7c00-add0-42e2-9af1-5e7b7243aa5f","timestamp":"2022-07-25T08:32:56.452Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T08:32:56.470Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T08:32:56.527Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T08:32:56.533Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T08:32:56.542Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T08:32:56.611Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T08:33:31.387Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T08:33:31.402Z"}
+{"level":"info","message":"Request to: /api/v1/user/0f9a7c00-add0-42e2-9af1-5e7b7243aa5f","timestamp":"2022-07-25T08:33:31.881Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T08:33:31.895Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T08:33:31.934Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T08:33:31.939Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T08:33:31.958Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T08:33:31.976Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T08:33:37.917Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T08:33:37.936Z"}
+{"level":"info","message":"Request to: /api/v1/user/0f9a7c00-add0-42e2-9af1-5e7b7243aa5f","timestamp":"2022-07-25T08:33:39.233Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T08:33:39.247Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T08:33:39.372Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T08:33:39.372Z"}
+{"level":"error","message":"Error creating a movie Found non-callable @@iterator","stack":"TypeError: Found non-callable @@iterator\n    at exports.MovieFindAll (/Users/ragulcs/Desktop/filmly/server/utils/query.js:6:28)\n    at exports.getDataForHome (/Users/ragulcs/Desktop/filmly/server/controllers/movieController.js:122:29)\n    at Object.internals.handler (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:99:36)\n    at /Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:30:23\n    at module.exports.internals.Protect.internals.Protect.run (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/protect.js:62:12)\n    at exports.execute (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:24:22)\n    at each (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/request.js:380:16)\n    at iterate (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/node_modules/items/lib/index.js:36:13)\n    at done (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/node_modules/items/lib/index.js:28:25)\n    at postValidate (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/validation.js:68:20)","timestamp":"2022-07-25T08:33:39.376Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T08:33:39.378Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T08:33:49.909Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T08:33:49.928Z"}
+{"level":"info","message":"Request to: /api/v1/user/0f9a7c00-add0-42e2-9af1-5e7b7243aa5f","timestamp":"2022-07-25T08:33:50.115Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T08:33:50.133Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T08:33:50.180Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T08:33:50.189Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T08:33:50.215Z"}
+{"level":"error","message":"Error creating a movie Found non-callable @@iterator","stack":"TypeError: Found non-callable @@iterator\n    at exports.MovieFindAll (/Users/ragulcs/Desktop/filmly/server/utils/query.js:6:28)\n    at exports.getDataForHome (/Users/ragulcs/Desktop/filmly/server/controllers/movieController.js:122:29)\n    at Object.internals.handler (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:99:36)\n    at /Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:30:23\n    at module.exports.internals.Protect.internals.Protect.run (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/protect.js:62:12)\n    at exports.execute (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:24:22)\n    at each (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/request.js:380:16)\n    at iterate (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/node_modules/items/lib/index.js:36:13)\n    at done (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/node_modules/items/lib/index.js:28:25)\n    at postValidate (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/validation.js:68:20)","timestamp":"2022-07-25T08:33:50.232Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T08:34:31.710Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T08:34:31.722Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T08:34:37.825Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T08:34:37.842Z"}
+{"level":"info","message":"Rate limit for 127.0.0.1 limit exceeded.","timestamp":"2022-07-25T08:34:43.264Z"}
+{"level":"info","message":"Request to: /api/v1/user/0f9a7c00-add0-42e2-9af1-5e7b7243aa5f","timestamp":"2022-07-25T08:34:43.264Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T08:34:43.280Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T08:34:43.338Z"}
+{"level":"error","message":"Error creating a movie Found non-callable @@iterator","stack":"TypeError: Found non-callable @@iterator\n    at exports.MovieFindAll (/Users/ragulcs/Desktop/filmly/server/utils/query.js:6:28)\n    at exports.getDataForHome (/Users/ragulcs/Desktop/filmly/server/controllers/movieController.js:122:29)\n    at Object.internals.handler (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:99:36)\n    at /Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:30:23\n    at module.exports.internals.Protect.internals.Protect.run (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/protect.js:62:12)\n    at exports.execute (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:24:22)\n    at each (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/request.js:380:16)\n    at iterate (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/node_modules/items/lib/index.js:36:13)\n    at done (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/node_modules/items/lib/index.js:28:25)\n    at postValidate (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/validation.js:68:20)","timestamp":"2022-07-25T08:34:43.345Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T08:34:43.360Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T08:34:43.363Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T08:35:09.880Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T08:35:09.891Z"}
+{"level":"info","message":"Request to: /api/v1/user/0f9a7c00-add0-42e2-9af1-5e7b7243aa5f","timestamp":"2022-07-25T08:35:10.982Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T08:35:10.996Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T08:35:11.059Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T08:35:11.066Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T08:35:11.074Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T08:35:11.107Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T08:35:23.696Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T08:35:23.715Z"}
+{"level":"info","message":"Request to: /api/v1/user/0f9a7c00-add0-42e2-9af1-5e7b7243aa5f","timestamp":"2022-07-25T08:35:24.147Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T08:35:24.164Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T08:35:24.223Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T08:35:24.227Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T08:35:24.235Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T08:35:24.259Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T08:36:12.044Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T08:36:12.060Z"}
+{"level":"info","message":"Rate limit for 127.0.0.1 limit exceeded.","timestamp":"2022-07-25T08:36:16.970Z"}
+{"level":"info","message":"Request to: /api/v1/user/0f9a7c00-add0-42e2-9af1-5e7b7243aa5f","timestamp":"2022-07-25T08:36:16.970Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T08:36:16.986Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T08:36:17.044Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T08:36:17.048Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T08:36:17.070Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T08:36:17.099Z"}
+{"level":"info","message":"Request to: /api/v1/movie/search","timestamp":"2022-07-25T08:36:24.726Z"}
+{"level":"info","message":"Request to: /api/v1/movie/search","timestamp":"2022-07-25T08:36:24.740Z"}
+{"level":"info","message":"Got movie for search successfully!","timestamp":"2022-07-25T08:36:24.745Z"}
+{"level":"info","message":"Request to: /api/v1/movie/search","timestamp":"2022-07-25T08:36:37.901Z"}
+{"level":"info","message":"Got movie for search successfully!","timestamp":"2022-07-25T08:36:37.904Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T08:37:04.388Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T08:37:04.400Z"}
+{"level":"info","message":"Request to: /api/v1/movie/search","timestamp":"2022-07-25T08:37:06.865Z"}
+{"level":"info","message":"Got movie for search successfully!","timestamp":"2022-07-25T08:37:06.890Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T08:37:27.428Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T08:37:27.447Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T08:43:08.052Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T08:43:08.071Z"}
+{"level":"info","message":"Rate limit for 127.0.0.1 limit exceeded.","timestamp":"2022-07-25T08:43:09.276Z"}
+{"level":"info","message":"Request to: /api/v1/user/0f9a7c00-add0-42e2-9af1-5e7b7243aa5f","timestamp":"2022-07-25T08:43:09.276Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T08:43:09.294Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T08:43:09.348Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T08:43:09.376Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T08:43:09.390Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T08:43:09.394Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T08:43:28.187Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T08:43:28.203Z"}
+{"level":"info","message":"Request to: /api/v1/user/0f9a7c00-add0-42e2-9af1-5e7b7243aa5f","timestamp":"2022-07-25T08:43:29.266Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T08:43:29.279Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T08:43:29.363Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T08:43:29.364Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T08:43:29.372Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T08:43:29.396Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T08:44:08.362Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T08:44:08.377Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T08:44:28.110Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T08:44:28.129Z"}
+{"level":"info","message":"Rate limit for 127.0.0.1 limit exceeded.","timestamp":"2022-07-25T08:44:34.860Z"}
+{"level":"info","message":"Request to: /api/v1/user/0f9a7c00-add0-42e2-9af1-5e7b7243aa5f","timestamp":"2022-07-25T08:44:34.861Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T08:44:34.876Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T08:44:34.938Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T08:44:34.942Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T08:44:34.963Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T08:44:34.988Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T08:45:37.607Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T08:45:37.621Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T08:47:07.649Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T08:47:07.660Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T08:47:14.629Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T08:47:14.652Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T08:47:16.509Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T08:47:16.524Z"}
+{"level":"info","message":"Rate limit for 127.0.0.1 limit exceeded.","timestamp":"2022-07-25T08:47:19.492Z"}
+{"level":"info","message":"Request to: /api/v1/user/0f9a7c00-add0-42e2-9af1-5e7b7243aa5f","timestamp":"2022-07-25T08:47:19.493Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T08:47:19.505Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T08:47:19.551Z"}
+{"level":"error","message":"Error getting list of genres DirectorFindAll is not defined","stack":"ReferenceError: DirectorFindAll is not defined\n    at exports.getAllGenre (/Users/ragulcs/Desktop/filmly/server/controllers/genreController.js:11:18)\n    at Object.internals.handler (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:99:36)\n    at /Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:30:23\n    at module.exports.internals.Protect.internals.Protect.run (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/protect.js:62:12)\n    at exports.execute (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:24:22)\n    at each (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/request.js:380:16)\n    at iterate (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/node_modules/items/lib/index.js:36:13)\n    at done (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/node_modules/items/lib/index.js:28:25)\n    at module.exports.internals.Auth.internals.Auth._authenticate (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/auth.js:222:16)\n    at internals.Auth.authenticate (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/auth.js:197:17)","timestamp":"2022-07-25T08:47:19.552Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T08:47:19.563Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T08:47:19.589Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T08:47:38.804Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T08:47:38.816Z"}
+{"level":"info","message":"Request to: /api/v1/user/0f9a7c00-add0-42e2-9af1-5e7b7243aa5f","timestamp":"2022-07-25T08:47:40.774Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T08:47:40.790Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T08:47:40.806Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T08:47:40.810Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T08:47:40.818Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T08:47:40.838Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T08:48:09.394Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T08:48:09.409Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T08:50:15.843Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T08:50:15.853Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T08:53:30.546Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T08:53:30.563Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T08:53:31.712Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T08:53:31.724Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T08:54:34.413Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T08:54:34.442Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T08:54:44.101Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T08:54:44.136Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T08:54:49.785Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T08:54:49.796Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T08:55:06.635Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T08:55:06.649Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T08:56:21.928Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T08:56:21.939Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T08:56:27.222Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T08:56:27.240Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T08:56:52.324Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T08:56:52.342Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T08:56:56.754Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T08:56:56.765Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T08:57:07.522Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T08:57:07.536Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T08:57:26.650Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T08:57:26.683Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T08:57:33.213Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T08:57:33.228Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T08:57:46.595Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T08:57:46.609Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T08:57:49.969Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T08:57:49.988Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T08:57:56.021Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T08:57:56.041Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T08:57:58.891Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T08:57:58.908Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T08:58:08.198Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T08:58:08.237Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T08:58:12.713Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T08:58:12.738Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T08:58:15.030Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T08:58:15.046Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T08:59:30.143Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T08:59:30.164Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T08:59:47.291Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T08:59:47.308Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T09:00:00.107Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T09:00:00.124Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T09:00:56.013Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T09:00:56.027Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T09:02:04.046Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T09:02:04.063Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T09:03:15.769Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T09:03:15.787Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T09:03:35.197Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T09:03:35.214Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T09:04:34.878Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T09:04:34.900Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T09:04:47.957Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T09:04:47.973Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T09:05:17.573Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T09:05:17.601Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T09:06:20.266Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T09:06:20.288Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T09:07:06.052Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T09:07:06.075Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T09:07:40.817Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T09:07:40.832Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T09:07:46.101Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T09:07:46.117Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T09:08:02.798Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T09:08:02.816Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T09:08:33.105Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T09:08:33.122Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T09:10:54.797Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T09:10:54.823Z"}
+{"level":"info","message":"Rate limit for 127.0.0.1 limit exceeded.","timestamp":"2022-07-25T09:10:58.725Z"}
+{"level":"info","message":"Request to: /api/v1/user/0f9a7c00-add0-42e2-9af1-5e7b7243aa5f","timestamp":"2022-07-25T09:10:58.726Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T09:10:58.742Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T09:10:58.774Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T09:10:58.777Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T09:10:58.786Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T09:10:58.812Z"}
+{"level":"info","message":"Request to: /api/v1/user/0f9a7c00-add0-42e2-9af1-5e7b7243aa5f","timestamp":"2022-07-25T09:11:02.708Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T09:11:02.713Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T09:11:02.735Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T09:11:02.760Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T09:11:02.801Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T09:11:02.805Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T09:11:06.345Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T09:11:06.349Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T09:11:06.352Z"}
+{"level":"info","message":"Request to: /api/v1/signup","timestamp":"2022-07-25T09:11:24.088Z"}
+{"level":"info","message":"Request to: /api/v1/signup","timestamp":"2022-07-25T09:11:24.093Z"}
+{"level":"info","message":"Account created successfully!","timestamp":"2022-07-25T09:11:24.207Z"}
+{"level":"info","message":"Request to: /api/v1/login","timestamp":"2022-07-25T09:11:30.201Z"}
+{"level":"info","message":"Request to: /api/v1/login","timestamp":"2022-07-25T09:11:30.210Z"}
+{"level":"info","message":"Logged in successfully!","timestamp":"2022-07-25T09:11:30.309Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T09:11:30.344Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T09:11:30.353Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T09:11:30.374Z"}
+{"level":"info","message":"Request to: /api/v1/movie/details/13","timestamp":"2022-07-25T09:11:37.543Z"}
+{"level":"info","message":"Request to: /api/v1/movie/details/13","timestamp":"2022-07-25T09:11:37.549Z"}
+{"level":"info","message":"Full movie details retrieved successfully!!","timestamp":"2022-07-25T09:11:37.570Z"}
+{"level":"info","message":"Request to: /api/v1/movie/search","timestamp":"2022-07-25T09:11:44.917Z"}
+{"level":"info","message":"Request to: /api/v1/movie/search","timestamp":"2022-07-25T09:11:44.921Z"}
+{"level":"info","message":"Got movie for search successfully!","timestamp":"2022-07-25T09:11:44.928Z"}
+{"level":"info","message":"Request to: /api/v1/movie/search","timestamp":"2022-07-25T09:11:52.341Z"}
+{"level":"error","message":"Error creating a movie column movie.dir_name does not exist","name":"SequelizeDatabaseError","original":{"code":"42703","file":"parse_relation.c","length":113,"line":"3611","name":"error","position":"117","routine":"errorMissingColumn","severity":"ERROR","sql":"SELECT \"id\", \"mov_title\", \"mov_year\", \"mov_lang\", \"mov_region\", \"mov_time\", \"mov_img\" FROM \"movie\" AS \"movie\" WHERE \"movie\".\"dir_name\" LIKE '%Steve%' LIMIT 10 OFFSET 0;"},"parameters":{},"parent":{"code":"42703","file":"parse_relation.c","length":113,"line":"3611","name":"error","position":"117","routine":"errorMissingColumn","severity":"ERROR","sql":"SELECT \"id\", \"mov_title\", \"mov_year\", \"mov_lang\", \"mov_region\", \"mov_time\", \"mov_img\" FROM \"movie\" AS \"movie\" WHERE \"movie\".\"dir_name\" LIKE '%Steve%' LIMIT 10 OFFSET 0;"},"sql":"SELECT \"id\", \"mov_title\", \"mov_year\", \"mov_lang\", \"mov_region\", \"mov_time\", \"mov_img\" FROM \"movie\" AS \"movie\" WHERE \"movie\".\"dir_name\" LIKE '%Steve%' LIMIT 10 OFFSET 0;","stack":"Error\n    at Query.run (/Users/ragulcs/Desktop/filmly/server/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)\n    at /Users/ragulcs/Desktop/filmly/server/node_modules/sequelize/lib/sequelize.js:311:28\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async PostgresQueryInterface.select (/Users/ragulcs/Desktop/filmly/server/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)\n    at async Function.findAll (/Users/ragulcs/Desktop/filmly/server/node_modules/sequelize/lib/model.js:1134:21)\n    at async exports.MovieFindAll (/Users/ragulcs/Desktop/filmly/server/utils/dbQuery.js:10:16)\n    at async exports.getMovieBySearchTerm (/Users/ragulcs/Desktop/filmly/server/controllers/movieController.js:237:14)","timestamp":"2022-07-25T09:11:52.352Z"}
+{"level":"info","message":"Request to: /api/v1/movie/search","timestamp":"2022-07-25T09:11:55.378Z"}
+{"level":"error","message":"Error creating a movie column movie.dir_name does not exist","name":"SequelizeDatabaseError","original":{"code":"42703","file":"parse_relation.c","length":113,"line":"3611","name":"error","position":"117","routine":"errorMissingColumn","severity":"ERROR","sql":"SELECT \"id\", \"mov_title\", \"mov_year\", \"mov_lang\", \"mov_region\", \"mov_time\", \"mov_img\" FROM \"movie\" AS \"movie\" WHERE \"movie\".\"dir_name\" LIKE '%Ste%' LIMIT 10 OFFSET 0;"},"parameters":{},"parent":{"code":"42703","file":"parse_relation.c","length":113,"line":"3611","name":"error","position":"117","routine":"errorMissingColumn","severity":"ERROR","sql":"SELECT \"id\", \"mov_title\", \"mov_year\", \"mov_lang\", \"mov_region\", \"mov_time\", \"mov_img\" FROM \"movie\" AS \"movie\" WHERE \"movie\".\"dir_name\" LIKE '%Ste%' LIMIT 10 OFFSET 0;"},"sql":"SELECT \"id\", \"mov_title\", \"mov_year\", \"mov_lang\", \"mov_region\", \"mov_time\", \"mov_img\" FROM \"movie\" AS \"movie\" WHERE \"movie\".\"dir_name\" LIKE '%Ste%' LIMIT 10 OFFSET 0;","stack":"Error\n    at Query.run (/Users/ragulcs/Desktop/filmly/server/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)\n    at /Users/ragulcs/Desktop/filmly/server/node_modules/sequelize/lib/sequelize.js:311:28\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async PostgresQueryInterface.select (/Users/ragulcs/Desktop/filmly/server/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)\n    at async Function.findAll (/Users/ragulcs/Desktop/filmly/server/node_modules/sequelize/lib/model.js:1134:21)\n    at async exports.MovieFindAll (/Users/ragulcs/Desktop/filmly/server/utils/dbQuery.js:10:16)\n    at async exports.getMovieBySearchTerm (/Users/ragulcs/Desktop/filmly/server/controllers/movieController.js:237:14)","timestamp":"2022-07-25T09:11:55.387Z"}
+{"level":"info","message":"Rate limit for 127.0.0.1 limit exceeded.","timestamp":"2022-07-25T09:12:02.365Z"}
+{"level":"info","message":"Request to: /api/v1/movie/search","timestamp":"2022-07-25T09:12:02.366Z"}
+{"level":"error","message":"Error creating a movie column movie.dir_name does not exist","name":"SequelizeDatabaseError","original":{"code":"42703","file":"parse_relation.c","length":113,"line":"3611","name":"error","position":"117","routine":"errorMissingColumn","severity":"ERROR","sql":"SELECT \"id\", \"mov_title\", \"mov_year\", \"mov_lang\", \"mov_region\", \"mov_time\", \"mov_img\" FROM \"movie\" AS \"movie\" WHERE \"movie\".\"dir_name\" LIKE '%Brad%' LIMIT 10 OFFSET 0;"},"parameters":{},"parent":{"code":"42703","file":"parse_relation.c","length":113,"line":"3611","name":"error","position":"117","routine":"errorMissingColumn","severity":"ERROR","sql":"SELECT \"id\", \"mov_title\", \"mov_year\", \"mov_lang\", \"mov_region\", \"mov_time\", \"mov_img\" FROM \"movie\" AS \"movie\" WHERE \"movie\".\"dir_name\" LIKE '%Brad%' LIMIT 10 OFFSET 0;"},"sql":"SELECT \"id\", \"mov_title\", \"mov_year\", \"mov_lang\", \"mov_region\", \"mov_time\", \"mov_img\" FROM \"movie\" AS \"movie\" WHERE \"movie\".\"dir_name\" LIKE '%Brad%' LIMIT 10 OFFSET 0;","stack":"Error\n    at Query.run (/Users/ragulcs/Desktop/filmly/server/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)\n    at /Users/ragulcs/Desktop/filmly/server/node_modules/sequelize/lib/sequelize.js:311:28\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async PostgresQueryInterface.select (/Users/ragulcs/Desktop/filmly/server/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)\n    at async Function.findAll (/Users/ragulcs/Desktop/filmly/server/node_modules/sequelize/lib/model.js:1134:21)\n    at async exports.MovieFindAll (/Users/ragulcs/Desktop/filmly/server/utils/dbQuery.js:10:16)\n    at async exports.getMovieBySearchTerm (/Users/ragulcs/Desktop/filmly/server/controllers/movieController.js:237:14)","timestamp":"2022-07-25T09:12:02.373Z"}
+{"level":"info","message":"Request to: /api/v1/movie/search","timestamp":"2022-07-25T09:12:26.968Z"}
+{"level":"error","message":"Error creating a movie column movie.dir_name does not exist","name":"SequelizeDatabaseError","original":{"code":"42703","file":"parse_relation.c","length":113,"line":"3611","name":"error","position":"117","routine":"errorMissingColumn","severity":"ERROR","sql":"SELECT \"id\", \"mov_title\", \"mov_year\", \"mov_lang\", \"mov_region\", \"mov_time\", \"mov_img\" FROM \"movie\" AS \"movie\" WHERE \"movie\".\"dir_name\" LIKE '%TIm%' LIMIT 10 OFFSET 0;"},"parameters":{},"parent":{"code":"42703","file":"parse_relation.c","length":113,"line":"3611","name":"error","position":"117","routine":"errorMissingColumn","severity":"ERROR","sql":"SELECT \"id\", \"mov_title\", \"mov_year\", \"mov_lang\", \"mov_region\", \"mov_time\", \"mov_img\" FROM \"movie\" AS \"movie\" WHERE \"movie\".\"dir_name\" LIKE '%TIm%' LIMIT 10 OFFSET 0;"},"sql":"SELECT \"id\", \"mov_title\", \"mov_year\", \"mov_lang\", \"mov_region\", \"mov_time\", \"mov_img\" FROM \"movie\" AS \"movie\" WHERE \"movie\".\"dir_name\" LIKE '%TIm%' LIMIT 10 OFFSET 0;","stack":"Error\n    at Query.run (/Users/ragulcs/Desktop/filmly/server/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)\n    at /Users/ragulcs/Desktop/filmly/server/node_modules/sequelize/lib/sequelize.js:311:28\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async PostgresQueryInterface.select (/Users/ragulcs/Desktop/filmly/server/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)\n    at async Function.findAll (/Users/ragulcs/Desktop/filmly/server/node_modules/sequelize/lib/model.js:1134:21)\n    at async exports.MovieFindAll (/Users/ragulcs/Desktop/filmly/server/utils/dbQuery.js:10:16)\n    at async exports.getMovieBySearchTerm (/Users/ragulcs/Desktop/filmly/server/controllers/movieController.js:237:14)","timestamp":"2022-07-25T09:12:27.003Z"}
+{"level":"info","message":"Request to: /api/v1/movie/search","timestamp":"2022-07-25T09:12:30.965Z"}
+{"level":"error","message":"Error creating a movie column movie.dir_name does not exist","name":"SequelizeDatabaseError","original":{"code":"42703","file":"parse_relation.c","length":113,"line":"3611","name":"error","position":"117","routine":"errorMissingColumn","severity":"ERROR","sql":"SELECT \"id\", \"mov_title\", \"mov_year\", \"mov_lang\", \"mov_region\", \"mov_time\", \"mov_img\" FROM \"movie\" AS \"movie\" WHERE \"movie\".\"dir_name\" LIKE '%Tim%' LIMIT 10 OFFSET 0;"},"parameters":{},"parent":{"code":"42703","file":"parse_relation.c","length":113,"line":"3611","name":"error","position":"117","routine":"errorMissingColumn","severity":"ERROR","sql":"SELECT \"id\", \"mov_title\", \"mov_year\", \"mov_lang\", \"mov_region\", \"mov_time\", \"mov_img\" FROM \"movie\" AS \"movie\" WHERE \"movie\".\"dir_name\" LIKE '%Tim%' LIMIT 10 OFFSET 0;"},"sql":"SELECT \"id\", \"mov_title\", \"mov_year\", \"mov_lang\", \"mov_region\", \"mov_time\", \"mov_img\" FROM \"movie\" AS \"movie\" WHERE \"movie\".\"dir_name\" LIKE '%Tim%' LIMIT 10 OFFSET 0;","stack":"Error\n    at Query.run (/Users/ragulcs/Desktop/filmly/server/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)\n    at /Users/ragulcs/Desktop/filmly/server/node_modules/sequelize/lib/sequelize.js:311:28\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async PostgresQueryInterface.select (/Users/ragulcs/Desktop/filmly/server/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)\n    at async Function.findAll (/Users/ragulcs/Desktop/filmly/server/node_modules/sequelize/lib/model.js:1134:21)\n    at async exports.MovieFindAll (/Users/ragulcs/Desktop/filmly/server/utils/dbQuery.js:10:16)\n    at async exports.getMovieBySearchTerm (/Users/ragulcs/Desktop/filmly/server/controllers/movieController.js:237:14)","timestamp":"2022-07-25T09:12:30.970Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T09:13:31.567Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T09:13:31.582Z"}
+{"level":"info","message":"Rate limit for 127.0.0.1 limit exceeded.","timestamp":"2022-07-25T09:13:34.645Z"}
+{"level":"info","message":"Request to: /api/v1/movie/search","timestamp":"2022-07-25T09:13:34.646Z"}
+{"level":"info","message":"Got movie for search successfully!","timestamp":"2022-07-25T09:13:34.662Z"}
+{"level":"info","message":"Request to: /api/v1/movie/search","timestamp":"2022-07-25T09:13:42.818Z"}
+{"level":"info","message":"Got movie for search successfully!","timestamp":"2022-07-25T09:13:42.829Z"}
+{"level":"info","message":"Request to: /api/v1/movie/search","timestamp":"2022-07-25T09:13:43.467Z"}
+{"level":"info","message":"Got movie for search successfully!","timestamp":"2022-07-25T09:13:43.472Z"}
+{"level":"info","message":"Request to: /api/v1/movie/search","timestamp":"2022-07-25T09:13:43.697Z"}
+{"level":"info","message":"Got movie for search successfully!","timestamp":"2022-07-25T09:13:43.702Z"}
+{"level":"info","message":"Request to: /api/v1/movie/search","timestamp":"2022-07-25T09:13:44.182Z"}
+{"level":"info","message":"Got movie for search successfully!","timestamp":"2022-07-25T09:13:44.187Z"}
+{"level":"info","message":"Request to: /api/v1/movie/search","timestamp":"2022-07-25T09:13:44.414Z"}
+{"level":"info","message":"Got movie for search successfully!","timestamp":"2022-07-25T09:13:44.419Z"}
+{"level":"info","message":"Request to: /api/v1/genre/movie/Comedy","timestamp":"2022-07-25T09:13:47.779Z"}
+{"level":"info","message":"Request to: /api/v1/genre/movie/Comedy","timestamp":"2022-07-25T09:13:47.787Z"}
+{"level":"info","message":"Successfully got list of movies by genre","timestamp":"2022-07-25T09:13:47.809Z"}
+{"level":"info","message":"Request to: /api/v1/genre/movie/Comedy","timestamp":"2022-07-25T09:14:26.781Z"}
+{"level":"info","message":"Successfully got list of movies by genre","timestamp":"2022-07-25T09:14:26.805Z"}
+{"level":"info","message":"Request to: /api/v1/movie/details/24","timestamp":"2022-07-25T09:14:28.750Z"}
+{"level":"info","message":"Request to: /api/v1/movie/details/24","timestamp":"2022-07-25T09:14:28.755Z"}
+{"level":"info","message":"Full movie details retrieved successfully!!","timestamp":"2022-07-25T09:14:28.777Z"}
+{"level":"info","message":"Rate limit for 127.0.0.1 limit exceeded.","timestamp":"2022-07-25T09:15:03.718Z"}
+{"level":"info","message":"Request to: /api/v1/movie/details/13","timestamp":"2022-07-25T09:15:03.718Z"}
+{"level":"info","message":"Full movie details retrieved successfully!!","timestamp":"2022-07-25T09:15:03.758Z"}
+{"level":"info","message":"Request to: /api/v1/actor/movie/17","timestamp":"2022-07-25T09:15:12.020Z"}
+{"level":"info","message":"Request to: /api/v1/actor/movie/17","timestamp":"2022-07-25T09:15:12.033Z"}
+{"level":"error","message":"Un handled rejection reply interface called twice","stack":"Error: reply interface called twice\n    at Object.exports.assert (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/node_modules/hoek/lib/index.js:736:11)\n    at Function.internals.response (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/reply.js:150:10)\n    at reply (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/reply.js:72:22)\n    at exports.getAllMoviesofActor (/Users/ragulcs/Desktop/filmly/server/controllers/actorController.js:59:5)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)","timestamp":"2022-07-25T09:15:12.049Z"}
+{"level":"info","message":"Request to: /api/v1/movie/details/13","timestamp":"2022-07-25T09:15:13.065Z"}
+{"level":"info","message":"Full movie details retrieved successfully!!","timestamp":"2022-07-25T09:15:13.080Z"}
+{"level":"info","message":"Request to: /api/v1/director/movie/5","timestamp":"2022-07-25T09:15:14.471Z"}
+{"level":"info","message":"Request to: /api/v1/director/movie/5","timestamp":"2022-07-25T09:15:14.483Z"}
+{"level":"error","message":"Un handled rejection logger is not defined","stack":"ReferenceError: logger is not defined\n    at exports.getAllMoviesOfDirector (/Users/ragulcs/Desktop/filmly/server/controllers/directorController.js:52:5)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)","timestamp":"2022-07-25T09:15:14.488Z"}
+{"level":"info","message":"Request to: /api/v1/movie/details/13","timestamp":"2022-07-25T09:15:15.664Z"}
+{"level":"info","message":"Full movie details retrieved successfully!!","timestamp":"2022-07-25T09:15:15.679Z"}
+{"level":"info","message":"Request to: /api/v1/movie/details/13","timestamp":"2022-07-25T09:15:19.982Z"}
+{"level":"info","message":"Full movie details retrieved successfully!!","timestamp":"2022-07-25T09:15:19.999Z"}
+{"level":"info","message":"Request to: /api/v1/genre/movie/Comedy","timestamp":"2022-07-25T09:15:21.705Z"}
+{"level":"info","message":"Successfully got list of movies by genre","timestamp":"2022-07-25T09:15:21.717Z"}
+{"level":"info","message":"Request to: /api/v1/movie/details/13","timestamp":"2022-07-25T09:15:22.670Z"}
+{"level":"info","message":"Full movie details retrieved successfully!!","timestamp":"2022-07-25T09:15:22.689Z"}
+{"level":"info","message":"Request to: /api/v1/genre/movie/Action","timestamp":"2022-07-25T09:15:23.935Z"}
+{"level":"info","message":"Request to: /api/v1/genre/movie/Action","timestamp":"2022-07-25T09:15:23.941Z"}
+{"level":"info","message":"Successfully got list of movies by genre","timestamp":"2022-07-25T09:15:23.949Z"}
+{"level":"info","message":"Request to: /api/v1/movie/details/13","timestamp":"2022-07-25T09:15:24.830Z"}
+{"level":"info","message":"Full movie details retrieved successfully!!","timestamp":"2022-07-25T09:15:24.853Z"}
+{"level":"info","message":"Request to: /api/v1/director/movie/5","timestamp":"2022-07-25T09:15:26.718Z"}
+{"level":"error","message":"Un handled rejection logger is not defined","stack":"ReferenceError: logger is not defined\n    at exports.getAllMoviesOfDirector (/Users/ragulcs/Desktop/filmly/server/controllers/directorController.js:52:5)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)","timestamp":"2022-07-25T09:15:26.725Z"}
+{"level":"info","message":"Request to: /api/v1/movie/details/13","timestamp":"2022-07-25T09:15:28.182Z"}
+{"level":"info","message":"Full movie details retrieved successfully!!","timestamp":"2022-07-25T09:15:28.201Z"}
+{"level":"info","message":"Request to: /api/v1/actor/movie/17","timestamp":"2022-07-25T09:15:29.537Z"}
+{"level":"error","message":"Un handled rejection reply interface called twice","stack":"Error: reply interface called twice\n    at Object.exports.assert (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/node_modules/hoek/lib/index.js:736:11)\n    at Function.internals.response (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/reply.js:150:10)\n    at reply (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/reply.js:72:22)\n    at exports.getAllMoviesofActor (/Users/ragulcs/Desktop/filmly/server/controllers/actorController.js:59:5)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)","timestamp":"2022-07-25T09:15:29.547Z"}
+{"level":"info","message":"Request to: /api/v1/movie/details/13","timestamp":"2022-07-25T09:15:31.112Z"}
+{"level":"info","message":"Full movie details retrieved successfully!!","timestamp":"2022-07-25T09:15:31.126Z"}
+{"level":"info","message":"Request to: /api/v1/director/movie/5","timestamp":"2022-07-25T09:15:32.891Z"}
+{"level":"error","message":"Un handled rejection logger is not defined","stack":"ReferenceError: logger is not defined\n    at exports.getAllMoviesOfDirector (/Users/ragulcs/Desktop/filmly/server/controllers/directorController.js:52:5)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)","timestamp":"2022-07-25T09:15:32.895Z"}
+{"level":"info","message":"Request to: /api/v1/movie/details/13","timestamp":"2022-07-25T09:15:34.977Z"}
+{"level":"info","message":"Full movie details retrieved successfully!!","timestamp":"2022-07-25T09:15:34.998Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T09:58:29.581Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T09:58:29.595Z"}
+{"level":"info","message":"Rate limit for 127.0.0.1 limit exceeded.","timestamp":"2022-07-25T09:58:40.591Z"}
+{"level":"info","message":"Request to: /api/v1/user/0f9a7c00-add0-42e2-9af1-5e7b7243aa5f","timestamp":"2022-07-25T09:58:40.591Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T09:58:40.605Z"}
+{"level":"info","message":"Request to: /api/v1/director/movie/5","timestamp":"2022-07-25T09:58:40.621Z"}
+{"level":"error","message":"Un handled rejection logger is not defined","stack":"ReferenceError: logger is not defined\n    at exports.getAllMoviesOfDirector (/Users/ragulcs/Desktop/filmly/server/controllers/directorController.js:52:5)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)","timestamp":"2022-07-25T09:58:40.625Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T09:58:40.676Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T09:58:40.680Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T09:59:15.238Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T09:59:15.256Z"}
+{"level":"info","message":"Request to: /api/v1/user/0f9a7c00-add0-42e2-9af1-5e7b7243aa5f","timestamp":"2022-07-25T09:59:15.680Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T09:59:15.695Z"}
+{"level":"info","message":"Request to: /api/v1/director/movie/5","timestamp":"2022-07-25T09:59:15.708Z"}
+{"level":"error","message":"Un handled rejection logger is not defined","stack":"ReferenceError: logger is not defined\n    at exports.getAllMoviesOfDirector (/Users/ragulcs/Desktop/filmly/server/controllers/directorController.js:53:5)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)","timestamp":"2022-07-25T09:59:15.714Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T09:59:15.765Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T09:59:15.769Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T09:59:48.049Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T09:59:48.064Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T09:59:53.878Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T09:59:53.888Z"}
+{"level":"info","message":"Rate limit for 127.0.0.1 limit exceeded.","timestamp":"2022-07-25T09:59:54.450Z"}
+{"level":"info","message":"Request to: /api/v1/user/0f9a7c00-add0-42e2-9af1-5e7b7243aa5f","timestamp":"2022-07-25T09:59:54.451Z"}
+{"level":"info","message":"Request to: /api/v1/director/movie/5","timestamp":"2022-07-25T09:59:54.465Z"}
+{"level":"error","message":"Un handled rejection logger is not defined","stack":"ReferenceError: logger is not defined\n    at exports.getAllMoviesOfDirector (/Users/ragulcs/Desktop/filmly/server/controllers/directorController.js:53:5)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)","timestamp":"2022-07-25T09:59:54.482Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T09:59:54.486Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T09:59:54.536Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T09:59:54.540Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T10:01:22.593Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T10:01:22.619Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T10:01:24.959Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T10:01:24.973Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T10:01:29.514Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T10:01:29.541Z"}
+{"level":"info","message":"Rate limit for 127.0.0.1 limit exceeded.","timestamp":"2022-07-25T10:01:30.807Z"}
+{"level":"info","message":"Request to: /api/v1/user/0f9a7c00-add0-42e2-9af1-5e7b7243aa5f","timestamp":"2022-07-25T10:01:30.807Z"}
+{"level":"info","message":"Request to: /api/v1/director/movie/5","timestamp":"2022-07-25T10:01:30.826Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T10:01:30.836Z"}
+{"level":"error","message":"Un handled rejection reply interface called twice","stack":"Error: reply interface called twice\n    at Object.exports.assert (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/node_modules/hoek/lib/index.js:736:11)\n    at Function.internals.response (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/reply.js:150:10)\n    at reply (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/reply.js:72:22)\n    at exports.getAllMoviesOfDirector (/Users/ragulcs/Desktop/filmly/server/controllers/directorController.js:52:5)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)","timestamp":"2022-07-25T10:01:30.858Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T10:01:30.871Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T10:01:30.877Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T10:01:57.154Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T10:01:57.167Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T10:01:59.613Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T10:01:59.637Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T10:02:16.960Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T10:02:16.980Z"}
+{"level":"info","message":"Request to: /api/v1/user/0f9a7c00-add0-42e2-9af1-5e7b7243aa5f","timestamp":"2022-07-25T10:02:26.232Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T10:02:26.250Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T10:02:26.273Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T10:02:26.276Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T10:02:26.283Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T10:02:26.310Z"}
+{"level":"info","message":"Rate limit for 127.0.0.1 limit exceeded.","timestamp":"2022-07-25T10:03:05.119Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T10:03:05.119Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T10:03:05.123Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T10:03:05.132Z"}
+{"level":"info","message":"Request to: /api/v1/signup","timestamp":"2022-07-25T10:03:32.037Z"}
+{"level":"info","message":"Request to: /api/v1/signup","timestamp":"2022-07-25T10:03:32.043Z"}
+{"level":"info","message":"Account created successfully!","timestamp":"2022-07-25T10:03:32.151Z"}
+{"level":"info","message":"Request to: /api/v1/login","timestamp":"2022-07-25T10:03:40.893Z"}
+{"level":"info","message":"Request to: /api/v1/login","timestamp":"2022-07-25T10:03:40.899Z"}
+{"level":"info","message":"Logged in successfully!","timestamp":"2022-07-25T10:03:41.004Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T10:03:41.046Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T10:03:41.051Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T10:03:41.072Z"}

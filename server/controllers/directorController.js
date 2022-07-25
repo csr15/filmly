@@ -1,7 +1,8 @@
 const { successReplyMessage, catchReplyMessage } = require("../helpers/helper");
+const logger = require("../logger");
 const db = require("../models");
+const { DirectorFindAll, DirectorCreate } = require("../utils/dbQuery");
 
-const Director = db.director;
 const Movie = db.movie;
 
 exports.getAllDirector = async (request, reply) => {
@@ -9,7 +10,7 @@ exports.getAllDirector = async (request, reply) => {
     const { page, pageSize } = request.payload;
     const offset = page * pageSize;
 
-    const data = await Director.findAll({
+    const data = await DirectorFindAll({
       offset: offset,
       limit: pageSize,
     });
@@ -24,11 +25,11 @@ exports.getAllDirector = async (request, reply) => {
 
 exports.getAllMoviesOfAllDirector = async (request, reply) => {
   try {
-    const result = await Director.findAll({
+    const result = await DirectorFindAll({
       include: Movie,
     });
 
-    reply(successReplyMessage(result));;
+    reply(successReplyMessage(result));
     logger.log("info", "Successfully got list of movies of all directors");
   } catch (error) {
     reply(catchReplyMessage());
@@ -38,14 +39,14 @@ exports.getAllMoviesOfAllDirector = async (request, reply) => {
 
 exports.getAllMoviesOfDirector = async (request, reply) => {
   try {
-    const result = await Director.findAll({
+    const result = await DirectorFindAll({
       include: Movie,
       where: {
         id: request.params.id,
       },
     });
 
-    reply(successReplyMessage(result));;
+    reply(successReplyMessage(result));
     logger.log("info", "Successfully got list of movies of a director");
   } catch (error) {
     reply(catchReplyMessage());
@@ -55,11 +56,11 @@ exports.getAllMoviesOfDirector = async (request, reply) => {
 
 exports.addDirector = async (request, reply) => {
   try {
-    await Director.create({
+    await DirectorCreate({
       ...request.payload,
     });
 
-    reply(successReplyMessage("", "Director added successfully!"));;
+    reply(successReplyMessage("", "Director added successfully!"));
     logger.log("info", "Successfully added a new director");
   } catch (error) {
     reply(catchReplyMessage());

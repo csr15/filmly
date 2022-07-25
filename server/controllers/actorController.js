@@ -1,10 +1,11 @@
 const { Op } = require("sequelize");
 
 const { successReplyMessage, catchReplyMessage } = require("../helpers/helper");
-const { Sequelize } = require("../models");
+const logger = require("../logger");
 const db = require("../models");
+const { Sequelize } = require("../models");
+const { ActorFindAll, ActorCreate } = require("../utils/dbQuery");
 
-const Actor = db.actor;
 const Movie = db.movie;
 
 exports.getAllActor = async (request, reply) => {
@@ -12,7 +13,7 @@ exports.getAllActor = async (request, reply) => {
     const { page, pageSize } = request.payload;
     const offset = page * pageSize;
 
-    const data = await Actor.findAll({
+    const data = await ActorFindAll({
       offset: offset,
       limit: pageSize,
     });
@@ -27,7 +28,7 @@ exports.getAllActor = async (request, reply) => {
 
 exports.getAllMoviesofAllActor = async (request, reply) => {
   try {
-    const data = await Actor.findAll({
+    const data = await ActorFindAll({
       include: Movie,
       raw: true,
     });
@@ -44,7 +45,7 @@ exports.getAllMoviesofActor = async (request, reply) => {
   try {
     const { page, pageSize } = request.payload;
     const offset = page * pageSize;
-    const data = await Actor.findAll({
+    const data = await ActorFindAll({
       include: Movie,
       where: {
         id: request.params.id,
@@ -63,7 +64,7 @@ exports.getAllMoviesofActor = async (request, reply) => {
 
 exports.getActorMovieCountByThisYear = async (request, reply) => {
   try {
-    const data = await Actor.count({
+    const data = await ActorCount({
       include: Movie,
       raw: true,
       where: {
@@ -82,7 +83,7 @@ exports.getActorMovieCountByThisYear = async (request, reply) => {
 
 exports.addActor = async (request, reply) => {
   try {
-    await Actor.create({
+    await ActorCreate({
       ...request.payload,
     });
 

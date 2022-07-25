@@ -2,13 +2,14 @@ const { successReplyMessage, catchReplyMessage } = require("../helpers/helper");
 const logger = require("../logger");
 const db = require("../models");
 const client = require("../redis");
+const { GenreFindAll, GenreCreate, MovieFindAll } = require("../utils/dbQuery");
 
 const Genre = db.genre;
 const Movie = db.movie;
 
 exports.getAllGenre = async (request, reply) => {
   try {
-    const data = await Genre.findAll();
+    const data = await GenreFindAll();
 
     reply(successReplyMessage(data));
     logger.log("info", "Successfully got list of genres");
@@ -23,7 +24,7 @@ exports.getAllMoviesGenre = async (request, reply) => {
     const allMovieGenre = await client.get("all_movie_genre");
 
     if (allMovieGenre === null) {
-      const data = await Movie.findAll({
+      const data = await MovieFindAll({
         include: Genre,
       });
 
@@ -45,7 +46,7 @@ exports.getAllMoviesOfSingleGenre = async (request, reply) => {
     const { page, pageSize } = request.payload;
     const offset = page * pageSize;
 
-    const result = await Genre.findAll({
+    const result = await GenreFindAll({
       include: Movie,
       where: {
         gen_title: request.params.title,
@@ -64,7 +65,7 @@ exports.getAllMoviesOfSingleGenre = async (request, reply) => {
 
 exports.addGenre = async (request, reply) => {
   try {
-    await Genre.create({
+    await GenreCreate({
       ...request.payload,
     });
 

@@ -1,11 +1,11 @@
 const { successReplyMessage, catchReplyMessage } = require("../helpers/helper");
-const elasticClient = require("../elasticSearch/index");
 const logger = require("../logger");
+const { createIndex, searchIndex } = require("../utils/elasticQuery");
 
 exports.elasticAddIndexHandler = async (request, reply) => {
   const { userId, rating } = request.payload;
   try {
-    await elasticClient.index({
+    await createIndex({
       index: "ratings",
       body: {
         userId: userId,
@@ -25,7 +25,7 @@ exports.elasticAddIndexHandler = async (request, reply) => {
 
 exports.elasticSearchIndexHandler = async (request, reply) => {
   try {
-    const body = await elasticClient.search({
+    const body = await searchIndex({
       index: "ratings",
       body: {
         query: {

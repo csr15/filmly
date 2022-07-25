@@ -5,6 +5,8 @@ const {
   BAD_REQUEST_CODE,
   FORBIDDEN,
   SERVER_ERROR,
+  LOGIN_URL,
+  SIGNUP_URL
 } = require("../constants/constants");
 const client = require("../redis/index");
 
@@ -51,8 +53,8 @@ exports.validateTokenHandler = (request) => {
   const authHeader = request.headers["authorization"];
   const token = authHeader && authHeader.split(" ")[1];
   if (
-    request.url.pathname === "/api/v1/login" ||
-    request.url.pathname === "/api/v1/signup"
+    request.url.pathname === LOGIN_URL ||
+    request.url.pathname === SIGNUP_URL
   ) {
     reply.continue();
   } else {
@@ -85,7 +87,7 @@ exports.rateLimiter = async (request, reply) => {
     const getData = await client.get(ip);
     if (getData !== null) {
       const count = JSON.parse(getData);
-      
+
       if (count === 50) {
         reply({ error: 1, message: "Throttle Limit exceeded." });
         logger.log("info", "Throttle limit exceeded.");

@@ -53,6 +53,9 @@ function Genre() {
             item={item}
             setMovieHandler={() => movieCardHandler(item.id)}
             key={index}
+            styles={{
+              marginTop: "30px",
+            }}
           />
         ))}
       </div>

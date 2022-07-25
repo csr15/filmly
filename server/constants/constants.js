@@ -9,6 +9,8 @@ const CONSTANTS = {
   FORBIDDEN: 403,
   UN_AUTHORIZED: 401,
   SERVER_ERROR: 500,
+  LOGIN_URL: "/api/v1/login",
+  SIGNUP_URL: "/api/v1/signup",
 };
 
 module.exports = CONSTANTS;

@@ -2,8 +2,15 @@ const { Op } = require("sequelize");
 
 const { successReplyMessage, catchReplyMessage } = require("../helpers/helper");
 const { Sequelize } = require("../models");
-const db = require("../models");
 const logger = require("../logger/index");
+const {
+  MovieFindAll,
+  MovieCreate,
+  GenreFindAll,
+  DirectorFindAll,
+  ActorFindAll,
+} = require("../utils/dbQuery");
+const db = require("../models");
 
 const Movie = db.movie;
 const Genre = db.genre;
@@ -15,7 +22,7 @@ exports.getAllMovie = async (request, reply) => {
     const { page, pageSize } = request.payload;
     const offset = page * pageSize;
 
-    const data = await Movie.findAll({
+    const data = await MovieFindAll({
       offset: offset,
       limit: pageSize,
     });
@@ -30,7 +37,7 @@ exports.getAllMovie = async (request, reply) => {
 
 exports.getMovie = async (request, reply) => {
   try {
-    const data = await Movie.findAll({
+    const data = await MovieFindAll({
       where: {
         id: request.params.id,
       },
@@ -46,7 +53,7 @@ exports.getMovie = async (request, reply) => {
 
 exports.getMovieReleasedThisMonth = async (request, reply) => {
   try {
-    const data = await Movie.findAll({
+    const data = await MovieFindAll({
       where: {
         [Op.and]: [
           Sequelize.fn(
@@ -67,7 +74,7 @@ exports.getMovieReleasedThisMonth = async (request, reply) => {
 
 exports.getMovieByLanguage = async (request, reply) => {
   try {
-    const data = await Movie.findAll({
+    const data = await MovieFindAll({
       where: {
         mov_lang: {
           [Op.like]: `%${request.payload.language}%`,
@@ -87,7 +94,7 @@ exports.addNewMovie = async (request, reply) => {
   try {
     const { id, mov_title, mov_year, mov_lang, mov_region, mov_time } =
       request.payload;
-    const newMovie = await Movie.create({
+    const newMovie = await MovieCreate({
       id: id,
       mov_title: mov_title,
       mov_year: mov_year,
@@ -118,14 +125,14 @@ exports.addNewMovie = async (request, reply) => {
 exports.getDataForHome = async (request, reply) => {
   try {
     const { gen1, gen2, gen3 } = request.payload;
-    const MovieData = Movie.findAll({
+    const MovieData = await MovieFindAll({
       where: {
         [Op.and]: [Sequelize.fn('EXTRACT(MONTH from "mov_year") =', 6)],
       },
       limit: 1,
     });
 
-    const Genre1 = Genre.findAll({
+    const Genre1 = await GenreFindAll({
       include: Movie,
       where: {
         gen_title: gen1,
@@ -133,7 +140,7 @@ exports.getDataForHome = async (request, reply) => {
       limit: 10,
     });
 
-    const Genre2 = Genre.findAll({
+    const Genre2 = await GenreFindAll({
       include: Movie,
       where: {
         gen_title: gen2,
@@ -141,7 +148,7 @@ exports.getDataForHome = async (request, reply) => {
       limit: 10,
     });
 
-    const Genre3 = Genre.findAll({
+    const Genre3 = await GenreFindAll({
       include: Movie,
       where: {
         gen_title: gen3,
@@ -173,21 +180,21 @@ exports.getDataForHome = async (request, reply) => {
 
 exports.getFullMovieDetails = async (request, reply) => {
   try {
-    const movieGenre = Movie.findAll({
+    const movieGenre = await MovieFindAll({
       include: Genre,
       where: {
         id: request.params.id,
       },
     });
 
-    const movieDirection = Movie.findAll({
+    const movieDirection = await MovieFindAll({
       include: Director,
       where: {
         id: request.params.id,
       },
     });
 
-    const movieCast = Movie.findAll({
+    const movieCast = await MovieFindAll({
       include: Actor,
       where: {
         id: request.params.id,
@@ -223,7 +230,7 @@ exports.getMovieBySearchTerm = async (request, reply) => {
     const offset = page * pageSize;
 
     if (selectedOption === "Movie") {
-      data = await Movie.findAll({
+      data = await MovieFindAll({
         where: {
           mov_title: {
             [Op.like]: `%${request.payload.searchTerm}%`,
@@ -233,7 +240,7 @@ exports.getMovieBySearchTerm = async (request, reply) => {
         offset: offset,
       });
     } else if (selectedOption === "Director") {
-      data = await Director.findAll({
+      data = await DirectorFindAll({
         where: {
           dir_name: {
             [Op.like]: `%${request.payload.searchTerm}%`,
@@ -243,7 +250,7 @@ exports.getMovieBySearchTerm = async (request, reply) => {
         offset: offset,
       });
     } else if (selectedOption === "Actor") {
-      data = await Actor.findAll({
+      data = await ActorFindAll({
         where: {
           act_name: {
             [Op.like]: `%${request.payload.searchTerm}%`,
