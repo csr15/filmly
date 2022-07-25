@@ -57,7 +57,6 @@ exports.getAllMoviesOfSingleGenre = async (request, reply) => {
     reply(successReplyMessage(result));
     logger.log("info", "Successfully got list of movies by genre");
   } catch (error) {
-    console.log(error);
     reply(catchReplyMessage());
     logger.log("error", "Error getting list of movies by genre", error);
   }

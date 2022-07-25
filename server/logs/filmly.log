@@ -26547,3 +26547,823 @@
 {"level":"info","message":"Got movie for search successfully!","timestamp":"2022-07-21T13:01:07.756Z"}
 {"level":"info","message":"Request to: /api/v1/movie/search","timestamp":"2022-07-21T13:01:10.525Z"}
 {"level":"info","message":"Got movie for search successfully!","timestamp":"2022-07-21T13:01:10.530Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-24T04:11:32.501Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-24T04:11:32.517Z"}
+{"level":"error","message":"Problem on creating server","timestamp":"2022-07-25T03:40:45.290Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T03:40:45.291Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T03:40:45.306Z"}
+{"level":"info","message":"Rate limit for 127.0.0.1 limit exceeded.","timestamp":"2022-07-25T03:41:04.680Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T03:41:04.681Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T03:41:04.699Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T03:41:04.723Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T03:41:04.730Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T03:41:04.823Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T03:41:04.861Z"}
+{"level":"info","message":"Rate limit for 127.0.0.1 limit exceeded.","timestamp":"2022-07-25T03:41:35.983Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T03:41:35.983Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T03:41:36.000Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T03:41:36.030Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T03:41:36.051Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T03:41:36.069Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T03:41:36.072Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T03:41:36.282Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T03:41:36.290Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T03:41:36.355Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T03:41:36.355Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T03:41:36.363Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T03:41:36.369Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T03:41:37.264Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T03:41:37.273Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T03:41:37.358Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T03:41:37.358Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T03:41:37.370Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T03:41:37.385Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T03:41:38.058Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T03:41:38.062Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T03:41:38.120Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T03:41:38.121Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T03:41:38.127Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T03:41:38.149Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T03:41:38.714Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T03:41:38.719Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T03:41:38.767Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T03:41:38.769Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T03:41:38.775Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T03:41:38.784Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T03:41:39.368Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T03:41:39.374Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T03:41:39.424Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T03:41:39.425Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T03:41:39.433Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T03:41:39.454Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T03:41:40.006Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T03:41:40.015Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T03:41:40.046Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T03:41:40.059Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T03:41:40.100Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T03:41:40.119Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T03:41:40.547Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T03:41:40.550Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T03:41:40.598Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T03:41:40.598Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T03:41:40.605Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T03:41:40.616Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T03:41:41.022Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T03:41:41.033Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T03:41:41.083Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T03:41:41.083Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T03:41:41.089Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T03:41:41.098Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T03:41:41.491Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T03:41:41.495Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T03:41:41.631Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T03:41:41.632Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T03:41:41.639Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T03:41:41.642Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T03:41:41.752Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T03:41:41.760Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T03:41:41.799Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T03:41:41.801Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T03:41:41.816Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T03:41:41.830Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T03:41:42.180Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T03:41:42.197Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T03:41:42.252Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T03:41:42.253Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T03:41:42.279Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T03:41:42.292Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T03:41:42.356Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T03:41:42.369Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T03:41:42.416Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T03:41:42.427Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T03:41:42.440Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T03:41:42.444Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T03:41:42.641Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T03:41:42.662Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T03:41:42.665Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T03:41:42.668Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T03:41:42.817Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T03:41:42.869Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T03:41:42.873Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T03:41:42.945Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T03:41:42.947Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T03:41:42.977Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T03:41:42.997Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T03:41:43.016Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T03:41:43.021Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T03:41:43.191Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T03:41:43.194Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T03:41:43.247Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T03:41:43.248Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T03:41:43.253Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T03:41:43.257Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T03:41:43.525Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T03:41:43.531Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T03:41:43.663Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T03:41:43.669Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T03:41:43.685Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T03:41:43.689Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T03:41:43.693Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T03:41:43.701Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T03:41:44.174Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T03:41:44.176Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T03:41:44.221Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T03:41:44.231Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T03:41:44.240Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T03:41:44.245Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T03:41:52.390Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T03:41:52.392Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T03:41:52.418Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T03:41:52.437Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T03:41:52.453Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T03:41:52.457Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T03:41:52.840Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T03:41:52.848Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T03:41:52.889Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T03:41:52.890Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T03:41:52.918Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T03:41:52.920Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T03:41:53.101Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T03:41:53.102Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T03:41:53.186Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T03:41:53.186Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T03:41:53.197Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T03:41:53.213Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T03:41:53.388Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T03:41:53.389Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T03:41:53.452Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T03:41:53.453Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T03:41:53.461Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T03:41:53.468Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T03:41:53.895Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T03:41:53.898Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T03:41:53.950Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T03:41:53.950Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T03:41:53.956Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T03:41:53.981Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T03:41:54.855Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T03:41:54.856Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T03:41:54.910Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T03:41:54.910Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T03:41:54.916Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T03:41:54.931Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T03:41:55.105Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T03:41:55.117Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T03:41:55.157Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T03:41:55.157Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T03:41:55.165Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T03:41:55.171Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T03:41:55.351Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T03:41:55.354Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T03:41:55.401Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T03:41:55.401Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T03:41:55.420Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T03:41:55.426Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T03:41:55.634Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T03:41:55.636Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T03:41:55.719Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T03:41:55.719Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T03:41:55.727Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T03:41:55.735Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T03:41:56.066Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T03:41:56.067Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T03:41:56.166Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T03:41:56.170Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T03:41:56.279Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T03:41:56.279Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T03:41:56.343Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T03:41:56.345Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T03:41:56.392Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T03:41:56.400Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T03:41:56.408Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T03:41:56.410Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T03:41:56.905Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T03:41:56.906Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T03:41:56.988Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T03:41:56.988Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T03:41:56.995Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T03:41:57.002Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T03:42:18.535Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T03:42:18.549Z"}
+{"level":"info","message":"Rate limit for 127.0.0.1 limit exceeded.","timestamp":"2022-07-25T03:42:19.568Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T03:42:19.569Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T03:42:19.582Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T03:42:19.609Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T03:42:19.614Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T03:42:19.626Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T03:42:19.662Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T03:42:23.677Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T03:42:23.682Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T03:42:23.713Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T03:42:23.734Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T03:42:23.741Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T03:42:23.745Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T03:42:24.126Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T03:42:24.129Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T03:42:24.184Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T03:42:24.185Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T03:42:24.199Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T03:42:24.211Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T03:42:24.455Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T03:42:24.460Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T03:42:24.506Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T03:42:24.507Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T03:42:24.525Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T03:42:24.531Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T03:42:24.909Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T03:42:24.913Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T03:42:24.960Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T03:42:24.961Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T03:42:24.970Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T03:42:24.978Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T03:42:45.140Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T03:42:45.157Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T03:42:46.968Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T03:42:46.980Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T03:42:47.011Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T03:42:47.015Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T03:42:47.026Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T03:42:47.058Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T03:42:47.596Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T03:42:47.601Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T03:42:47.660Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T03:42:47.661Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T03:42:47.681Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T03:42:47.685Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T03:42:48.106Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T03:42:48.112Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T03:42:48.155Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T03:42:48.155Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T03:42:48.167Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T03:42:48.177Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T03:42:48.544Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T03:42:48.548Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T03:42:48.680Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T03:42:48.681Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T03:42:48.700Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T03:42:48.707Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T03:42:49.072Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T03:42:49.075Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T03:42:49.131Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T03:42:49.131Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T03:42:49.141Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T03:42:49.150Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T03:42:49.511Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T03:42:49.513Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T03:42:49.562Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T03:42:49.563Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T03:42:49.572Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T03:42:49.588Z"}
+{"level":"info","message":"Rate limit for 127.0.0.1 limit exceeded.","timestamp":"2022-07-25T03:43:12.920Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T03:43:12.921Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T03:43:12.931Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T03:43:13.083Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T03:43:13.084Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T03:43:13.099Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T03:43:13.125Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T03:43:48.897Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T03:43:48.907Z"}
+{"level":"info","message":"Rate limit for 127.0.0.1 limit exceeded.","timestamp":"2022-07-25T03:43:50.851Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T03:43:50.852Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T03:43:50.868Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T03:43:51.161Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T03:43:51.163Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T03:43:51.301Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T03:43:51.304Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T03:43:51.312Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T03:43:51.346Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T03:43:51.685Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T03:43:51.690Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T03:43:51.849Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T03:43:51.850Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T03:43:51.865Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T03:43:51.879Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T03:43:52.455Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T03:43:52.458Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T03:43:52.886Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T03:43:52.889Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T03:43:53.061Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T03:43:53.062Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T03:43:53.073Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T03:43:53.079Z"}
+{"level":"info","message":"Throttle limit exceeded.","timestamp":"2022-07-25T03:43:53.377Z"}
+{"level":"info","message":"Throttle limit exceeded.","timestamp":"2022-07-25T03:43:53.531Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T03:44:10.175Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T03:44:10.190Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T03:46:11.186Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T03:46:11.196Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T03:46:42.943Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T03:46:42.954Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T03:49:59.914Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T03:49:59.923Z"}
+{"level":"info","message":"Rate limit for 127.0.0.1 limit exceeded.","timestamp":"2022-07-25T03:50:01.774Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T03:50:01.774Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T03:50:01.786Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T03:50:01.809Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T03:50:01.830Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T03:50:01.841Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T03:50:01.844Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T03:51:41.997Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T03:51:42.011Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T03:51:43.767Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T03:51:43.780Z"}
+{"level":"info","message":"Rate limit for 127.0.0.1 limit exceeded.","timestamp":"2022-07-25T03:51:52.046Z"}
+{"level":"info","message":"Request to: /api/v1/login","timestamp":"2022-07-25T03:51:52.047Z"}
+{"level":"info","message":"Logged in successfully!","timestamp":"2022-07-25T03:51:52.151Z"}
+{"level":"info","message":"Request to: /api/v1/validateToken","timestamp":"2022-07-25T03:52:07.843Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T03:52:25.356Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T03:52:25.370Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T03:52:26.867Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T03:52:26.882Z"}
+{"level":"info","message":"Rate limit for 127.0.0.1 limit exceeded.","timestamp":"2022-07-25T03:52:29.600Z"}
+{"level":"info","message":"Request to: /api/v1/validateToken","timestamp":"2022-07-25T03:52:29.601Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T03:52:59.184Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T03:52:59.195Z"}
+{"level":"info","message":"Rate limit for 127.0.0.1 limit exceeded.","timestamp":"2022-07-25T03:53:00.350Z"}
+{"level":"info","message":"Request to: /api/v1/validateToken","timestamp":"2022-07-25T03:53:00.351Z"}
+{"expiredAt":"2022-07-25T03:52:12.000Z","level":"error","message":"Access token expired jwt expired","name":"TokenExpiredError","stack":"TokenExpiredError: jwt expired\n    at /Users/ragulcs/Desktop/filmly/server/node_modules/jsonwebtoken/verify.js:152:21\n    at getSecret (/Users/ragulcs/Desktop/filmly/server/node_modules/jsonwebtoken/verify.js:90:14)\n    at Object.module.exports [as verify] (/Users/ragulcs/Desktop/filmly/server/node_modules/jsonwebtoken/verify.js:94:10)\n    at exports.validateToken (/Users/ragulcs/Desktop/filmly/server/controllers/userController.js:96:11)\n    at Object.internals.handler (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:99:36)\n    at /Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:30:23\n    at module.exports.internals.Protect.internals.Protect.run (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/protect.js:62:12)\n    at exports.execute (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:24:22)\n    at each (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/request.js:380:16)\n    at iterate (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/node_modules/items/lib/index.js:36:13)","timestamp":"2022-07-25T03:53:00.362Z"}
+{"level":"info","message":"Request to: /api/v1/login","timestamp":"2022-07-25T03:53:06.241Z"}
+{"level":"info","message":"Logged in successfully!","timestamp":"2022-07-25T03:53:06.353Z"}
+{"level":"info","message":"Request to: /api/v1/validateToken","timestamp":"2022-07-25T03:53:16.268Z"}
+{"level":"info","message":"Token verified successfully.","timestamp":"2022-07-25T03:53:16.272Z"}
+{"level":"info","message":"Rate limit for 127.0.0.1 limit exceeded.","timestamp":"2022-07-25T03:55:01.951Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T03:55:01.951Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T03:55:01.960Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T03:55:01.985Z"}
+{"level":"info","message":"Request to: /api/v1/movie/details/13","timestamp":"2022-07-25T03:55:09.684Z"}
+{"level":"info","message":"Request to: /api/v1/movie/details/13","timestamp":"2022-07-25T03:55:09.691Z"}
+{"level":"info","message":"Full movie details retrieved successfully!!","timestamp":"2022-07-25T03:55:09.730Z"}
+{"level":"info","message":"Request to: /api/v1/genre/movie/Thriller","timestamp":"2022-07-25T03:55:24.340Z"}
+{"level":"info","message":"Request to: /api/v1/genre/movie/Thriller","timestamp":"2022-07-25T03:55:24.476Z"}
+{"level":"info","message":"Successfully got list of movies by genre","timestamp":"2022-07-25T03:55:24.500Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T03:55:28.497Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T03:55:28.500Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T03:55:28.972Z"}
+{"level":"info","message":"Request to: /api/v1/genre/movie/Thriller","timestamp":"2022-07-25T03:55:28.973Z"}
+{"level":"info","message":"Successfully got list of movies by genre","timestamp":"2022-07-25T03:55:28.986Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T03:55:29.003Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T03:55:29.011Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T03:55:29.063Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T03:55:29.065Z"}
+{"level":"info","message":"Rate limit for 127.0.0.1 limit exceeded.","timestamp":"2022-07-25T03:55:33.820Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T03:55:33.821Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T03:55:33.825Z"}
+{"level":"info","message":"Request to: /api/v1/genre/movie/Thriller","timestamp":"2022-07-25T03:55:33.837Z"}
+{"level":"info","message":"Successfully got list of movies by genre","timestamp":"2022-07-25T03:55:33.844Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T03:55:35.734Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T03:55:35.737Z"}
+{"level":"info","message":"Request to: /api/v1/genre/movie/Thriller","timestamp":"2022-07-25T03:55:35.744Z"}
+{"level":"info","message":"Successfully got list of movies by genre","timestamp":"2022-07-25T03:55:35.750Z"}
+{"level":"info","message":"Rate limit for 127.0.0.1 limit exceeded.","timestamp":"2022-07-25T04:10:21.222Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T04:10:21.223Z"}
+{"level":"info","message":"Request to: /api/v1/genre/movie/Thriller","timestamp":"2022-07-25T04:10:21.238Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T04:10:21.247Z"}
+{"level":"info","message":"Successfully got list of movies by genre","timestamp":"2022-07-25T04:10:21.252Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T04:10:26.972Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T04:10:26.976Z"}
+{"level":"info","message":"Request to: /api/v1/genre/movie/Thriller","timestamp":"2022-07-25T04:10:27.000Z"}
+{"level":"info","message":"Successfully got list of movies by genre","timestamp":"2022-07-25T04:10:27.007Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T04:10:27.152Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T04:10:27.153Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T04:10:28.398Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T04:10:28.402Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T04:10:28.428Z"}
+{"level":"info","message":"Request to: /api/v1/validateToken","timestamp":"2022-07-25T04:10:29.137Z"}
+{"level":"info","message":"Request to: /api/v1/validateToken","timestamp":"2022-07-25T04:10:29.148Z"}
+{"expiredAt":"2022-07-20T12:55:43.000Z","level":"error","message":"Access token expired jwt expired","name":"TokenExpiredError","stack":"TokenExpiredError: jwt expired\n    at /Users/ragulcs/Desktop/filmly/server/node_modules/jsonwebtoken/verify.js:152:21\n    at getSecret (/Users/ragulcs/Desktop/filmly/server/node_modules/jsonwebtoken/verify.js:90:14)\n    at Object.module.exports [as verify] (/Users/ragulcs/Desktop/filmly/server/node_modules/jsonwebtoken/verify.js:94:10)\n    at exports.validateToken (/Users/ragulcs/Desktop/filmly/server/controllers/userController.js:96:11)\n    at Object.internals.handler (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:99:36)\n    at /Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:30:23\n    at module.exports.internals.Protect.internals.Protect.run (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/protect.js:62:12)\n    at exports.execute (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:24:22)\n    at each (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/request.js:380:16)\n    at iterate (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/node_modules/items/lib/index.js:36:13)","timestamp":"2022-07-25T04:10:29.153Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T04:14:13.517Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T04:14:13.533Z"}
+{"level":"info","message":"Rate limit for 127.0.0.1 limit exceeded.","timestamp":"2022-07-25T04:14:40.917Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T04:14:40.917Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T04:14:40.937Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T04:14:41.056Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T04:14:41.059Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T04:14:41.083Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T04:14:41.099Z"}
+{"level":"info","message":"Request to: /api/v1/validateToken","timestamp":"2022-07-25T04:14:43.389Z"}
+{"expiredAt":"2022-07-20T12:55:43.000Z","level":"error","message":"Access token expired jwt expired","name":"TokenExpiredError","stack":"TokenExpiredError: jwt expired\n    at /Users/ragulcs/Desktop/filmly/server/node_modules/jsonwebtoken/verify.js:152:21\n    at getSecret (/Users/ragulcs/Desktop/filmly/server/node_modules/jsonwebtoken/verify.js:90:14)\n    at Object.module.exports [as verify] (/Users/ragulcs/Desktop/filmly/server/node_modules/jsonwebtoken/verify.js:94:10)\n    at exports.validateToken (/Users/ragulcs/Desktop/filmly/server/controllers/userController.js:96:11)\n    at Object.internals.handler (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:99:36)\n    at /Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:30:23\n    at module.exports.internals.Protect.internals.Protect.run (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/protect.js:62:12)\n    at exports.execute (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:24:22)\n    at each (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/request.js:380:16)\n    at iterate (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/node_modules/items/lib/index.js:36:13)","timestamp":"2022-07-25T04:14:43.400Z"}
+{"level":"info","message":"Request to: /api/v1/validateToken","timestamp":"2022-07-25T04:14:50.655Z"}
+{"expiredAt":"2022-07-20T12:55:43.000Z","level":"error","message":"Access token expired jwt expired","name":"TokenExpiredError","stack":"TokenExpiredError: jwt expired\n    at /Users/ragulcs/Desktop/filmly/server/node_modules/jsonwebtoken/verify.js:152:21\n    at getSecret (/Users/ragulcs/Desktop/filmly/server/node_modules/jsonwebtoken/verify.js:90:14)\n    at Object.module.exports [as verify] (/Users/ragulcs/Desktop/filmly/server/node_modules/jsonwebtoken/verify.js:94:10)\n    at exports.validateToken (/Users/ragulcs/Desktop/filmly/server/controllers/userController.js:96:11)\n    at Object.internals.handler (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:99:36)\n    at /Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:30:23\n    at module.exports.internals.Protect.internals.Protect.run (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/protect.js:62:12)\n    at exports.execute (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:24:22)\n    at each (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/request.js:380:16)\n    at iterate (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/node_modules/items/lib/index.js:36:13)","timestamp":"2022-07-25T04:14:50.661Z"}
+{"level":"info","message":"Request to: /api/v1/validateToken","timestamp":"2022-07-25T04:14:52.863Z"}
+{"expiredAt":"2022-07-20T12:55:43.000Z","level":"error","message":"Access token expired jwt expired","name":"TokenExpiredError","stack":"TokenExpiredError: jwt expired\n    at /Users/ragulcs/Desktop/filmly/server/node_modules/jsonwebtoken/verify.js:152:21\n    at getSecret (/Users/ragulcs/Desktop/filmly/server/node_modules/jsonwebtoken/verify.js:90:14)\n    at Object.module.exports [as verify] (/Users/ragulcs/Desktop/filmly/server/node_modules/jsonwebtoken/verify.js:94:10)\n    at exports.validateToken (/Users/ragulcs/Desktop/filmly/server/controllers/userController.js:96:11)\n    at Object.internals.handler (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:99:36)\n    at /Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:30:23\n    at module.exports.internals.Protect.internals.Protect.run (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/protect.js:62:12)\n    at exports.execute (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:24:22)\n    at each (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/request.js:380:16)\n    at iterate (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/node_modules/items/lib/index.js:36:13)","timestamp":"2022-07-25T04:14:52.867Z"}
+{"level":"info","message":"Rate limit for 127.0.0.1 limit exceeded.","timestamp":"2022-07-25T04:15:31.100Z"}
+{"level":"info","message":"Request to: /api/v1/validateToken","timestamp":"2022-07-25T04:15:31.100Z"}
+{"expiredAt":"2022-07-20T12:55:43.000Z","level":"error","message":"Access token expired jwt expired","name":"TokenExpiredError","stack":"TokenExpiredError: jwt expired\n    at /Users/ragulcs/Desktop/filmly/server/node_modules/jsonwebtoken/verify.js:152:21\n    at getSecret (/Users/ragulcs/Desktop/filmly/server/node_modules/jsonwebtoken/verify.js:90:14)\n    at Object.module.exports [as verify] (/Users/ragulcs/Desktop/filmly/server/node_modules/jsonwebtoken/verify.js:94:10)\n    at exports.validateToken (/Users/ragulcs/Desktop/filmly/server/controllers/userController.js:96:11)\n    at Object.internals.handler (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:99:36)\n    at /Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:30:23\n    at module.exports.internals.Protect.internals.Protect.run (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/protect.js:62:12)\n    at exports.execute (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:24:22)\n    at each (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/request.js:380:16)\n    at iterate (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/node_modules/items/lib/index.js:36:13)","timestamp":"2022-07-25T04:15:31.102Z"}
+{"level":"info","message":"Request to: /api/v1/login","timestamp":"2022-07-25T04:15:48.290Z"}
+{"level":"info","message":"Request to: /api/v1/login","timestamp":"2022-07-25T04:15:48.301Z"}
+{"level":"info","message":"Logged in successfully!","timestamp":"2022-07-25T04:15:48.409Z"}
+{"level":"info","message":"Request to: /api/v1/validateToken","timestamp":"2022-07-25T04:15:49.712Z"}
+{"level":"info","message":"Token verified successfully.","timestamp":"2022-07-25T04:15:49.714Z"}
+{"level":"info","message":"Rate limit for 127.0.0.1 limit exceeded.","timestamp":"2022-07-25T04:16:20.153Z"}
+{"level":"info","message":"Request to: /api/v1/validateToken","timestamp":"2022-07-25T04:16:20.153Z"}
+{"level":"info","message":"Rate limit for 127.0.0.1 limit exceeded.","timestamp":"2022-07-25T04:16:20.153Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T04:16:20.154Z"}
+{"expiredAt":"2022-07-25T04:16:08.000Z","level":"error","message":"Access token expired jwt expired","name":"TokenExpiredError","stack":"TokenExpiredError: jwt expired\n    at /Users/ragulcs/Desktop/filmly/server/node_modules/jsonwebtoken/verify.js:152:21\n    at getSecret (/Users/ragulcs/Desktop/filmly/server/node_modules/jsonwebtoken/verify.js:90:14)\n    at Object.module.exports [as verify] (/Users/ragulcs/Desktop/filmly/server/node_modules/jsonwebtoken/verify.js:94:10)\n    at exports.validateToken (/Users/ragulcs/Desktop/filmly/server/controllers/userController.js:96:11)\n    at Object.internals.handler (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:99:36)\n    at /Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:30:23\n    at module.exports.internals.Protect.internals.Protect.run (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/protect.js:62:12)\n    at exports.execute (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:24:22)\n    at each (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/request.js:380:16)\n    at iterate (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/node_modules/items/lib/index.js:36:13)","timestamp":"2022-07-25T04:16:20.156Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T04:16:20.166Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T04:16:20.267Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T04:16:20.270Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T04:16:20.366Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T04:16:20.380Z"}
+{"level":"info","message":"Request to: /api/v1/validateToken","timestamp":"2022-07-25T04:16:23.665Z"}
+{"expiredAt":"2022-07-25T04:16:08.000Z","level":"error","message":"Access token expired jwt expired","name":"TokenExpiredError","stack":"TokenExpiredError: jwt expired\n    at /Users/ragulcs/Desktop/filmly/server/node_modules/jsonwebtoken/verify.js:152:21\n    at getSecret (/Users/ragulcs/Desktop/filmly/server/node_modules/jsonwebtoken/verify.js:90:14)\n    at Object.module.exports [as verify] (/Users/ragulcs/Desktop/filmly/server/node_modules/jsonwebtoken/verify.js:94:10)\n    at exports.validateToken (/Users/ragulcs/Desktop/filmly/server/controllers/userController.js:96:11)\n    at Object.internals.handler (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:99:36)\n    at /Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:30:23\n    at module.exports.internals.Protect.internals.Protect.run (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/protect.js:62:12)\n    at exports.execute (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:24:22)\n    at each (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/request.js:380:16)\n    at iterate (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/node_modules/items/lib/index.js:36:13)","timestamp":"2022-07-25T04:16:23.668Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T04:16:39.236Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T04:16:39.247Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T04:16:41.106Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T04:16:41.109Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T04:16:41.198Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T04:16:41.200Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T04:16:41.205Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T04:16:41.222Z"}
+{"level":"info","message":"Rate limit for 127.0.0.1 limit exceeded.","timestamp":"2022-07-25T04:16:53.685Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T04:16:53.685Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T04:16:53.689Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T04:16:53.699Z"}
+{"level":"info","message":"Rate limit for 127.0.0.1 limit exceeded.","timestamp":"2022-07-25T04:17:34.205Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T04:17:34.205Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T04:17:34.235Z"}
+{"level":"info","message":"Rate limit for 127.0.0.1 limit exceeded.","timestamp":"2022-07-25T04:22:18.275Z"}
+{"level":"info","message":"Request to: /api/v1/validateToken","timestamp":"2022-07-25T04:22:18.275Z"}
+{"expiredAt":"2022-07-25T04:16:08.000Z","level":"error","message":"Access token expired jwt expired","name":"TokenExpiredError","stack":"TokenExpiredError: jwt expired\n    at /Users/ragulcs/Desktop/filmly/server/node_modules/jsonwebtoken/verify.js:152:21\n    at getSecret (/Users/ragulcs/Desktop/filmly/server/node_modules/jsonwebtoken/verify.js:90:14)\n    at Object.module.exports [as verify] (/Users/ragulcs/Desktop/filmly/server/node_modules/jsonwebtoken/verify.js:94:10)\n    at exports.validateToken (/Users/ragulcs/Desktop/filmly/server/controllers/userController.js:96:11)\n    at Object.internals.handler (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:99:36)\n    at /Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:30:23\n    at module.exports.internals.Protect.internals.Protect.run (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/protect.js:62:12)\n    at exports.execute (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:24:22)\n    at each (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/request.js:380:16)\n    at iterate (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/node_modules/items/lib/index.js:36:13)","timestamp":"2022-07-25T04:22:18.278Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T04:22:18.768Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T04:22:18.780Z"}
+{"level":"info","message":"Request to: /api/v1/login","timestamp":"2022-07-25T04:22:24.556Z"}
+{"level":"info","message":"Request to: /api/v1/login","timestamp":"2022-07-25T04:22:24.560Z"}
+{"level":"info","message":"Logged in successfully!","timestamp":"2022-07-25T04:22:24.663Z"}
+{"level":"info","message":"Request to: /api/v1/validateToken","timestamp":"2022-07-25T04:22:24.713Z"}
+{"level":"info","message":"Request to: /api/v1/validateToken","timestamp":"2022-07-25T04:22:24.717Z"}
+{"level":"info","message":"Token verified successfully.","timestamp":"2022-07-25T04:22:24.719Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T04:22:24.724Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T04:22:24.728Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T04:22:24.751Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T04:22:26.242Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T04:22:26.258Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T04:22:26.263Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T04:22:26.290Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T04:22:26.297Z"}
+{"level":"info","message":"Throttle limit exceeded.","timestamp":"2022-07-25T04:22:26.300Z"}
+{"level":"info","message":"Throttle limit exceeded.","timestamp":"2022-07-25T04:22:38.002Z"}
+{"level":"info","message":"Throttle limit exceeded.","timestamp":"2022-07-25T04:22:38.036Z"}
+{"level":"info","message":"Throttle limit exceeded.","timestamp":"2022-07-25T04:22:38.095Z"}
+{"level":"info","message":"Rate limit for 127.0.0.1 limit exceeded.","timestamp":"2022-07-25T04:23:11.151Z"}
+{"level":"info","message":"Request to: /api/v1/validateToken","timestamp":"2022-07-25T04:23:11.151Z"}
+{"expiredAt":"2022-07-25T04:22:44.000Z","level":"error","message":"Access token expired jwt expired","name":"TokenExpiredError","stack":"TokenExpiredError: jwt expired\n    at /Users/ragulcs/Desktop/filmly/server/node_modules/jsonwebtoken/verify.js:152:21\n    at getSecret (/Users/ragulcs/Desktop/filmly/server/node_modules/jsonwebtoken/verify.js:90:14)\n    at Object.module.exports [as verify] (/Users/ragulcs/Desktop/filmly/server/node_modules/jsonwebtoken/verify.js:94:10)\n    at exports.validateToken (/Users/ragulcs/Desktop/filmly/server/controllers/userController.js:96:11)\n    at Object.internals.handler (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:99:36)\n    at /Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:30:23\n    at module.exports.internals.Protect.internals.Protect.run (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/protect.js:62:12)\n    at exports.execute (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:24:22)\n    at each (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/request.js:380:16)\n    at iterate (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/node_modules/items/lib/index.js:36:13)","timestamp":"2022-07-25T04:23:11.154Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T04:23:11.843Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T04:23:11.854Z"}
+{"level":"info","message":"Request to: /api/v1/validateToken","timestamp":"2022-07-25T04:23:11.915Z"}
+{"expiredAt":"2022-07-25T04:22:44.000Z","level":"error","message":"Access token expired jwt expired","name":"TokenExpiredError","stack":"TokenExpiredError: jwt expired\n    at /Users/ragulcs/Desktop/filmly/server/node_modules/jsonwebtoken/verify.js:152:21\n    at getSecret (/Users/ragulcs/Desktop/filmly/server/node_modules/jsonwebtoken/verify.js:90:14)\n    at Object.module.exports [as verify] (/Users/ragulcs/Desktop/filmly/server/node_modules/jsonwebtoken/verify.js:94:10)\n    at exports.validateToken (/Users/ragulcs/Desktop/filmly/server/controllers/userController.js:96:11)\n    at Object.internals.handler (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:99:36)\n    at /Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:30:23\n    at module.exports.internals.Protect.internals.Protect.run (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/protect.js:62:12)\n    at exports.execute (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:24:22)\n    at each (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/request.js:380:16)\n    at iterate (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/node_modules/items/lib/index.js:36:13)","timestamp":"2022-07-25T04:23:11.918Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T04:23:11.932Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T04:23:11.936Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T04:24:20.260Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T04:24:20.276Z"}
+{"level":"info","message":"Rate limit for 127.0.0.1 limit exceeded.","timestamp":"2022-07-25T04:24:20.418Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T04:24:20.418Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T04:24:20.430Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T04:24:20.508Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T04:24:20.514Z"}
+{"level":"info","message":"Request to: /api/v1/validateToken","timestamp":"2022-07-25T04:24:20.523Z"}
+{"expiredAt":"2022-07-25T04:22:44.000Z","level":"error","message":"Access token expired jwt expired","name":"TokenExpiredError","stack":"TokenExpiredError: jwt expired\n    at /Users/ragulcs/Desktop/filmly/server/node_modules/jsonwebtoken/verify.js:152:21\n    at getSecret (/Users/ragulcs/Desktop/filmly/server/node_modules/jsonwebtoken/verify.js:90:14)\n    at Object.module.exports [as verify] (/Users/ragulcs/Desktop/filmly/server/node_modules/jsonwebtoken/verify.js:94:10)\n    at exports.validateToken (/Users/ragulcs/Desktop/filmly/server/controllers/userController.js:96:11)\n    at Object.internals.handler (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:99:36)\n    at /Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:30:23\n    at module.exports.internals.Protect.internals.Protect.run (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/protect.js:62:12)\n    at exports.execute (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:24:22)\n    at each (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/request.js:380:16)\n    at iterate (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/node_modules/items/lib/index.js:36:13)","timestamp":"2022-07-25T04:24:20.531Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T04:24:25.187Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T04:24:25.191Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T04:24:25.193Z"}
+{"level":"info","message":"Request to: /api/v1/login","timestamp":"2022-07-25T04:24:32.576Z"}
+{"level":"info","message":"Request to: /api/v1/login","timestamp":"2022-07-25T04:24:32.584Z"}
+{"level":"info","message":"Logged in successfully!","timestamp":"2022-07-25T04:24:32.689Z"}
+{"level":"info","message":"Request to: /api/v1/validateToken","timestamp":"2022-07-25T04:24:32.731Z"}
+{"level":"info","message":"Request to: /api/v1/validateToken","timestamp":"2022-07-25T04:24:32.734Z"}
+{"level":"info","message":"Token verified successfully.","timestamp":"2022-07-25T04:24:32.736Z"}
+{"level":"info","message":"Rate limit for 127.0.0.1 limit exceeded.","timestamp":"2022-07-25T04:25:35.431Z"}
+{"level":"info","message":"Request to: /api/v1/validateToken","timestamp":"2022-07-25T04:25:35.432Z"}
+{"level":"info","message":"Token verified successfully.","timestamp":"2022-07-25T04:25:35.434Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T04:25:35.448Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T04:25:35.456Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T04:25:35.484Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T04:25:38.333Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T04:25:38.340Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T04:25:38.345Z"}
+{"level":"info","message":"Request to: /api/v1/validateToken","timestamp":"2022-07-25T04:25:38.419Z"}
+{"level":"info","message":"Token verified successfully.","timestamp":"2022-07-25T04:25:38.422Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T04:25:38.431Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T04:25:38.433Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T04:25:38.437Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T04:25:38.455Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T04:25:50.483Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T04:25:50.498Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T04:25:51.479Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T04:25:51.489Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T04:25:53.203Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T04:25:53.215Z"}
+{"level":"info","message":"Request to: /api/v1/validateToken","timestamp":"2022-07-25T04:25:53.282Z"}
+{"level":"info","message":"Token verified successfully.","timestamp":"2022-07-25T04:25:53.285Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T04:25:53.303Z"}
+{"level":"info","message":"Throttle limit exceeded.","timestamp":"2022-07-25T04:25:53.306Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T04:25:53.308Z"}
+{"level":"info","message":"Throttle limit exceeded.","timestamp":"2022-07-25T04:25:55.285Z"}
+{"level":"info","message":"Throttle limit exceeded.","timestamp":"2022-07-25T04:25:55.361Z"}
+{"level":"info","message":"Throttle limit exceeded.","timestamp":"2022-07-25T04:25:55.366Z"}
+{"level":"info","message":"Throttle limit exceeded.","timestamp":"2022-07-25T04:25:56.449Z"}
+{"level":"info","message":"Throttle limit exceeded.","timestamp":"2022-07-25T04:25:56.542Z"}
+{"level":"info","message":"Throttle limit exceeded.","timestamp":"2022-07-25T04:25:56.542Z"}
+{"level":"info","message":"Rate limit for 127.0.0.1 limit exceeded.","timestamp":"2022-07-25T04:26:06.109Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T04:26:06.110Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T04:26:06.112Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T04:26:06.121Z"}
+{"level":"info","message":"Request to: /api/v1/login","timestamp":"2022-07-25T04:26:15.519Z"}
+{"level":"info","message":"Logged in successfully!","timestamp":"2022-07-25T04:26:15.619Z"}
+{"level":"info","message":"Request to: /api/v1/validateToken","timestamp":"2022-07-25T04:26:15.653Z"}
+{"level":"info","message":"Token verified successfully.","timestamp":"2022-07-25T04:26:15.656Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T04:26:18.482Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T04:26:18.487Z"}
+{"level":"info","message":"Request to: /api/v1/validateToken","timestamp":"2022-07-25T04:26:18.524Z"}
+{"level":"info","message":"Token verified successfully.","timestamp":"2022-07-25T04:26:18.526Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T04:26:18.671Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T04:26:18.673Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T04:26:18.691Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T04:26:18.720Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T04:26:20.105Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T04:26:20.113Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T04:26:20.298Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T04:26:20.300Z"}
+{"level":"info","message":"Request to: /api/v1/validateToken","timestamp":"2022-07-25T04:26:20.302Z"}
+{"level":"info","message":"Token verified successfully.","timestamp":"2022-07-25T04:26:20.303Z"}
+{"level":"info","message":"Throttle limit exceeded.","timestamp":"2022-07-25T04:26:20.322Z"}
+{"level":"info","message":"Throttle limit exceeded.","timestamp":"2022-07-25T04:26:22.415Z"}
+{"level":"info","message":"Throttle limit exceeded.","timestamp":"2022-07-25T04:26:22.470Z"}
+{"level":"info","message":"Throttle limit exceeded.","timestamp":"2022-07-25T04:26:22.471Z"}
+{"level":"info","message":"Throttle limit exceeded.","timestamp":"2022-07-25T04:26:23.710Z"}
+{"level":"info","message":"Throttle limit exceeded.","timestamp":"2022-07-25T04:26:23.783Z"}
+{"level":"info","message":"Throttle limit exceeded.","timestamp":"2022-07-25T04:26:23.787Z"}
+{"level":"info","message":"Rate limit for 127.0.0.1 limit exceeded.","timestamp":"2022-07-25T04:26:44.439Z"}
+{"level":"info","message":"Request to: /api/v1/validateToken","timestamp":"2022-07-25T04:26:44.439Z"}
+{"expiredAt":"2022-07-25T04:26:35.000Z","level":"error","message":"Access token expired jwt expired","name":"TokenExpiredError","stack":"TokenExpiredError: jwt expired\n    at /Users/ragulcs/Desktop/filmly/server/node_modules/jsonwebtoken/verify.js:152:21\n    at getSecret (/Users/ragulcs/Desktop/filmly/server/node_modules/jsonwebtoken/verify.js:90:14)\n    at Object.module.exports [as verify] (/Users/ragulcs/Desktop/filmly/server/node_modules/jsonwebtoken/verify.js:94:10)\n    at exports.validateToken (/Users/ragulcs/Desktop/filmly/server/controllers/userController.js:96:11)\n    at Object.internals.handler (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:99:36)\n    at /Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:30:23\n    at module.exports.internals.Protect.internals.Protect.run (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/protect.js:62:12)\n    at exports.execute (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:24:22)\n    at each (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/request.js:380:16)\n    at iterate (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/node_modules/items/lib/index.js:36:13)","timestamp":"2022-07-25T04:26:44.441Z"}
+{"level":"info","message":"Request to: /api/v1/validateToken","timestamp":"2022-07-25T04:27:00.954Z"}
+{"expiredAt":"2022-07-25T04:26:35.000Z","level":"error","message":"Access token expired jwt expired","name":"TokenExpiredError","stack":"TokenExpiredError: jwt expired\n    at /Users/ragulcs/Desktop/filmly/server/node_modules/jsonwebtoken/verify.js:152:21\n    at getSecret (/Users/ragulcs/Desktop/filmly/server/node_modules/jsonwebtoken/verify.js:90:14)\n    at Object.module.exports [as verify] (/Users/ragulcs/Desktop/filmly/server/node_modules/jsonwebtoken/verify.js:94:10)\n    at exports.validateToken (/Users/ragulcs/Desktop/filmly/server/controllers/userController.js:96:11)\n    at Object.internals.handler (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:99:36)\n    at /Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:30:23\n    at module.exports.internals.Protect.internals.Protect.run (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/protect.js:62:12)\n    at exports.execute (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:24:22)\n    at each (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/request.js:380:16)\n    at iterate (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/node_modules/items/lib/index.js:36:13)","timestamp":"2022-07-25T04:27:00.955Z"}
+{"level":"info","message":"Request to: /api/v1/validateToken","timestamp":"2022-07-25T04:27:06.538Z"}
+{"expiredAt":"2022-07-25T04:26:35.000Z","level":"error","message":"Access token expired jwt expired","name":"TokenExpiredError","stack":"TokenExpiredError: jwt expired\n    at /Users/ragulcs/Desktop/filmly/server/node_modules/jsonwebtoken/verify.js:152:21\n    at getSecret (/Users/ragulcs/Desktop/filmly/server/node_modules/jsonwebtoken/verify.js:90:14)\n    at Object.module.exports [as verify] (/Users/ragulcs/Desktop/filmly/server/node_modules/jsonwebtoken/verify.js:94:10)\n    at exports.validateToken (/Users/ragulcs/Desktop/filmly/server/controllers/userController.js:96:11)\n    at Object.internals.handler (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:99:36)\n    at /Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:30:23\n    at module.exports.internals.Protect.internals.Protect.run (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/protect.js:62:12)\n    at exports.execute (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:24:22)\n    at each (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/request.js:380:16)\n    at iterate (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/node_modules/items/lib/index.js:36:13)","timestamp":"2022-07-25T04:27:06.539Z"}
+{"level":"info","message":"Rate limit for 127.0.0.1 limit exceeded.","timestamp":"2022-07-25T04:27:23.453Z"}
+{"level":"info","message":"Request to: /api/v1/validateToken","timestamp":"2022-07-25T04:27:23.453Z"}
+{"expiredAt":"2022-07-25T04:26:35.000Z","level":"error","message":"Access token expired jwt expired","name":"TokenExpiredError","stack":"TokenExpiredError: jwt expired\n    at /Users/ragulcs/Desktop/filmly/server/node_modules/jsonwebtoken/verify.js:152:21\n    at getSecret (/Users/ragulcs/Desktop/filmly/server/node_modules/jsonwebtoken/verify.js:90:14)\n    at Object.module.exports [as verify] (/Users/ragulcs/Desktop/filmly/server/node_modules/jsonwebtoken/verify.js:94:10)\n    at exports.validateToken (/Users/ragulcs/Desktop/filmly/server/controllers/userController.js:96:11)\n    at Object.internals.handler (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:99:36)\n    at /Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:30:23\n    at module.exports.internals.Protect.internals.Protect.run (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/protect.js:62:12)\n    at exports.execute (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:24:22)\n    at each (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/request.js:380:16)\n    at iterate (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/node_modules/items/lib/index.js:36:13)","timestamp":"2022-07-25T04:27:23.454Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T04:27:25.054Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T04:27:25.072Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T04:27:25.203Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T04:27:25.206Z"}
+{"level":"info","message":"Request to: /api/v1/validateToken","timestamp":"2022-07-25T04:27:25.261Z"}
+{"expiredAt":"2022-07-25T04:26:35.000Z","level":"error","message":"Access token expired jwt expired","name":"TokenExpiredError","stack":"TokenExpiredError: jwt expired\n    at /Users/ragulcs/Desktop/filmly/server/node_modules/jsonwebtoken/verify.js:152:21\n    at getSecret (/Users/ragulcs/Desktop/filmly/server/node_modules/jsonwebtoken/verify.js:90:14)\n    at Object.module.exports [as verify] (/Users/ragulcs/Desktop/filmly/server/node_modules/jsonwebtoken/verify.js:94:10)\n    at exports.validateToken (/Users/ragulcs/Desktop/filmly/server/controllers/userController.js:96:11)\n    at Object.internals.handler (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:99:36)\n    at /Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:30:23\n    at module.exports.internals.Protect.internals.Protect.run (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/protect.js:62:12)\n    at exports.execute (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:24:22)\n    at each (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/request.js:380:16)\n    at iterate (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/node_modules/items/lib/index.js:36:13)","timestamp":"2022-07-25T04:27:25.263Z"}
+{"level":"info","message":"Request to: /api/v1/login","timestamp":"2022-07-25T04:27:30.385Z"}
+{"level":"info","message":"Logged in successfully!","timestamp":"2022-07-25T04:27:30.484Z"}
+{"level":"info","message":"Request to: /api/v1/validateToken","timestamp":"2022-07-25T04:27:30.521Z"}
+{"level":"info","message":"Token verified successfully.","timestamp":"2022-07-25T04:27:30.521Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T04:27:30.533Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T04:27:30.546Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T04:27:32.608Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T04:27:32.611Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T04:27:32.771Z"}
+{"level":"info","message":"Request to: /api/v1/validateToken","timestamp":"2022-07-25T04:27:32.773Z"}
+{"level":"info","message":"Token verified successfully.","timestamp":"2022-07-25T04:27:32.775Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T04:27:32.779Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T04:27:32.793Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T04:27:32.810Z"}
+{"level":"info","message":"Throttle limit exceeded.","timestamp":"2022-07-25T04:27:33.819Z"}
+{"level":"info","message":"Throttle limit exceeded.","timestamp":"2022-07-25T04:27:33.979Z"}
+{"level":"info","message":"Throttle limit exceeded.","timestamp":"2022-07-25T04:27:33.980Z"}
+{"level":"info","message":"Throttle limit exceeded.","timestamp":"2022-07-25T04:27:44.642Z"}
+{"level":"info","message":"Throttle limit exceeded.","timestamp":"2022-07-25T04:27:48.379Z"}
+{"level":"info","message":"Throttle limit exceeded.","timestamp":"2022-07-25T04:27:48.409Z"}
+{"level":"info","message":"Throttle limit exceeded.","timestamp":"2022-07-25T04:27:48.518Z"}
+{"level":"info","message":"Rate limit for 127.0.0.1 limit exceeded.","timestamp":"2022-07-25T04:27:55.188Z"}
+{"level":"info","message":"Request to: /api/v1/validateToken","timestamp":"2022-07-25T04:27:55.188Z"}
+{"expiredAt":"2022-07-25T04:27:50.000Z","level":"error","message":"Access token expired jwt expired","name":"TokenExpiredError","stack":"TokenExpiredError: jwt expired\n    at /Users/ragulcs/Desktop/filmly/server/node_modules/jsonwebtoken/verify.js:152:21\n    at getSecret (/Users/ragulcs/Desktop/filmly/server/node_modules/jsonwebtoken/verify.js:90:14)\n    at Object.module.exports [as verify] (/Users/ragulcs/Desktop/filmly/server/node_modules/jsonwebtoken/verify.js:94:10)\n    at exports.validateToken (/Users/ragulcs/Desktop/filmly/server/controllers/userController.js:96:11)\n    at Object.internals.handler (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:99:36)\n    at /Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:30:23\n    at module.exports.internals.Protect.internals.Protect.run (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/protect.js:62:12)\n    at exports.execute (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:24:22)\n    at each (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/request.js:380:16)\n    at iterate (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/node_modules/items/lib/index.js:36:13)","timestamp":"2022-07-25T04:27:55.189Z"}
+{"level":"info","message":"Rate limit for 127.0.0.1 limit exceeded.","timestamp":"2022-07-25T04:39:08.535Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T04:39:08.535Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T04:39:08.546Z"}
+{"level":"info","message":"Request to: /api/v1/validateToken","timestamp":"2022-07-25T04:39:08.570Z"}
+{"expiredAt":"2022-07-25T04:27:50.000Z","level":"error","message":"Access token expired jwt expired","name":"TokenExpiredError","stack":"TokenExpiredError: jwt expired\n    at /Users/ragulcs/Desktop/filmly/server/node_modules/jsonwebtoken/verify.js:152:21\n    at getSecret (/Users/ragulcs/Desktop/filmly/server/node_modules/jsonwebtoken/verify.js:90:14)\n    at Object.module.exports [as verify] (/Users/ragulcs/Desktop/filmly/server/node_modules/jsonwebtoken/verify.js:94:10)\n    at exports.validateToken (/Users/ragulcs/Desktop/filmly/server/controllers/userController.js:96:11)\n    at Object.internals.handler (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:99:36)\n    at /Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:30:23\n    at module.exports.internals.Protect.internals.Protect.run (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/protect.js:62:12)\n    at exports.execute (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:24:22)\n    at each (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/request.js:380:16)\n    at iterate (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/node_modules/items/lib/index.js:36:13)","timestamp":"2022-07-25T04:39:08.571Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T04:39:08.701Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T04:39:08.705Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T04:39:28.775Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T04:39:28.778Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T04:39:28.793Z"}
+{"level":"info","message":"Rate limit for 127.0.0.1 limit exceeded.","timestamp":"2022-07-25T04:39:40.612Z"}
+{"level":"info","message":"Request to: /api/v1/login","timestamp":"2022-07-25T04:39:40.612Z"}
+{"level":"info","message":"Request to: /api/v1/login","timestamp":"2022-07-25T04:39:40.623Z"}
+{"level":"info","message":"Logged in successfully!","timestamp":"2022-07-25T04:39:40.726Z"}
+{"level":"info","message":"Request to: /api/v1/validateToken","timestamp":"2022-07-25T04:39:40.768Z"}
+{"level":"info","message":"Request to: /api/v1/validateToken","timestamp":"2022-07-25T04:39:40.774Z"}
+{"level":"info","message":"Token verified successfully.","timestamp":"2022-07-25T04:39:40.775Z"}
+{"level":"info","message":"Rate limit for 127.0.0.1 limit exceeded.","timestamp":"2022-07-25T04:40:41.036Z"}
+{"level":"info","message":"Request to: /api/v1/validateToken","timestamp":"2022-07-25T04:40:41.036Z"}
+{"expiredAt":"2022-07-25T04:40:00.000Z","level":"error","message":"Access token expired jwt expired","name":"TokenExpiredError","stack":"TokenExpiredError: jwt expired\n    at /Users/ragulcs/Desktop/filmly/server/node_modules/jsonwebtoken/verify.js:152:21\n    at getSecret (/Users/ragulcs/Desktop/filmly/server/node_modules/jsonwebtoken/verify.js:90:14)\n    at Object.module.exports [as verify] (/Users/ragulcs/Desktop/filmly/server/node_modules/jsonwebtoken/verify.js:94:10)\n    at exports.validateToken (/Users/ragulcs/Desktop/filmly/server/controllers/userController.js:96:11)\n    at Object.internals.handler (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:99:36)\n    at /Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:30:23\n    at module.exports.internals.Protect.internals.Protect.run (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/protect.js:62:12)\n    at exports.execute (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:24:22)\n    at each (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/request.js:380:16)\n    at iterate (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/node_modules/items/lib/index.js:36:13)","timestamp":"2022-07-25T04:40:41.036Z"}
+{"level":"info","message":"Request to: /api/v1/validateToken","timestamp":"2022-07-25T04:40:41.968Z"}
+{"expiredAt":"2022-07-25T04:27:50.000Z","level":"error","message":"Access token expired jwt expired","name":"TokenExpiredError","stack":"TokenExpiredError: jwt expired\n    at /Users/ragulcs/Desktop/filmly/server/node_modules/jsonwebtoken/verify.js:152:21\n    at getSecret (/Users/ragulcs/Desktop/filmly/server/node_modules/jsonwebtoken/verify.js:90:14)\n    at Object.module.exports [as verify] (/Users/ragulcs/Desktop/filmly/server/node_modules/jsonwebtoken/verify.js:94:10)\n    at exports.validateToken (/Users/ragulcs/Desktop/filmly/server/controllers/userController.js:96:11)\n    at Object.internals.handler (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:99:36)\n    at /Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:30:23\n    at module.exports.internals.Protect.internals.Protect.run (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/protect.js:62:12)\n    at exports.execute (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:24:22)\n    at each (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/request.js:380:16)\n    at iterate (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/node_modules/items/lib/index.js:36:13)","timestamp":"2022-07-25T04:40:41.970Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T04:40:42.981Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T04:40:42.996Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T04:40:43.012Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T04:40:43.089Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T04:40:43.092Z"}
+{"level":"info","message":"Request to: /api/v1/validateToken","timestamp":"2022-07-25T04:40:43.123Z"}
+{"expiredAt":"2022-07-25T04:40:00.000Z","level":"error","message":"Access token expired jwt expired","name":"TokenExpiredError","stack":"TokenExpiredError: jwt expired\n    at /Users/ragulcs/Desktop/filmly/server/node_modules/jsonwebtoken/verify.js:152:21\n    at getSecret (/Users/ragulcs/Desktop/filmly/server/node_modules/jsonwebtoken/verify.js:90:14)\n    at Object.module.exports [as verify] (/Users/ragulcs/Desktop/filmly/server/node_modules/jsonwebtoken/verify.js:94:10)\n    at exports.validateToken (/Users/ragulcs/Desktop/filmly/server/controllers/userController.js:96:11)\n    at Object.internals.handler (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:99:36)\n    at /Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:30:23\n    at module.exports.internals.Protect.internals.Protect.run (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/protect.js:62:12)\n    at exports.execute (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/handler.js:24:22)\n    at each (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/request.js:380:16)\n    at iterate (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/node_modules/items/lib/index.js:36:13)","timestamp":"2022-07-25T04:40:43.125Z"}
+{"level":"info","message":"Request to: /api/v1/login","timestamp":"2022-07-25T04:40:49.850Z"}
+{"level":"info","message":"Logged in successfully!","timestamp":"2022-07-25T04:40:49.943Z"}
+{"level":"info","message":"Request to: /api/v1/validateToken","timestamp":"2022-07-25T04:40:49.967Z"}
+{"level":"info","message":"Token verified successfully.","timestamp":"2022-07-25T04:40:49.968Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T04:40:49.972Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T04:40:49.976Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T04:40:49.988Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T04:40:52.389Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T04:40:52.396Z"}
+{"level":"info","message":"Throttle limit exceeded.","timestamp":"2022-07-25T04:40:52.427Z"}
+{"level":"info","message":"Throttle limit exceeded.","timestamp":"2022-07-25T04:40:52.485Z"}
+{"level":"info","message":"Rate limit for 127.0.0.1 limit exceeded.","timestamp":"2022-07-25T04:41:12.916Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T04:41:12.916Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T04:41:12.941Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T04:58:15.683Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T04:58:15.698Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T05:03:22.386Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T05:03:22.402Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T05:05:16.199Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T05:05:16.214Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T05:15:55.187Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T05:15:55.202Z"}
+{"level":"info","message":"Rate limit for 127.0.0.1 limit exceeded.","timestamp":"2022-07-25T05:16:03.889Z"}
+{"level":"info","message":"Request to: /api/v1/actor/all","timestamp":"2022-07-25T05:16:03.890Z"}
+{"level":"error","message":"Un handled rejection reply interface called twice","stack":"Error: reply interface called twice\n    at Object.exports.assert (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/node_modules/hoek/lib/index.js:736:11)\n    at Function.internals.response (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/reply.js:150:10)\n    at reply (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/reply.js:72:22)\n    at exports.getAllActor (/Users/ragulcs/Desktop/filmly/server/controllers/actorController.js:23:5)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)","timestamp":"2022-07-25T05:16:03.913Z"}
+{"level":"info","message":"Request to: /api/v1/actor/all","timestamp":"2022-07-25T05:16:11.285Z"}
+{"level":"info","message":"Request to: /api/v1/actor/all","timestamp":"2022-07-25T05:16:22.182Z"}
+{"level":"error","message":"Un handled rejection reply interface called twice","stack":"Error: reply interface called twice\n    at Object.exports.assert (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/node_modules/hoek/lib/index.js:736:11)\n    at Function.internals.response (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/reply.js:150:10)\n    at reply (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/reply.js:72:22)\n    at exports.getAllActor (/Users/ragulcs/Desktop/filmly/server/controllers/actorController.js:23:5)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)","timestamp":"2022-07-25T05:16:22.205Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T05:16:48.366Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T05:16:48.376Z"}
+{"level":"info","message":"Rate limit for 127.0.0.1 limit exceeded.","timestamp":"2022-07-25T05:17:09.482Z"}
+{"level":"info","message":"Request to: /api/v1/actor/movie/10","timestamp":"2022-07-25T05:17:09.482Z"}
+{"level":"info","message":"Request to: /api/v1/actor/movie/10","timestamp":"2022-07-25T05:17:23.760Z"}
+{"level":"info","message":"Request to: /api/v1/actor/movie/10","timestamp":"2022-07-25T05:17:33.184Z"}
+{"level":"error","message":"Un handled rejection reply interface called twice","stack":"Error: reply interface called twice\n    at Object.exports.assert (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/node_modules/hoek/lib/index.js:736:11)\n    at Function.internals.response (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/reply.js:150:10)\n    at reply (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/reply.js:72:22)\n    at exports.getAllMoviesofActor (/Users/ragulcs/Desktop/filmly/server/controllers/actorController.js:59:5)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)","timestamp":"2022-07-25T05:17:33.226Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T05:17:51.641Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T05:17:51.658Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T05:17:53.164Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T05:17:53.181Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T05:18:48.485Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T05:18:48.500Z"}
+{"level":"info","message":"Rate limit for 127.0.0.1 limit exceeded.","timestamp":"2022-07-25T05:18:52.856Z"}
+{"level":"info","message":"Request to: /api/v1/director/all","timestamp":"2022-07-25T05:18:52.857Z"}
+{"level":"error","message":"Un handled rejection reply interface called twice","stack":"Error: reply interface called twice\n    at Object.exports.assert (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/node_modules/hoek/lib/index.js:736:11)\n    at Function.internals.response (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/reply.js:150:10)\n    at reply (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/reply.js:72:22)\n    at exports.getAllDirector (/Users/ragulcs/Desktop/filmly/server/controllers/directorController.js:20:5)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)","timestamp":"2022-07-25T05:18:52.883Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T05:21:03.215Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T05:21:03.230Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T05:21:06.121Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T05:21:06.135Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T05:21:07.876Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T05:21:07.886Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T05:42:25.023Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T05:42:25.043Z"}
+{"level":"info","message":"Rate limit for 127.0.0.1 limit exceeded.","timestamp":"2022-07-25T05:42:28.121Z"}
+{"level":"info","message":"Request to: /api/v1/movie/currentMonth","timestamp":"2022-07-25T05:42:28.121Z"}
+{"level":"info","message":"Successfully got movies released this month","timestamp":"2022-07-25T05:42:28.133Z"}
+{"level":"info","message":"Rate limit for 127.0.0.1 limit exceeded.","timestamp":"2022-07-25T05:43:05.846Z"}
+{"level":"info","message":"Request to: /api/v1/movie/language","timestamp":"2022-07-25T05:43:05.846Z"}
+{"level":"info","message":"Successfully got list of movies by languages","timestamp":"2022-07-25T05:43:05.869Z"}
+{"level":"info","message":"Request to: /api/v1/movie/language","timestamp":"2022-07-25T05:43:14.108Z"}
+{"level":"info","message":"Successfully got list of movies by languages","timestamp":"2022-07-25T05:43:14.119Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T05:46:21.242Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T05:46:21.256Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T05:48:14.176Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T05:48:14.192Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T05:49:00.072Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T05:49:00.082Z"}
+{"level":"info","message":"Rate limit for 127.0.0.1 limit exceeded.","timestamp":"2022-07-25T05:49:05.028Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T05:49:05.028Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T05:49:05.103Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T05:49:05.114Z"}
+{"level":"info","message":"Request to: /api/v1/login","timestamp":"2022-07-25T05:49:12.030Z"}
+{"level":"info","message":"Logged in successfully!","timestamp":"2022-07-25T05:49:12.133Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T05:49:12.208Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T05:49:12.236Z"}
+{"level":"info","message":"Request to: /api/v1/movie/search","timestamp":"2022-07-25T05:49:19.296Z"}
+{"level":"info","message":"Request to: /api/v1/movie/search","timestamp":"2022-07-25T05:49:19.303Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T05:50:12.913Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T05:50:12.928Z"}
+{"level":"info","message":"Rate limit for 127.0.0.1 limit exceeded.","timestamp":"2022-07-25T05:50:18.352Z"}
+{"level":"info","message":"Request to: /api/v1/movie/search","timestamp":"2022-07-25T05:50:18.353Z"}
+{"level":"info","message":"Got movie for search successfully!","timestamp":"2022-07-25T05:50:18.370Z"}
+{"level":"info","message":"Request to: /api/v1/movie/details/24","timestamp":"2022-07-25T05:50:22.310Z"}
+{"level":"info","message":"Request to: /api/v1/movie/details/24","timestamp":"2022-07-25T05:50:22.317Z"}
+{"level":"info","message":"Full movie details retrieved successfully!!","timestamp":"2022-07-25T05:50:22.339Z"}
+{"level":"info","message":"Request to: /api/v1/movie/search","timestamp":"2022-07-25T05:50:35.176Z"}
+{"level":"info","message":"Got movie for search successfully!","timestamp":"2022-07-25T05:50:35.193Z"}
+{"level":"info","message":"Request to: /api/v1/movie/search","timestamp":"2022-07-25T05:50:43.457Z"}
+{"level":"info","message":"Got movie for search successfully!","timestamp":"2022-07-25T05:50:43.465Z"}
+{"level":"info","message":"Rate limit for 127.0.0.1 limit exceeded.","timestamp":"2022-07-25T05:50:49.631Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T05:50:49.631Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T05:50:49.838Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T05:50:49.844Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T05:51:50.423Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T05:51:50.433Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T05:51:54.405Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T05:51:54.423Z"}
+{"level":"info","message":"Rate limit for 127.0.0.1 limit exceeded.","timestamp":"2022-07-25T05:51:55.551Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T05:51:55.551Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T05:51:55.565Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T05:51:55.703Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T05:51:55.703Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T05:51:55.724Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T05:51:55.739Z"}
+{"level":"info","message":"Request to: /api/v1/movie/details/13","timestamp":"2022-07-25T05:51:58.643Z"}
+{"level":"info","message":"Full movie details retrieved successfully!!","timestamp":"2022-07-25T05:51:58.658Z"}
+{"level":"info","message":"Request to: /api/v1/actor/movie/17","timestamp":"2022-07-25T05:52:00.932Z"}
+{"level":"info","message":"Request to: /api/v1/actor/movie/17","timestamp":"2022-07-25T05:52:00.940Z"}
+{"level":"error","message":"Un handled rejection reply interface called twice","stack":"Error: reply interface called twice\n    at Object.exports.assert (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/node_modules/hoek/lib/index.js:736:11)\n    at Function.internals.response (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/reply.js:150:10)\n    at reply (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/reply.js:72:22)\n    at exports.getAllMoviesofActor (/Users/ragulcs/Desktop/filmly/server/controllers/actorController.js:59:5)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)","timestamp":"2022-07-25T05:52:00.957Z"}
+{"level":"info","message":"Request to: /api/v1/movie/details/13","timestamp":"2022-07-25T05:52:04.281Z"}
+{"level":"info","message":"Full movie details retrieved successfully!!","timestamp":"2022-07-25T05:52:04.299Z"}
+{"level":"info","message":"Request to: /api/v1/director/movie/5","timestamp":"2022-07-25T05:52:06.282Z"}
+{"level":"info","message":"Request to: /api/v1/director/movie/5","timestamp":"2022-07-25T05:52:06.291Z"}
+{"level":"error","message":"Un handled rejection reply interface called twice","stack":"Error: reply interface called twice\n    at Object.exports.assert (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/node_modules/hoek/lib/index.js:736:11)\n    at Function.internals.response (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/reply.js:150:10)\n    at reply (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/reply.js:72:22)\n    at exports.getAllMoviesOfDirector (/Users/ragulcs/Desktop/filmly/server/controllers/directorController.js:51:5)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)","timestamp":"2022-07-25T05:52:06.305Z"}
+{"level":"info","message":"Request to: /api/v1/movie/details/13","timestamp":"2022-07-25T05:52:07.993Z"}
+{"level":"info","message":"Full movie details retrieved successfully!!","timestamp":"2022-07-25T05:52:08.007Z"}
+{"level":"info","message":"Request to: /api/v1/genre/movie/Comedy","timestamp":"2022-07-25T05:52:09.535Z"}
+{"level":"info","message":"Throttle limit exceeded.","timestamp":"2022-07-25T05:52:09.551Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T05:53:28.593Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T05:53:28.608Z"}
+{"level":"info","message":"Rate limit for 127.0.0.1 limit exceeded.","timestamp":"2022-07-25T05:53:32.077Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T05:53:32.077Z"}
+{"level":"info","message":"Request to: /api/v1/genre/movie/Comedy","timestamp":"2022-07-25T05:53:32.093Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T05:53:32.104Z"}
+{"level":"info","message":"Successfully got list of movies by genre","timestamp":"2022-07-25T05:53:32.117Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T05:53:32.187Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T05:53:32.189Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T05:53:32.210Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T05:53:32.212Z"}
+{"level":"info","message":"Request to: /api/v1/user/d5576e54-9aed-43a2-98a3-43bd5d690698","timestamp":"2022-07-25T05:53:37.430Z"}
+{"level":"info","message":"Single user data retrieved successfully!","timestamp":"2022-07-25T05:53:37.436Z"}
+{"level":"info","message":"Request to: /api/v1/genre/all","timestamp":"2022-07-25T05:53:37.573Z"}
+{"level":"info","message":"Successfully got list of genres","timestamp":"2022-07-25T05:53:37.577Z"}
+{"level":"info","message":"Request to: /api/v1/movie/home","timestamp":"2022-07-25T05:53:37.590Z"}
+{"level":"info","message":"Data for home page retrieved successfully!","timestamp":"2022-07-25T05:53:37.617Z"}
+{"level":"info","message":"Request to: /api/v1/movie/search","timestamp":"2022-07-25T05:53:51.420Z"}
+{"level":"info","message":"Got movie for search successfully!","timestamp":"2022-07-25T05:53:51.555Z"}
+{"level":"info","message":"Request to: /api/v1/movie/search","timestamp":"2022-07-25T05:53:54.934Z"}
+{"level":"info","message":"Got movie for search successfully!","timestamp":"2022-07-25T05:53:54.945Z"}
+{"level":"info","message":"Request to: /api/v1/movie/search","timestamp":"2022-07-25T05:53:56.098Z"}
+{"level":"info","message":"Got movie for search successfully!","timestamp":"2022-07-25T05:53:56.104Z"}
+{"level":"info","message":"Request to: /api/v1/movie/search","timestamp":"2022-07-25T05:53:57.250Z"}
+{"level":"info","message":"Got movie for search successfully!","timestamp":"2022-07-25T05:53:57.255Z"}
+{"level":"info","message":"Throttle limit exceeded.","timestamp":"2022-07-25T05:53:57.700Z"}
+{"level":"info","message":"Throttle limit exceeded.","timestamp":"2022-07-25T05:54:00.972Z"}
+{"level":"info","message":"Throttle limit exceeded.","timestamp":"2022-07-25T05:54:00.981Z"}
+{"level":"info","message":"Throttle limit exceeded.","timestamp":"2022-07-25T05:54:00.998Z"}
+{"level":"info","message":"Throttle limit exceeded.","timestamp":"2022-07-25T05:54:01.011Z"}
+{"level":"info","message":"Rate limit for 127.0.0.1 limit exceeded.","timestamp":"2022-07-25T05:54:24.206Z"}
+{"level":"info","message":"Request to: /api/v1/movie/search","timestamp":"2022-07-25T05:54:24.206Z"}
+{"level":"info","message":"Got movie for search successfully!","timestamp":"2022-07-25T05:54:24.222Z"}
+{"level":"info","message":"Request to: /api/v1/movie/search","timestamp":"2022-07-25T05:54:24.446Z"}
+{"level":"info","message":"Got movie for search successfully!","timestamp":"2022-07-25T05:54:24.451Z"}
+{"level":"info","message":"Request to: /api/v1/movie/search","timestamp":"2022-07-25T05:54:25.515Z"}
+{"level":"info","message":"Got movie for search successfully!","timestamp":"2022-07-25T05:54:25.520Z"}
+{"level":"info","message":"Request to: /api/v1/movie/search","timestamp":"2022-07-25T05:54:25.712Z"}
+{"level":"info","message":"Got movie for search successfully!","timestamp":"2022-07-25T05:54:25.717Z"}
+{"level":"info","message":"Request to: /api/v1/movie/search","timestamp":"2022-07-25T05:54:26.100Z"}
+{"level":"info","message":"Got movie for search successfully!","timestamp":"2022-07-25T05:54:26.105Z"}
+{"level":"info","message":"Request to: /api/v1/movie/search","timestamp":"2022-07-25T05:54:26.865Z"}
+{"level":"info","message":"Got movie for search successfully!","timestamp":"2022-07-25T05:54:26.871Z"}
+{"level":"info","message":"Request to: /api/v1/movie/search","timestamp":"2022-07-25T05:54:27.300Z"}
+{"level":"info","message":"Got movie for search successfully!","timestamp":"2022-07-25T05:54:27.305Z"}
+{"level":"info","message":"Request to: /api/v1/movie/search","timestamp":"2022-07-25T05:54:27.316Z"}
+{"level":"info","message":"Got movie for search successfully!","timestamp":"2022-07-25T05:54:27.324Z"}
+{"level":"info","message":"Request to: /api/v1/movie/search","timestamp":"2022-07-25T05:54:28.172Z"}
+{"level":"info","message":"Got movie for search successfully!","timestamp":"2022-07-25T05:54:28.178Z"}
+{"level":"info","message":"Request to: /api/v1/movie/search","timestamp":"2022-07-25T05:54:29.016Z"}
+{"level":"info","message":"Got movie for search successfully!","timestamp":"2022-07-25T05:54:29.020Z"}
+{"level":"info","message":"Request to: /api/v1/movie/search","timestamp":"2022-07-25T05:54:30.485Z"}
+{"level":"info","message":"Got movie for search successfully!","timestamp":"2022-07-25T05:54:30.491Z"}
+{"level":"info","message":"Throttle limit exceeded.","timestamp":"2022-07-25T05:54:30.735Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T05:54:53.520Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T05:54:53.533Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T05:55:15.081Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T05:55:15.095Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T05:55:20.085Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T05:55:20.104Z"}
+{"level":"info","message":"Rate limit for 127.0.0.1 limit exceeded.","timestamp":"2022-07-25T05:55:26.994Z"}
+{"level":"info","message":"Request to: /api/v1/movie/search","timestamp":"2022-07-25T05:55:26.995Z"}
+{"level":"info","message":"Got movie for search successfully!","timestamp":"2022-07-25T05:55:27.019Z"}
+{"level":"info","message":"Request to: /api/v1/movie/search","timestamp":"2022-07-25T05:55:27.256Z"}
+{"level":"info","message":"Got movie for search successfully!","timestamp":"2022-07-25T05:55:27.264Z"}
+{"level":"info","message":"Request to: /api/v1/movie/search","timestamp":"2022-07-25T05:55:27.515Z"}
+{"level":"info","message":"Got movie for search successfully!","timestamp":"2022-07-25T05:55:27.520Z"}
+{"level":"info","message":"Request to: /api/v1/movie/search","timestamp":"2022-07-25T05:55:27.952Z"}
+{"level":"info","message":"Got movie for search successfully!","timestamp":"2022-07-25T05:55:27.957Z"}
+{"level":"info","message":"Request to: /api/v1/movie/search","timestamp":"2022-07-25T05:55:28.098Z"}
+{"level":"info","message":"Got movie for search successfully!","timestamp":"2022-07-25T05:55:28.103Z"}
+{"level":"info","message":"Request to: /api/v1/movie/search","timestamp":"2022-07-25T05:55:28.365Z"}
+{"level":"info","message":"Got movie for search successfully!","timestamp":"2022-07-25T05:55:28.371Z"}
+{"level":"info","message":"Request to: /api/v1/movie/search","timestamp":"2022-07-25T05:55:30.589Z"}
+{"level":"info","message":"Got movie for search successfully!","timestamp":"2022-07-25T05:55:30.594Z"}
+{"level":"info","message":"Request to: /api/v1/actor/movie/315079","timestamp":"2022-07-25T05:55:31.792Z"}
+{"level":"info","message":"Request to: /api/v1/actor/movie/315079","timestamp":"2022-07-25T05:55:31.800Z"}
+{"level":"error","message":"Un handled rejection reply interface called twice","stack":"Error: reply interface called twice\n    at Object.exports.assert (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/node_modules/hoek/lib/index.js:736:11)\n    at Function.internals.response (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/reply.js:150:10)\n    at reply (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/reply.js:72:22)\n    at exports.getAllMoviesofActor (/Users/ragulcs/Desktop/filmly/server/controllers/actorController.js:59:5)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)","timestamp":"2022-07-25T05:55:31.819Z"}
+{"level":"info","message":"Request to: /api/v1/movie/details/13","timestamp":"2022-07-25T05:55:37.620Z"}
+{"level":"info","message":"Full movie details retrieved successfully!!","timestamp":"2022-07-25T05:55:37.646Z"}
+{"level":"info","message":"Request to: /api/v1/actor/movie/17","timestamp":"2022-07-25T05:55:39.521Z"}
+{"level":"error","message":"Un handled rejection reply interface called twice","stack":"Error: reply interface called twice\n    at Object.exports.assert (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/node_modules/hoek/lib/index.js:736:11)\n    at Function.internals.response (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/reply.js:150:10)\n    at reply (/Users/ragulcs/Desktop/filmly/server/node_modules/hapi/lib/reply.js:72:22)\n    at exports.getAllMoviesofActor (/Users/ragulcs/Desktop/filmly/server/controllers/actorController.js:59:5)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)","timestamp":"2022-07-25T05:55:39.541Z"}
+{"level":"info","message":"Request to: /api/v1/movie/search","timestamp":"2022-07-25T05:55:47.426Z"}
+{"level":"info","message":"Got movie for search successfully!","timestamp":"2022-07-25T05:55:47.435Z"}
+{"level":"info","message":"Server created successfully","timestamp":"2022-07-25T05:57:14.621Z"}
+{"level":"info","message":"Redis connected successfully.","timestamp":"2022-07-25T05:57:14.640Z"}
+{"level":"info","message":"Rate limit for 127.0.0.1 limit exceeded.","timestamp":"2022-07-25T05:57:16.806Z"}
+{"level":"info","message":"Request to: /api/v1/movie/search","timestamp":"2022-07-25T05:57:16.807Z"}
+{"level":"info","message":"Got movie for search successfully!","timestamp":"2022-07-25T05:57:16.828Z"}

@@ -5,6 +5,7 @@ const {
   getAllMoviesOfAllDirector,
   addDirector,
 } = require("../controllers/directorController");
+const { paginationValidator, paramIdValidator } = require("../validation");
 
 exports.directorRoutes = [
   {
@@ -12,6 +13,7 @@ exports.directorRoutes = [
     path: `${API_VERSION}/director/all`,
     config: {
       cors: true,
+      validate: paginationValidator
     },
     handler: getAllDirector,
   },
@@ -28,6 +30,7 @@ exports.directorRoutes = [
     path: `${API_VERSION}/director/movie/{id}`,
     config: {
       cors: true,
+      validate: paramIdValidator
     },
     handler: getAllMoviesOfDirector,
   },

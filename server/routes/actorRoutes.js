@@ -6,6 +6,7 @@ const {
   getActorMovieCountByThisYear,
   getAllMoviesofActor,
 } = require("../controllers/actorController");
+const { paginationValidator, idAndPaginationValidator, paramIdValidator } = require("../validation");
 
 exports.actorRoutes = [
   {
@@ -13,6 +14,7 @@ exports.actorRoutes = [
     path: `${API_VERSION}/actor/all`,
     config: {
       cors: true,
+      validate: paginationValidator
     },
     handler: getAllActor,
   },
@@ -29,6 +31,7 @@ exports.actorRoutes = [
     path: `${API_VERSION}/actor/movie/count/{id}`,
     config: {
       cors: true,
+      validate: paramIdValidator
     },
     handler: getActorMovieCountByThisYear,
   },
@@ -45,6 +48,7 @@ exports.actorRoutes = [
     path: `${API_VERSION}/actor/movie/{id}`,
     config: {
       cors: true,
+      validate: idAndPaginationValidator
     },
     handler: getAllMoviesofActor,
   },

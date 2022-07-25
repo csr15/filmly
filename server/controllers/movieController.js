@@ -48,7 +48,12 @@ exports.getMovieReleasedThisMonth = async (request, reply) => {
   try {
     const data = await Movie.findAll({
       where: {
-        [Op.and]: [Sequelize.fn('EXTRACT(MONTH from "mov_year") =', 6)],
+        [Op.and]: [
+          Sequelize.fn(
+            'EXTRACT(MONTH from "mov_year") =',
+            new Date().getMonth()
+          ),
+        ],
       },
     });
 

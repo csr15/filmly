@@ -5,6 +5,7 @@ const {
   catchReplyMessage,
   errorReplyMessage,
   successReplyMessage,
+  accessTokenExpired,
 } = require("../helpers/helper");
 const logger = require("../logger");
 const db = require("../models");
@@ -89,10 +90,25 @@ exports.signupHandler = async (request, reply) => {
 
 exports.validateToken = async (request, reply) => {
   try {
-    if(request.params.isValid === true){
-      reply(successReplyMessage("Token verified"));
-    }else{
-      reply(successReplyMessage("Error Token verified"));
+    const token = request.payload.token;
+
+    if (token !== undefined) {
+      jwt.verify(token, process.env.ACCESS_TOKEN, (err, user) => {
+        if (err) {
+          reply(accessTokenExpired());
+          logger.log("error", "Access token expired", err);
+        } else {
+          if (user === null) {
+            logger.log("error", "Access token expired");
+            return reply(accessTokenExpired());
+          } else {
+            logger.log("info", "Token verified successfully.");
+            reply(successReplyMessage(user, "Token verified successfully!"));
+          }
+        }
+      });
+    } else {
+      reply(catchReplyMessage("Please provide access token"));
     }
   } catch (error) {
     reply(catchReplyMessage());

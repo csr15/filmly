@@ -41,7 +41,6 @@ function List() {
           occupation === "actor" ? "act_name" : "dir_name"
         ]
       );
-      console.log(home.allMoviesOfActor);
     }
   }, [home]);
 

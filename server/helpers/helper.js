@@ -10,6 +10,7 @@ const client = require("../redis/index");
 
 const jwt = require("jsonwebtoken");
 const logger = require("../logger");
+const { ERROR } = require("../../client/filmly/src/store/actionTypes");
 
 exports.successReplyMessage = (data, message) => {
   return {
@@ -84,8 +85,8 @@ exports.rateLimiter = async (request, reply) => {
     const getData = await client.get(ip);
     if (getData !== null) {
       const count = JSON.parse(getData);
-
-      if (count == 10) {
+      
+      if (count === 50) {
         reply({ error: 1, message: "Throttle Limit exceeded." });
         logger.log("info", "Throttle limit exceeded.");
       } else {
@@ -94,7 +95,7 @@ exports.rateLimiter = async (request, reply) => {
       }
     } else {
       await client.set(ip, 0);
-      await client.expire(ip, 30);
+      await client.expire(ip, 60);
       logger.log(
         "info",
         `Rate limit for ${request.info.remoteAddress} limit exceeded.`

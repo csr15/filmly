@@ -9,6 +9,13 @@ const {
   getFullMovieDetails,
   getMovieBySearchTerm,
 } = require("../controllers/movieController");
+const {
+  paginationValidator,
+  paramIdValidator,
+  movieByLanguageValidator,
+  homeDataValidator,
+  searchValidator,
+} = require("../validation");
 
 exports.movieRoutes = [
   {
@@ -16,6 +23,7 @@ exports.movieRoutes = [
     path: `${API_VERSION}/movie/all`,
     config: {
       cors: true,
+      validate: paginationValidator,
     },
     handler: getAllMovie,
   },
@@ -24,6 +32,7 @@ exports.movieRoutes = [
     path: `${API_VERSION}/movie/{id}`,
     config: {
       cors: true,
+      validate: paramIdValidator,
     },
     handler: getMovie,
   },
@@ -32,6 +41,7 @@ exports.movieRoutes = [
     path: `${API_VERSION}/movie/search`,
     config: {
       cors: true,
+      validate: searchValidator,
     },
     handler: getMovieBySearchTerm,
   },
@@ -48,6 +58,7 @@ exports.movieRoutes = [
     path: `${API_VERSION}/movie/language`,
     config: {
       cors: true,
+      validate: movieByLanguageValidator,
     },
     handler: getMovieByLanguage,
   },
@@ -63,10 +74,8 @@ exports.movieRoutes = [
     method: "POST",
     path: `${API_VERSION}/movie/home`,
     config: {
-      cors: {
-        origin: ["*"],
-        additionalHeaders: ["*"],
-      },
+      cors: true,
+      validate: homeDataValidator,
     },
     handler: getDataForHome,
   },
@@ -74,10 +83,8 @@ exports.movieRoutes = [
     method: "GET",
     path: `${API_VERSION}/movie/details/{id}`,
     config: {
-      cors: {
-        origin: ["*"],
-        additionalHeaders: ["*"],
-      },
+      cors: true,
+      validate: paramIdValidator,
     },
     handler: getFullMovieDetails,
   },
